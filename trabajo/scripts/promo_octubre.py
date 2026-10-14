@@ -25,16 +25,16 @@ def badge(dr,cx,y,monto,regalo,fs1,fs2):
     dr.rounded_rectangle((cx-w2/2-20,y2,cx+w2/2+20,y2+fs2+22),radius=10,fill=CARBON)
     dr.text((cx,y2+9),t2,font=F2,fill=BLANCO,anchor="mt")
 
-# Escritorio 1900x800
-W,H=1900,800
+# Escritorio 1600x900 (zona segura al centro para cualquier ancho de pantalla)
+W,H=1600,900
 c=Image.new("RGBA",(W,H),CARBON+(255,))
 pt=patron((W,H)).convert("RGBA")
-m=Image.new("L",(W,H),0); ImageDraw.Draw(m).polygon([(820,0),(W,0),(W,H),(640,H)],fill=255)
+m=Image.new("L",(W,H),0); ImageDraw.Draw(m).polygon([(600,0),(W,0),(W,H),(470,H)],fill=255)
 c.paste(pt,(0,0),m)
-dr=ImageDraw.Draw(c); dr.line([(820,0),(640,H)],fill=AMAR,width=10)
-pegar(c,fit(g,440),1080,260); pegar(c,fit(d,470),1500,245)
-badge(dr,1080,60,"$100.000","caja de guantes naranjos",30,24)
-badge(dr,1500,60,"$200.000","set de dados 1/4\"",30,24)
+dr=ImageDraw.Draw(c); dr.line([(600,0),(470,H)],fill=AMAR,width=9)
+pegar(c,fit(g,400),860,330); pegar(c,fit(d,430),1255,315)
+badge(dr,860,150,"$100.000","caja de guantes naranjos",28,22)
+badge(dr,1255,150,"$200.000","set de dados 1/4\"",28,22)
 c.convert("RGB").save('/home/claude/fotos/promo-octubre-escritorio.jpg',quality=88)
 
 # Celular 900x820
