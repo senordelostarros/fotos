@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Banner inicio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* Banner del inicio de elsenordelostarros.cl — se muestra en un iframe desde Jumpseller.
+   Para quitar o cambiar un slide, editar el bloque <div class="sl"> correspondiente. */
+*{box-sizing:border-box}
+html,body{margin:0;background:#fff;font-family:Poppins,Arial,sans-serif;color:#1D2126}
+a{color:inherit}
+.w{display:grid;grid-template-columns:270px 1fr;gap:16px;max-width:1280px;margin:0 auto;padding:0 16px}
+
+/* categorías */
+.cat{background:#fff;border:1px solid #e3e6e8;border-radius:8px;overflow:hidden;align-self:start}
+.cat h3{margin:0;background:#1D2126;color:#fff;font-size:15px;font-weight:600;padding:12px 16px;border-bottom:4px solid #FFC72C}
+.cat a{display:flex;align-items:center;gap:12px;padding:9px 16px;color:#1D2126;text-decoration:none;font-size:14px;border-bottom:1px solid #f0f2f3}
+.cat a:last-child{border-bottom:0}
+.cat a:hover{background:#eaf7fa}
+.cat svg{width:22px;height:22px;flex:none;stroke:#2a9db3;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.cat span{flex:1}
+.cat a:after{content:"›";color:#9aa3a8;font-size:18px}
+
+/* slider */
+.sl-box{position:relative;border-radius:8px;overflow:hidden;background:#1D2126;display:grid}
+.sl{grid-area:1/1;position:relative;min-height:440px;background-size:cover;background-position:right center;opacity:0;visibility:hidden;transition:opacity .6s}
+.sl.on{opacity:1;visibility:visible}
+.tx{position:absolute;left:0;top:0;bottom:0;width:36%;min-width:300px;padding:34px 30px;display:flex;flex-direction:column;justify-content:center;color:#fff}
+.tag{align-self:flex-start;background:#FFC72C;color:#1D2126;font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:6px 12px;border-radius:6px;margin-bottom:12px}
+.tx h2{margin:0 0 8px;font-size:30px;line-height:1.15;font-weight:800}
+.tx h2 span{color:#FFC72C}
+.tx p{margin:0 0 18px;color:#c9d1d6;font-size:14px}
+.btn{align-self:flex-start;background:#6FC8DA;color:#1D2126!important;text-decoration:none;font-weight:700;font-size:15px;padding:11px 20px;border-radius:8px}
+.btn:hover{background:#FFC72C}
+.media{display:none}
+.sl:not(.sf) .tx{background:linear-gradient(90deg,#1D2126 0,#1D2126 78%,rgba(29,33,38,0) 100%);padding-right:60px}
+@media(min-width:1180px){.sl:not(.sf) .tx{background:none;padding-right:30px}}
+
+/* guía Senfineco */
+.sl.sf .tx{width:56%}
+.guia{list-style:none;margin:2px 0 18px;padding:0;display:grid;gap:8px}
+.guia li{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-left:4px solid #6FC8DA;border-radius:8px;padding:7px 12px 7px 8px}
+.guia img{width:46px;height:46px;object-fit:contain;background:#fff;border-radius:6px;flex:none}
+.guia b{display:block;color:#FFC72C;font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+.guia small{display:block;color:#fff;font-size:13px;line-height:1.35}
+.guia small i{font-style:normal;color:#9fdcea;font-weight:600}
+
+/* puntos */
+.dots{position:absolute;right:16px;bottom:14px;display:flex;gap:8px;z-index:3}
+.dots button{width:11px;height:11px;border-radius:50%;border:0;background:rgba(255,255,255,.45);padding:0;cursor:pointer}
+.dots button.on{background:#FFC72C;width:26px;border-radius:6px}
+
+/* celular */
+@media(max-width:760px){
+  .w{grid-template-columns:1fr;padding:0 12px}
+  .sl-box{order:-1}
+  .sl{min-height:0;background-image:none!important}
+  .media{display:block;aspect-ratio:900/430;background-size:100% auto;background-position:top center;background-repeat:no-repeat}
+  .tx,.sl.sf .tx,.sl:not(.sf) .tx{background:none;position:static;width:auto;min-width:0;padding:18px 18px 44px}
+  .tx h2{font-size:24px}
+  .dots{left:50%;right:auto;transform:translateX(-50%);bottom:14px}
+}
+@media(prefers-reduced-motion:reduce){.sl{transition:none}}
+</style>
+</head>
+<body>
+<div class="w">
+
+  <nav class="cat" aria-label="Categorías">
+    <h3>Categorías</h3>
+    <a target="_top" href="https://elsenordelostarros.cl/herramientas-manuales"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.2L3 17.8V21h3.2l6.3-6.3a4 4 0 0 0 5.2-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></svg><span>Herramientas manuales</span></a>
+    <a target="_top" href="https://elsenordelostarros.cl/herramientas-electricas-y-neumaticas"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg><span>Eléctricas y neumáticas</span></a>
+    <a target="_top" href="https://elsenordelostarros.cl/insumos-de-taller"><svg viewBox="0 0 24 24"><path d="M9 3h6v3l3 3v12H6V9l3-3z"/><path d="M9 6h6M6 13h12"/></svg><span>Insumos de taller</span></a>
+    <a target="_top" href="https://elsenordelostarros.cl/desabolladura-y-pintura"><svg viewBox="0 0 24 24"><path d="M8 3h5v4H8zM7 7h7v14H7zM14 9l5-2M14 12h5M14 15l5 2"/></svg><span>Desabolladura y Pintura</span></a>
+    <a target="_top" href="https://elsenordelostarros.cl/diagnostico-y-herramienta-especial"><svg viewBox="0 0 24 24"><path d="M4 16a8 8 0 1 1 16 0"/><path d="M12 16l4-5"/><circle cx="12" cy="16" r="1.5"/></svg><span>Diagnóstico</span></a>
+    <a target="_top" href="https://elsenordelostarros.cl/equipamiento-de-taller"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="13" rx="1.5"/><path d="M4 9.5h16M4 14h16M10 7.2h4M10 11.7h4M10 16.2h4"/><circle cx="7" cy="20" r="1.2"/><circle cx="17" cy="20" r="1.2"/></svg><span>Equipamiento de taller</span></a>
+    <a target="_top" href="https://elsenordelostarros.cl/seguridad-e-higiene"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.5 3 8.3 7 10 4-1.7 7-5.5 7-10V6z"/><path d="m9 12 2 2 4-4"/></svg><span>Seguridad e higiene</span></a>
+    <a target="_top" href="https://elsenordelostarros.cl/promociones"><svg viewBox="0 0 24 24"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.5"/></svg><span>Promociones</span></a>
+    <a target="_top" href="https://elsenordelostarros.cl/mistersolucion"><svg viewBox="0 0 24 24"><path d="m12 3 2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></svg><span>Mister Solución</span></a>
+  </nav>
+
+  <div class="sl-box" id="sl-box">
+
+    <!-- 1 · Promo de octubre (cambiar en noviembre) -->
+    <div class="sl on" style="background-image:url(promo-octubre-escritorio.jpg)">
+      <div class="media" style="background-image:url(promo-octubre-celular.jpg)"></div>
+      <div class="tx">
+        <span class="tag">Promo de octubre</span>
+        <h2>Tu compra <span>trae regalo</span></h2>
+        <p>Montos netos · válido hasta el 31 de octubre</p>
+        <a class="btn" target="_top" href="https://elsenordelostarros.cl/promociones">Ver promociones</a>
+      </div>
+    </div>
+
+    <!-- 2 · Despacho y factura -->
+    <div class="sl" style="background-image:url(banner-despacho-escritorio.jpg)">
+      <div class="media" style="background-image:url(banner-despacho-celular.jpg)"></div>
+      <div class="tx">
+        <span class="tag">Despacho y factura el mismo día</span>
+        <h2>Insumos y herramientas <span>para tu taller</span></h2>
+        <p>Precios netos + IVA · Despacho Santiago $5.000</p>
+        <a class="btn" target="_top" href="https://elsenordelostarros.cl/herramientas-manuales">Ver catálogo</a>
+      </div>
+    </div>
+
+    <!-- 3 · Senfineco con guía -->
+    <div class="sl sf" style="background-image:url(banner-senfineco-escritorio.jpg)">
+      <div class="media" style="background-image:url(banner-senfineco-celular.jpg)"></div>
+      <div class="tx">
+        <span class="tag">Línea completa Senfineco</span>
+        <h2>Químicos para <span>motor y frenos</span></h2>
+        <ul class="guia">
+          <li><img src="ms-motor-flush-motorbike-10min.jpg" alt="MotorFlush Senfineco"><div><b>Motor</b><small><i>MotorFlush:</i> limpia el motor por dentro antes del cambio de aceite</small></div></li>
+          <li><img src="ms-limpia-inyector-gasolina.jpg" alt="Limpia inyectores Senfineco"><div><b>Inyección</b><small><i>Limpia inyectores:</i> recupera potencia y baja el consumo</small></div></li>
+          <li><img src="ms-limpia-frenos-660ml.jpg" alt="Limpia frenos Senfineco"><div><b>Frenos</b><small><i>Limpia frenos:</i> desengrasa discos, calipers y piezas</small></div></li>
+        </ul>
+        <a class="btn" target="_top" href="https://elsenordelostarros.cl/insumos-de-taller/quimicos-y-lubricantes">Ver productos</a>
+      </div>
+    </div>
+
+    <div class="dots" id="dots"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var box=document.getElementById('sl-box'),sl=box.querySelectorAll('.sl'),dots=document.getElementById('dots'),i=0,t,b=[];
+  function go(n){sl[i].classList.remove('on');b[i].classList.remove('on');i=(n+sl.length)%sl.length;sl[i].classList.add('on');b[i].classList.add('on')}
+  for(var k=0;k<sl.length;k++){(function(k){var d=document.createElement('button');d.setAttribute('aria-label','Ver slide '+(k+1));d.onclick=function(){go(k);start()};dots.appendChild(d);b.push(d)})(k)}
+  b[0].classList.add('on');
+  function start(){clearInterval(t);t=setInterval(function(){go(i+1)},6000)}
+  box.addEventListener('mouseenter',function(){clearInterval(t)});box.addEventListener('mouseleave',start);
+  start();
+  // avisar la altura a la página de Jumpseller para que el iframe se ajuste
+  function h(){try{parent.postMessage({sdtbn:document.body.scrollHeight},'*')}catch(e){}}
+  window.addEventListener('load',h);window.addEventListener('resize',h);setTimeout(h,800);
+})();
+</script>
+</body>
+</html>
