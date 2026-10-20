@@ -38,3 +38,7 @@ celular('banner-senfineco-celular.jpg',[(INY,330,300,60),(MF,280,470,120),(FR,35
 escritorio('banner-despacho-escritorio.jpg',[(GA,330,740,270),(DA,200,1110,420),(GN,360,1460,240)])
 celular('banner-despacho-celular.jpg',[(GA,230,150,110),(DA,150,450,190),(GN,250,750,80)],alto=430)
 print('ok')
+
+# Fondo genérico para la bomba del día (el producto se pone encima con HTML)
+escritorio('banner-bomba-escritorio.jpg',[],x_top=900,x_bot=770)
+celular('banner-bomba-celular.jpg',[],alto=430)

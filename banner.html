@@ -47,6 +47,27 @@ a{color:inherit}
 .guia small{display:block;color:#fff;font-size:13px;line-height:1.35}
 .guia small i{font-style:normal;color:#9fdcea;font-weight:600}
 
+
+/* bomba del día */
+.sl.bo .tx{width:52%}
+.bo .card{position:absolute;right:7%;top:50%;transform:translateY(-50%);width:34%;max-width:330px;aspect-ratio:1;background:#fff;border-radius:16px;box-shadow:0 18px 40px rgba(0,0,0,.35);display:flex;align-items:center;justify-content:center;padding:14px}
+.bo .card img{width:100%;height:100%;object-fit:contain}
+.bo .off{position:absolute;top:-16px;right:-16px;background:#E0473A;color:#fff;font-weight:800;font-size:22px;width:76px;height:76px;border-radius:50%;display:flex;align-items:center;justify-content:center;transform:rotate(-10deg);box-shadow:0 6px 14px rgba(0,0,0,.3)}
+.bo .pn{color:#fff;font-weight:600;font-size:17px;margin:0 0 6px}
+.bo .pr{display:flex;align-items:baseline;gap:12px;margin:0 0 4px}
+.bo .pr s{color:#9aa3a8;font-size:17px}
+.bo .pr b{color:#FFC72C;font-size:38px;font-weight:800;line-height:1}
+.bo .pr em{color:#c9d1d6;font-style:normal;font-size:14px}
+.bo .hoy{color:#c9d1d6;font-size:13px;margin:0 0 16px}
+@media(min-width:761px){.bo .media .card{display:none}}
+@media(max-width:760px){
+  .bo-pc{display:none!important}
+  .bo .media{position:relative}
+  .bo .card{right:auto;left:50%;top:54%;transform:translate(-50%,-50%);width:36%;padding:8px}
+  .bo .off{width:60px;height:60px;font-size:17px;top:-10px;right:-10px}
+  .bo .pr b{font-size:32px}
+}
+
 /* puntos */
 .dots{position:absolute;right:16px;bottom:14px;display:flex;gap:8px;z-index:3}
 .dots button{width:11px;height:11px;border-radius:50%;border:0;background:rgba(255,255,255,.45);padding:0;cursor:pointer}
@@ -83,8 +104,22 @@ a{color:inherit}
 
   <div class="sl-box" id="sl-box">
 
+    <!-- 0 · Bomba del día: el producto cambia solo según el día (lista BOMBAS en el script) -->
+    <div class="sl bo on" id="bomba" style="background-image:url(banner-bomba-escritorio.jpg)">
+      <div class="media" style="background-image:url(banner-bomba-celular.jpg)"><div class="card"><img id="bo-img" alt=""><span class="off">-20%</span></div></div>
+      <div class="card bo-pc"><img id="bo-img2" alt=""><span class="off">-20%</span></div>
+      <div class="tx">
+        <span class="tag">Bomba del día · solo hoy</span>
+        <h2>Danos hoy nuestra <span>promo de cada día</span></h2>
+        <p class="pn" id="bo-n"></p>
+        <div class="pr"><s id="bo-a"></s><b id="bo-p"></b><em>+ IVA</em></div>
+        <p class="hoy">Precio válido solo por hoy o hasta agotar stock</p>
+        <a class="btn" id="bo-l" target="_top" href="https://elsenordelostarros.cl/promociones">La quiero</a>
+      </div>
+    </div>
+
     <!-- 1 · Promo de octubre (cambiar en noviembre) -->
-    <div class="sl on" style="background-image:url(promo-octubre-escritorio.jpg)">
+    <div class="sl" style="background-image:url(promo-octubre-escritorio.jpg)">
       <div class="media" style="background-image:url(promo-octubre-celular.jpg)"></div>
       <div class="tx">
         <span class="tag">Promo de octubre</span>
@@ -125,6 +160,29 @@ a{color:inherit}
 </div>
 
 <script>
+(function(){
+  // BOMBA DEL DÍA: una por día de la semana (0=domingo). Precios netos. Cambiar aquí cada semana.
+  var BOMBAS={
+    3:['Chicharra 1/2" con 18 dados YATO','juego-chicharra-12-con-18-dados-19-piezas',76989],
+    4:['Pistola de calor 2000 W YATO','pistola-de-aire-caliente-2000-w',49489],
+    5:['Juego de dados 1/2" 23 piezas YATO','juego-de-dados-12-23-piezas-caja-metalica',120989],
+    6:['Inflador digital 0 a 120 psi YATO','inflador-manual-0-a-120-psi-con-pantalla-digital',49489],
+    0:['Llave de torque 1/2" 60 a 330 Nm YATO','llave-de-torque-12-60-a-330-nm',186989],
+    1:['Juego de extractores 16 piezas YATO','juego-de-extractores-16-piezas',184789],
+    2:['Gata caimán hidráulica 3 toneladas YATO','gata-caiman-hidraulica-3-toneladas',263989]
+  };
+  var INICIO='2026-10-21';
+  var hoy=new Date().toLocaleDateString('en-CA',{timeZone:'America/Santiago'});
+  var el=document.getElementById('bomba');
+  var d=new Date(hoy+'T12:00:00').getDay(), x=BOMBAS[d];
+  function $(n){return document.getElementById(n)}
+  function cl(v){return '$'+Math.round(v).toLocaleString('es-CL').replace(/,/g,'.')}
+  if(hoy<INICIO||!x){el.parentNode.removeChild(el);var f=document.querySelector('#sl-box .sl');if(f)f.classList.add('on');return}
+  var img='ms5-'+x[1]+'.jpg';
+  $('bo-img').src=img;$('bo-img2').src=img;$('bo-img').alt=$('bo-img2').alt=x[0];
+  $('bo-n').textContent=x[0];$('bo-a').textContent=cl(x[2]);$('bo-p').textContent=cl(x[2]*0.8);
+  $('bo-l').href='https://elsenordelostarros.cl/'+x[1];
+})();
 (function(){
   var box=document.getElementById('sl-box'),sl=box.querySelectorAll('.sl'),dots=document.getElementById('dots'),i=0,t,b=[];
   function go(n){sl[i].classList.remove('on');b[i].classList.remove('on');i=(n+sl.length)%sl.length;sl[i].classList.add('on');b[i].classList.add('on')}
