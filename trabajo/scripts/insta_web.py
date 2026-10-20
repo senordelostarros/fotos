@@ -69,7 +69,7 @@ img.save(f'{OUT}/web-2-categorias.jpg',quality=92)
 # 3 cómo comprar
 img,d=base(3)
 y=titulo(d,210,['Comprar es','muy simple'],66,acento=['muy simple'])
-pasos=[('1','Elige tu producto','y agrégalo al carro'),('2','Ingresa tus datos','y la dirección de despacho'),('3','Paga por transferencia','y recibe tu factura')]
+pasos=[('1','Elige tu producto','y agrégalo al carro'),('2','Ingresa tus datos','y la dirección de despacho'),('3','Paga con tarjeta o transferencia','y recibe tu factura')]
 y+=40
 for n,t,s in pasos:
     d.ellipse([60,y,160,y+100],fill=AMAR); d.text((110,y+50),n,font=f(FB,54),fill=CARBON,anchor='mm')
