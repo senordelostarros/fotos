@@ -42,3 +42,15 @@ print('ok')
 # Fondo genérico para la bomba del día (el producto se pone encima con HTML)
 escritorio('banner-bomba-escritorio.jpg',[],x_top=900,x_bot=770)
 celular('banner-bomba-celular.jpg',[],alto=430)
+
+# Mix de la tienda para el slide "Tu compra trae regalo"
+LL='ms-juego-de-llaves-punta-corona-8-32-mm-17-piezas.jpg'; AM='ms-amarra-plastica-negra.jpg'; JB='ms-jabon-mecanico-2-litros.jpg'
+HU='ms-huincha-aisladora-19mm-x-18m-negra.jpg'; H7='ms-ampolleta-halogena-h7-12v-55w-hella-px26d.jpg'; TK='ms-pano-mecanico-tork-heavy-duty-combi-roll-in-box-280-panos.jpg'
+DH='ms2-juegos-de-dados-hexagonales-std-12-12-pzas.jpg'
+escritorio('banner-mix-escritorio.jpg',[
+  (LL,330,880,60),(DH,190,1200,90),(TK,300,1470,40),
+  (MF,250,800,520),(INY,330,900,470),(FR,360,1030,450),
+  (JB,250,1180,560),(HU,170,1340,600),(H7,220,1490,570),(GN,260,1300,300),(AM,230,1050,250)],x_top=640,x_bot=510)
+celular('banner-mix-celular.jpg',[
+  (LL,200,125,25),(DH,120,330,40),(TK,190,560,15),(GN,170,780,30),
+  (MF,140,150,250),(INY,190,270,220),(FR,210,380,205),(JB,150,500,260),(HU,100,640,300),(H7,140,800,265)],alto=430)

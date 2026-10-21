@@ -68,6 +68,11 @@ a{color:inherit}
   .bo .pr b{font-size:32px}
 }
 
+.reg{list-style:none;margin:0 0 18px;padding:0;display:grid;gap:6px}
+.reg li{color:#fff;font-size:13px;padding-left:22px;position:relative}
+.reg li:before{content:'';position:absolute;left:0;top:5px;width:12px;height:12px;border-radius:3px;background:#FFC72C}
+.reg b{color:#FFC72C;display:block;font-size:13px}
+
 /* puntos */
 .dots{position:absolute;right:16px;bottom:14px;display:flex;gap:8px;z-index:3}
 .dots button{width:11px;height:11px;border-radius:50%;border:0;background:rgba(255,255,255,.45);padding:0;cursor:pointer}
@@ -121,13 +126,17 @@ a{color:inherit}
     <!-- PRODUCTOS: slides de tienda, se crean desde la lista PRODUCTOS del script -->
     <span id="prod-aqui"></span>
 
-    <!-- 1 · Promo de octubre (cambiar en noviembre) -->
-    <div class="sl" style="background-image:url(promo-octubre-escritorio.jpg)">
-      <div class="media" style="background-image:url(promo-octubre-celular.jpg)"></div>
+    <!-- 1 · Promo de octubre (cambiar en noviembre): mix de la tienda + regalo por escrito -->
+    <div class="sl" style="background-image:url(banner-mix-escritorio.jpg)">
+      <div class="media" style="background-image:url(banner-mix-celular.jpg)"></div>
       <div class="tx">
         <span class="tag">Promo de octubre</span>
         <h2>Tu compra <span>trae regalo</span></h2>
-        <p>Montos netos · válido hasta el 31 de octubre</p>
+        <p>Herramientas, químicos, insumos y seguridad para tu taller, en un solo lugar.</p>
+        <ul class="reg">
+          <li><b>Sobre $100.000 + IVA</b> te llevas una caja de guantes naranjos</li>
+          <li><b>Sobre $200.000 + IVA</b> te llevas un set de dados 1/4"</li>
+        </ul>
         <a class="btn" target="_top" href="https://elsenordelostarros.cl/promociones">Ver promociones</a>
       </div>
     </div>
