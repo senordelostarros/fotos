@@ -41,7 +41,7 @@ print('ok')
 
 # Fondo genérico para la bomba del día (el producto se pone encima con HTML)
 escritorio('banner-bomba-escritorio.jpg',[],x_top=900,x_bot=770)
-celular('banner-bomba-celular.jpg',[],alto=430)
+celular('banner-bomba-celular.jpg',[],alto=812)
 
 # Mix de la tienda para el slide "Tu compra trae regalo"
 LL='ms-juego-de-llaves-punta-corona-8-32-mm-17-piezas.jpg'; AM='ms-amarra-plastica-negra.jpg'; JB='ms-jabon-mecanico-2-litros.jpg'
