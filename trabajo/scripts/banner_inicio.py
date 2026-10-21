@@ -54,3 +54,14 @@ escritorio('banner-mix-escritorio.jpg',[
 celular('banner-mix-celular.jpg',[
   (LL,200,125,25),(DH,120,330,40),(TK,190,560,15),(GN,170,780,30),
   (MF,140,150,250),(INY,190,270,220),(FR,210,380,205),(JB,150,500,260),(HU,100,640,300),(H7,140,800,265)],alto=430)
+
+# Celular v2: collage a pantalla completa (900x700, todo turquesa) para que las fotos se vean grandes
+def celular2(nombre,prods,H=700):
+    W=900
+    c=Image.new("RGBA",(W,H),CARBON+(255,)); c.paste(patron((W,H)).convert("RGBA"),(0,0))
+    for f,h,cx,top in prods: pegar(c,fit(recortar(R+f),h),cx,top)
+    c.convert("RGB").save(R+nombre,quality=86)
+celular2('banner-senfineco-celular2.jpg',[(INY,560,250,60),(MF,470,470,170),(FR,600,690,40)])
+celular2('banner-mix-celular2.jpg',[
+  (LL,300,170,30),(DH,170,470,60),(TK,260,740,20),
+  (MF,230,110,370),(INY,290,250,340),(FR,310,390,330),(JB,230,540,400),(HU,140,700,470),(H7,190,830,420),(GN,220,690,210)])
