@@ -65,3 +65,8 @@ celular2('banner-senfineco-celular2.jpg',[(INY,560,250,60),(MF,470,470,170),(FR,
 celular2('banner-mix-celular2.jpg',[
   (LL,300,170,30),(DH,170,470,60),(TK,260,740,20),
   (MF,230,110,370),(INY,290,250,340),(FR,310,390,330),(JB,230,540,400),(HU,140,700,470),(H7,190,830,420),(GN,220,690,210)])
+
+# Slide "Despacho y factura" (el de la caja de herramientas) + productos de valor en la zona oscura
+CD='ms-caja-dados-14-18-piezas-4-14mm.jpg'; C126='ms3-caja-de-herramientas-de-126-piezas.jpg'; CR='ms-carro-porta-herramientas-con-6-cajones-y-rieles-telescopicos.jpg'
+escritorio('banner-caja-escritorio.jpg',[(C126,430,1010,320),(CR,660,1390,130)],x_top=700,x_bot=560)
+celular2('banner-caja-celular.jpg',[('ms-maleta-con-150-herramientas.jpg',290,250,30),(C126,330,300,340),(CR,600,700,60)])

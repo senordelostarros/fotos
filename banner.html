@@ -79,6 +79,21 @@ a{color:inherit}
 .reg li:before{content:'';position:absolute;left:0;top:5px;width:12px;height:12px;border-radius:3px;background:#FFC72C}
 .reg b{color:#FFC72C;display:block;font-size:13px}
 
+
+/* slide caja de herramientas */
+.sl.cj .tx{width:44%;justify-content:flex-end;padding-bottom:40px;background:linear-gradient(0deg,rgba(29,33,38,.95) 0,rgba(29,33,38,.85) 45%,rgba(29,33,38,0) 100%)}
+.prem{display:grid;gap:6px;margin:4px 0 16px}
+.prem a{display:flex;justify-content:space-between;gap:10px;align-items:center;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-left:4px solid #FFC72C;border-radius:8px;padding:7px 12px;text-decoration:none}
+.prem b{color:#fff;font-size:13px;font-weight:600}
+.prem span{color:#FFC72C;font-weight:800;font-size:14px;white-space:nowrap}
+.prem a:hover{background:rgba(255,255,255,.16)}
+@media(max-width:760px){
+  .sl.cj .tx{width:auto;background:none}
+  .sl.cj .media{aspect-ratio:900/700!important;background-size:cover!important}
+  .prem a{background:#fff;border-color:#e3e6e8;border-left-color:#FFC72C}
+  .prem b{color:#1D2126}.prem span{color:#1D2126}
+}
+
 /* puntos */
 .dots{position:absolute;right:16px;bottom:14px;display:flex;gap:8px;z-index:3}
 .dots button{width:11px;height:11px;border-radius:50%;border:0;background:rgba(255,255,255,.45);padding:0;cursor:pointer}
@@ -136,8 +151,22 @@ a{color:inherit}
 
   <div class="sl-box" id="sl-box">
 
+    <!-- A · Caja de herramientas: despacho y factura + productos de valor (pedido de Renato, va primero) -->
+    <div class="sl cj on" style="background-image:url(banner-caja-escritorio.jpg)">
+      <div class="media" style="background-image:url(banner-caja-celular.jpg)"></div>
+      <div class="tx">
+        <span class="tag">Despacho y factura el mismo día</span>
+        <h2>Insumos y herramientas <span>para tu taller</span></h2>
+        <div class="prem">
+          <a target="_top" href="https://elsenordelostarros.cl/caja-de-herramientas-de-126-piezas"><b>Caja de herramientas 126 piezas</b><span>$548.900 + IVA</span></a>
+          <a target="_top" href="https://elsenordelostarros.cl/carro-porta-herramientas-con-6-cajones-y-rieles-telescopicos"><b>Carro 6 cajones telescópicos</b><span>$383.900 + IVA</span></a>
+        </div>
+        <a class="btn" target="_top" href="https://elsenordelostarros.cl/herramientas-manuales">Ver catálogo</a>
+      </div>
+    </div>
+
     <!-- 0 · Bomba del día: el producto cambia solo según el día (lista BOMBAS en el script) -->
-    <div class="sl bo on" id="bomba" style="background-image:url(banner-bomba-escritorio.jpg)">
+    <div class="sl bo" id="bomba" style="background-image:url(banner-bomba-escritorio.jpg)">
       <div class="media" style="background-image:url(banner-bomba-celular.jpg)"><div class="card"><img id="bo-img" alt=""><span class="off">-20%</span></div></div>
       <div class="card bo-pc"><img id="bo-img2" alt=""><span class="off">-20%</span></div>
       <div class="tx">
