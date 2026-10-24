@@ -17,6 +17,7 @@ OUT = "/mnt/user-data/outputs/instagram"
 W, H = 1080, 1350
 CARBON = (29, 33, 38)
 TURQ = (111, 200, 218)
+FONDO_BLANCO = True  # acordado: producto sobre fondo blanco (más profesional)
 TURQ_HONDO = (74, 160, 178)
 AMAR = (255, 199, 44)
 BLANCO = (255, 255, 255)
@@ -122,7 +123,7 @@ def publicacion(nombre_archivo, productos, etiqueta, titulo, detalle, precio, su
 
     # panel turquesa con el producto
     py0, py1 = 230, 880
-    panel = patron((W - 120, py1 - py0))
+    panel = Image.new("RGB", (W - 120, py1 - py0), (255, 255, 255)) if FONDO_BLANCO else patron((W - 120, py1 - py0))
     m = Image.new("L", panel.size, 0)
     ImageDraw.Draw(m).rounded_rectangle([0, 0, panel.width - 1, panel.height - 1], 28, fill=255)
     img.paste(panel, (60, py0), m)
