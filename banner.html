@@ -130,11 +130,31 @@ a{color:inherit}
   .dots button.on{background:#FFC72C}
   .dots{bottom:10px}
 }
+
+/* portada: banner fijo arriba (con categorías) y carrusel de promociones abajo */
+.pg{grid-template-areas:"nav hero" "rot rot";row-gap:16px}
+.pg nav.cat{grid-area:nav}
+.pg .hero{grid-area:hero}
+.pg .rot{grid-area:rot}
+.pg .rot .sl{min-height:400px}
+@media(max-width:760px){
+  .pg{grid-template-areas:"hero" "rot";grid-template-columns:1fr;row-gap:8px}
+  .hero .sl.cj .media{aspect-ratio:900/620!important}
+  .pg nav.cat{display:none}
+  .pg .rot .sl{min-height:0}
+  .hero .tx p{display:none}
+  .guia img{display:none}
+  .guia li{padding:6px 10px}
+  .guia{gap:6px;margin-bottom:12px}
+  .rot .bo .media{aspect-ratio:1/0.68!important}
+  .rot .bo .card{width:60%;max-width:240px}
+  .rot .sl:not(.bo) .media{aspect-ratio:900/600!important}
+}
 @media(prefers-reduced-motion:reduce){.sl{transition:none}}
 </style>
 </head>
 <body>
-<div class="w">
+<div class="w pg">
 
   <nav class="cat" aria-label="Categorías">
     <h3>Categorías</h3>
@@ -149,8 +169,7 @@ a{color:inherit}
     <a target="_top" href="https://elsenordelostarros.cl/mistersolucion"><svg viewBox="0 0 24 24"><path d="m12 3 2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></svg><span>Mister Solución</span></a>
   </nav>
 
-  <div class="sl-box" id="sl-box">
-
+  <div class="sl-box hero">
     <!-- A · Caja de herramientas: despacho y factura + productos de valor (pedido de Renato, va primero) -->
     <div class="sl cj on" style="background-image:url(banner-caja-escritorio.jpg)">
       <div class="media" style="background-image:url(banner-caja-celular.jpg)"></div>
@@ -162,8 +181,12 @@ a{color:inherit}
       </div>
     </div>
 
+  </div>
+
+  <div class="sl-box rot" id="sl-box">
+
     <!-- 0 · Bomba del día: el producto cambia solo según el día (lista BOMBAS en el script) -->
-    <div class="sl bo" id="bomba" style="background-image:url(banner-bomba-escritorio.jpg)">
+    <div class="sl bo on" id="bomba" style="background-image:url(banner-bomba-escritorio.jpg)">
       <div class="media" style="background-image:url(banner-bomba-celular.jpg)"><div class="card"><img id="bo-img" alt=""><span class="off">-20%</span></div></div>
       <div class="card bo-pc"><img id="bo-img2" alt=""><span class="off">-20%</span></div>
       <div class="tx">
