@@ -70,3 +70,30 @@ celular2('banner-mix-celular2.jpg',[
 CD='ms-caja-dados-14-18-piezas-4-14mm.jpg'; C126='ms3-caja-de-herramientas-de-126-piezas.jpg'; CR='ms-carro-porta-herramientas-con-6-cajones-y-rieles-telescopicos.jpg'
 escritorio('banner-caja-escritorio.jpg',[(C126,430,1010,320),(CR,660,1390,130)],x_top=700,x_bot=560)
 celular2('banner-caja-celular.jpg',[('ms-maleta-con-150-herramientas.jpg',290,250,30),(C126,330,300,340),(CR,600,700,60)])
+
+# v2 (pedido 24 oct): caja de dados como el original sobre turquesa a la izquierda; a la derecha, mini productos de la tienda
+def tiles(c,prods,x0,y0,cols,size,gap):
+    d=ImageDraw.Draw(c)
+    for i,f in enumerate(prods):
+        x=x0+(i%cols)*(size+gap); y=y0+(i//cols)*(size+gap)
+        d.rounded_rectangle([x,y,x+size,y+size],radius=int(size*.12),fill=(255,255,255,255))
+        p=recortar(R+f); s=min((size*.82)/p.width,(size*.82)/p.height)
+        p=p.resize((max(1,int(p.width*s)),max(1,int(p.height*s))),Image.LANCZOS)
+        c.alpha_composite(p,(x+(size-p.width)//2,y+(size-p.height)//2))
+MIX=[LL,MF,GN,DH,FR,AM,TK,INY,H7]
+def caja_v2():
+    W,H=1600,900
+    c=Image.new("RGBA",(W,H),CARBON+(255,)); pt=patron((W,H)).convert("RGBA")
+    m=Image.new("L",(W,H),0); ImageDraw.Draw(m).polygon([(0,0),(820,0),(690,H),(0,H)],fill=255)
+    c.paste(pt,(0,0),m); ImageDraw.Draw(c).line([(820,0),(690,H)],fill=AMAR,width=9)
+    pegar(c,fit(recortar(R+CD),400),400,90)
+    tiles(c,MIX,880,135,3,190,22)
+    c.convert("RGB").save(R+'banner-caja-escritorio.jpg',quality=86)
+    W,H=900,700
+    c=Image.new("RGBA",(W,H),CARBON+(255,)); pt=patron((W,H)).convert("RGBA")
+    m=Image.new("L",(W,H),0); ImageDraw.Draw(m).polygon([(0,0),(470,0),(400,H),(0,H)],fill=255)
+    c.paste(pt,(0,0),m); ImageDraw.Draw(c).line([(470,0),(400,H)],fill=AMAR,width=7)
+    pegar(c,fit(recortar(R+CD),330),220,170)
+    tiles(c,MIX,470,80,3,128,14)
+    c.convert("RGB").save(R+'banner-caja-celular.jpg',quality=86)
+caja_v2()
