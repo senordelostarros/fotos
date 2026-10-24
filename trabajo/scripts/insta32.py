@@ -14,7 +14,7 @@ publicacion(n,[(recortar(F+"ms5-inflador-manual-0-a-120-psi-con-pantalla-digital
 p=os.path.join(insta.OUT,n); im=Image.open(p).convert("RGB"); d=ImageDraw.Draw(im)
 cx,cy,r=W-150,300,95
 d.ellipse([cx-r,cy-r,cx+r,cy+r],fill=(224,71,58)); d.text((cx,cy),"-20%",font=f(FB,58),fill=(255,255,255),anchor="mm")
-fa=f(FM,34); t="Antes $49.489"; x=W-60; y=1170
+fa=f(FM,34); t="Antes $49.489"; x=W-60; y=1142
 w=d.textlength(t,font=fa); d.text((x,y),t,font=fa,fill=GRIS,anchor="ra")
 d.line([(x-w,y+21),(x,y+21)],fill=GRIS,width=3)
 im.save(p,quality=92)

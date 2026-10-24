@@ -110,49 +110,49 @@ def texto_ajustado(d, txt, fuente, ancho_max, tam, tam_min=34):
 
 
 def publicacion(nombre_archivo, productos, etiqueta, titulo, detalle, precio, sufijo):
-    img = Image.new("RGB", (W, H), CARBON)
+    """Estilo acordado (oct 2026): todo blanco, como el post '¿Cansado de perder tiempo en el taller?'."""
+    TXT, TXT2 = CARBON, (110, 116, 124)
+    img = Image.new("RGB", (W, H), BLANCO)
     d = ImageDraw.Draw(img)
 
-    # cabecera: logo
+    # cabecera: logo + etiqueta turquesa
     logo = Image.open(LOGO).convert("RGB")
     lw = 300
     logo = logo.resize((lw, int(logo.height * lw / logo.width)), Image.LANCZOS)
     img.paste(logo, (60, 52))
-    d.text((W - 60, 78), etiqueta.upper(), font=f(FB, 26), fill=AMAR, anchor="ra")
-    d.text((W - 60, 114), "Insumos para talleres", font=f(FR, 24), fill=GRIS, anchor="ra")
+    d.text((W - 60, 78), etiqueta.upper(), font=f(FB, 26), fill=TURQ_HONDO, anchor="ra")
+    d.text((W - 60, 114), "Insumos para talleres", font=f(FR, 24), fill=TXT2, anchor="ra")
 
-    # panel turquesa con el producto
+    # producto directo sobre el blanco
     py0, py1 = 230, 880
-    panel = Image.new("RGB", (W - 120, py1 - py0), (255, 255, 255)) if FONDO_BLANCO else patron((W - 120, py1 - py0))
-    m = Image.new("L", panel.size, 0)
-    ImageDraw.Draw(m).rounded_rectangle([0, 0, panel.width - 1, panel.height - 1], 28, fill=255)
-    img.paste(panel, (60, py0), m)
     for prod, caja in productos:
         x0, y0, x1, y1 = caja
         colocar(img, prod, (60 + x0, py0 + y0, 60 + x1, py0 + y1))
+    d.line([(60, py1 + 8), (W - 60, py1 + 8)], fill=(222, 226, 230), width=3)
 
     # texto
     ft, lineas = texto_ajustado(d, titulo, FB, W - 120, 62)
     y = 920
     for ln in lineas:
-        d.text((60, y), ln, font=ft, fill=BLANCO)
+        d.text((60, y), ln, font=ft, fill=TXT)
         y += int(ft.size * 1.18)
-    d.text((60, y + 6), detalle, font=f(FM, 28), fill=GRIS)
+    d.text((60, y + 6), detalle, font=f(FM, 28), fill=TXT2)
 
     # precio
-    yp = 1138
+    yp = 1110
     if precio:
         fp = f(FB, 74)
-        d.text((60, yp), precio, font=fp, fill=AMAR)
+        d.text((60, yp), precio, font=fp, fill=TXT)
         wpr = d.textlength(precio, font=fp)
-        d.text((60 + wpr + 16, yp + 34), sufijo, font=f(FM, 30), fill=GRIS)
+        d.text((60 + wpr + 16, yp + 34), sufijo, font=f(FM, 30), fill=TXT2)
     else:
-        d.text((60, yp + 10), sufijo, font=f(FB, 46), fill=AMAR)
+        d.text((60, yp + 10), sufijo, font=f(FB, 46), fill=TURQ_HONDO)
 
-    # pie
-    d.rectangle([0, H - 96, W, H], fill=AMAR)
-    d.text((60, H - 48), "Pedidos por WhatsApp  +56 9 4969 1686", font=f(FB, 32), fill=CARBON, anchor="lm")
-    d.text((W - 60, H - 48), "elsenordelostarros.cl", font=f(FM, 26), fill=CARBON, anchor="rm")
+    # pie: línea turquesa + franja carbón
+    d.rectangle([0, H - 102, W, H - 96], fill=TURQ)
+    d.rectangle([0, H - 96, W, H], fill=CARBON)
+    d.text((60, H - 48), "Pedidos por WhatsApp  +56 9 4969 1686", font=f(FB, 32), fill=AMAR, anchor="lm")
+    d.text((W - 60, H - 48), "elsenordelostarros.cl", font=f(FM, 26), fill=BLANCO, anchor="rm")
 
     os.makedirs(OUT, exist_ok=True)
     img.save(os.path.join(OUT, nombre_archivo), quality=92, optimize=True)
