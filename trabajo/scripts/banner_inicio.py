@@ -80,7 +80,7 @@ def tiles(c,prods,x0,y0,cols,size,gap):
         p=recortar(R+f); s=min((size*.82)/p.width,(size*.82)/p.height)
         p=p.resize((max(1,int(p.width*s)),max(1,int(p.height*s))),Image.LANCZOS)
         c.alpha_composite(p,(x+(size-p.width)//2,y+(size-p.height)//2))
-MIX=[LL,MF,GN,DH,FR,AM,TK,INY,H7]
+MIX=[LL,MF,GN,DH,'ms-limpia-frenos-60l.jpg',AM,TK,JB,H7]
 def caja_v2():
     W,H=1600,900
     c=Image.new("RGBA",(W,H),CARBON+(255,)); pt=patron((W,H)).convert("RGBA")
