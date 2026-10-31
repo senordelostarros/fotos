@@ -10,14 +10,15 @@ F=os.path.join(B,'..','..')+'/'
 PW,PH=W-120,650
 def cl(v): return '$'+f'{round(v):,}'.replace(',','.')
 # bombas: dia, foto, titulo, sku, precio normal, slug corto, texto
+# bombas nuevas por fecha: foto, titulo, sku, precio, slug, texto, hashtags, permalink
 BOMBA={
- 'sab':('ms5-inflador-manual-0-a-120-psi-con-pantalla-digital.jpg','Inflador digital 0 a 120 psi','YT73530',49489,'inflador-digital','inflador de pie con manómetro digital, para dejar cada neumático en su presión exacta','#Neumaticos #Inflador','inflador-manual-0-a-120-psi-con-pantalla-digital'),
- 'dom':('ms5-llave-de-torque-12-60-a-330-nm.jpg','Llave de torque 1/2" 330 Nm','YT07415',186989,'llave-torque','llave de torque con clic de aviso, para apretar ruedas y culatas al torque exacto','#LlaveDeTorque #Torque','llave-de-torque-12-60-a-330-nm'),
- 'lun':('ms5-juego-de-extractores-16-piezas.jpg','Extractores 16 piezas','YT25391',184789,'extractores-16','juego de extractores interior y exterior con martillo deslizante, para poleas, rodamientos y engranajes','#Extractores #Rodamientos','juego-de-extractores-16-piezas'),
- 'mar':('ms5-gata-caiman-hidraulica-3-toneladas.jpg','Gata caimán hidráulica 3 t','YT17211',263989,'gata-caiman','gata caimán de 3 toneladas: tres bombeadas y arriba','#GataHidraulica #Gata','gata-caiman-hidraulica-3-toneladas'),
- 'mie':('ms5-juego-chicharra-12-con-18-dados-19-piezas.jpg','Chicharra 1/2" con 18 dados','YT38681',76989,'chicharra-18-dados','chicharra de 72 dientes con 18 dados de 8 a 32 mm, el juego que no puede faltar','#Dados #Chicharra','juego-chicharra-12-con-18-dados-19-piezas'),
- 'jue':('ms5-pistola-de-aire-caliente-2000-w.jpg','Pistola de calor 2000 W','YT82291',49489,'pistola-calor','pistola de calor de 2000 W hasta 550 °C, para sacar emblemas, adhesivos y retráctil','#PistolaDeCalor #Desabolladura','pistola-de-aire-caliente-2000-w'),
- 'vie':('ms5-juego-de-dados-12-23-piezas-caja-metalica.jpg','Juego de dados 1/2" 23 piezas','YT12651',120989,'dados-23-piezas','juego de dados 1/2" de 23 piezas en caja metálica, con chicharra, extensiones y barrote','#Dados #Chicharra','juego-de-dados-12-23-piezas-caja-metalica'),
+ 'Domingo 1 nov':('ms5-juego-de-dados-cortos-y-largos-14-23-piezas.jpg','Dados 1/4" largos y cortos 23','YT14451',43989,'dados-14-23-piezas','juego de dados 1/4" cortos y largos de 4 a 13 mm, con accesorios de encastre, para el trabajo fino del motor','#Dados #Chicharra','juego-de-dados-cortos-y-largos-14-23-piezas'),
+ 'Lunes 2 nov':('ms5-juego-extractor-universal-de-2-y-3-brazos.jpg','Extractor universal 12 pzas','YT25105',197989,'extractor-universal','juego extractor universal interior y exterior de 2 o 3 brazos, 12 piezas con brazos de 100, 200 y 250 mm','#Extractores #Rodamientos','juego-de-extractor-universal-interior-y-exterior'),
+ 'Martes 3 nov':('ms5-gata-caiman-hidraulica-2-toneladas.jpg','Gata caimán hidráulica 2 t','YT1720',160589,'gata-caiman-2t','gata caimán de 2 toneladas con mango giratorio, de 89 a 359 mm de altura, para vehículo liviano','#GataHidraulica #Gata','gata-caiman-2-ton-1'),
+ 'Miércoles 4 nov':('ms5-juego-de-dados-para-tapones-de-carter.jpg','Dados para tapones de cárter','YT0600',75339,'dados-carter','juego de 12 dados para tapones de cárter, con las medidas más usadas en vehículo liviano','#CambioDeAceite #Lubricentro','juego-de-dados-para-tapones-de-carter'),
+ 'Jueves 5 nov':('ms5-juego-para-sensores-de-oxigeno-e-inyeccion-diesel.jpg','Dados sensores de oxígeno','YT1751',65989,'sensores-oxigeno','juego de 7 piezas para sensores de oxígeno e inyección diésel, medidas 27 y 28 mm','#SensorDeOxigeno #Diesel','juego-para-sensores-de-oxigeno-e-inyeccion-diesel'),
+ 'Viernes 6 nov':('ms5-juego-de-extractores-de-rotulas-de-direccion-1.jpg','Extractores de rótulas 5 pzas','YT0616',50589,'extractores-rotulas','juego de 5 extractores de rótulas de dirección, con extractor de pasador de bola y de varilla','#Rotulas #Direccion #Suspension','juego-de-extractores-de-rotulas-de-direccion'),
+ 'Sábado 7 nov':('ms5-juego-de-dados-torx-de-impacto-12.jpg','Dados torx de impacto 1/2"','YT1065',60489,'dados-torx-impacto','juego de 8 dados torx de impacto de T30 a T80, acero CrMo con dureza HRC 54','#DadosDeImpacto #Torx','juego-de-dados-torx-de-impacto-12'),
 }
 DN={'sab':'SÁBADO','dom':'DOMINGO','lun':'LUNES','mar':'MARTES','mie':'MIÉRCOLES','jue':'JUEVES','vie':'VIERNES'}
 # productos: foto, etiqueta, titulo, detalle corto, sku, precio, slug, texto, hashtags
@@ -50,7 +51,9 @@ DIAS=[
 TAGS='#ElSeñorDeLosTarros #Yato #Taller #Mecanica #Santiago'
 num=37; textos=[]
 for dia,fecha,prods in DIAS:
-    foto,tit,sku,precio,slug,txt,tg,perma=BOMBA[dia]; pb=precio*0.8
+  if fecha not in BOMBA: textos.append(f"══════ {fecha.upper()} ══════\n\n(Bomba de hoy: inflador digital, ya salió en post. Hoy sube solo el Reel y la historia de la bomba.)\n")
+  else:
+    foto,tit,sku,precio,slug,txt,tg,perma=BOMBA[fecha]; pb=precio*0.8
     n=f"{num}-bomba-{slug}.jpg"
     publicacion(n,[(recortar(F+foto),(60,50,PW-60,PH-40))],"Bomba del día · solo hoy",tit,f"Danos hoy nuestra promoción de cada día  ·  {sku}",cl(pb),"+ IVA")
     p=os.path.join(insta.OUT,n); im=Image.open(p).convert("RGB"); d=ImageDraw.Draw(im)
@@ -64,9 +67,9 @@ for dia,fecha,prods in DIAS:
     s.save(os.path.join(insta.OUT,f"{num}-historia-bomba-{slug}.jpg"),quality=92)
     textos.append(f"══════ {fecha.upper()} ══════\n\n{num} · Bomba del día: {tit} YATO\n🔥 Danos hoy nuestra promoción de cada día: {txt}. 20% más barato solo por hoy.\n💲 {cl(pb)} + IVA (antes {cl(precio)}) · Código {sku}\n📲 Pedidos por WhatsApp +56 9 4969 1686 · elsenordelostarros.cl\n#ElSeñorDeLosTarros #BombaDelDia #Yato {tg} #Taller #Mecanica #Santiago\n🔗 Enlace historia: https://www.elsenordelostarros.cl/{perma}\n")
     num+=1
-    for foto,et,tit,det,sku,precio,slug,txt,tg in prods:
-        publicacion(f"{num}-{slug}.jpg",[(recortar(F+foto),(60,50,PW-60,PH-40))],et,tit,f"{det}  ·  {sku}",cl(precio),"+ IVA")
-        textos.append(f"{num} · {tit} YATO\n{txt}\n💲 {cl(precio)} + IVA · Código {sku}\n📲 Pedidos por WhatsApp +56 9 4969 1686 · elsenordelostarros.cl\n#ElSeñorDeLosTarros #Yato {tg} #Taller #Mecanica #Santiago\n")
-        num+=1
-open(os.path.join(insta.OUT,'textos-37-60-semana-31oct-7nov.txt'),'w').write('\n'.join(textos))
+  for foto,et,tit,det,sku,precio,slug,txt,tg in prods:
+    publicacion(f"{num}-{slug}.jpg",[(recortar(F+foto),(60,50,PW-60,PH-40))],et,tit,f"{det}  ·  {sku}",cl(precio),"+ IVA")
+    textos.append(f"{num} · {tit} YATO\n{txt}\n💲 {cl(precio)} + IVA · Código {sku}\n📲 Pedidos por WhatsApp +56 9 4969 1686 · elsenordelostarros.cl\n#ElSeñorDeLosTarros #Yato {tg} #Taller #Mecanica #Santiago\n")
+    num+=1
+open(os.path.join(insta.OUT,'textos-37-59-semana-31oct-7nov.txt'),'w').write('\n'.join(textos))
 print('ok',num-1)

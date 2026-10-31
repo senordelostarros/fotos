@@ -271,14 +271,24 @@ a{color:inherit}
     1:['Juego de extractores 16 piezas YATO','juego-de-extractores-16-piezas',184789],
     2:['Gata caimán hidráulica 3 toneladas YATO','gata-caiman-hidraulica-3-toneladas',263989]
   };
+  // Bombas por fecha (tienen prioridad sobre la lista semanal). [nombre, permalink, precio, foto opcional]
+  var FECHAS={
+    '2026-11-01':['Juego de dados 1/4" cortos y largos 23 piezas YATO','juego-de-dados-cortos-y-largos-14-23-piezas',43989],
+    '2026-11-02':['Juego extractor universal de 2 y 3 brazos YATO','juego-de-extractor-universal-interior-y-exterior',197989,'ms5-juego-extractor-universal-de-2-y-3-brazos.jpg'],
+    '2026-11-03':['Gata caimán hidráulica 2 toneladas YATO','gata-caiman-2-ton-1',160589,'ms5-gata-caiman-hidraulica-2-toneladas.jpg'],
+    '2026-11-04':['Juego de dados para tapones de cárter 12 piezas YATO','juego-de-dados-para-tapones-de-carter',75339],
+    '2026-11-05':['Juego para sensores de oxígeno e inyección diésel YATO','juego-para-sensores-de-oxigeno-e-inyeccion-diesel',65989],
+    '2026-11-06':['Juego de extractores de rótulas de dirección YATO','juego-de-extractores-de-rotulas-de-direccion',50589,'ms5-juego-de-extractores-de-rotulas-de-direccion-1.jpg'],
+    '2026-11-07':['Juego de dados torx de impacto 1/2" YATO','juego-de-dados-torx-de-impacto-12',60489]
+  };
   var INICIO='2026-10-21';
   var hoy=new Date().toLocaleDateString('en-CA',{timeZone:'America/Santiago'});
   var el=document.getElementById('bomba');
-  var d=new Date(hoy+'T12:00:00').getDay(), x=BOMBAS[d];
+  var d=new Date(hoy+'T12:00:00').getDay(), x=FECHAS[hoy]||BOMBAS[d];
   function $(n){return document.getElementById(n)}
   function cl(v){return '$'+Math.round(v).toLocaleString('es-CL').replace(/,/g,'.')}
   if(hoy<INICIO||!x){el.parentNode.removeChild(el);var f=document.querySelector('#sl-box .sl');if(f)f.classList.add('on');return}
-  var img='ms5-'+x[1]+'.jpg';
+  var img=x[3]||('ms5-'+x[1]+'.jpg');
   $('bo-img').src=img;$('bo-img2').src=img;$('bo-img').alt=$('bo-img2').alt=x[0];
   $('bo-n').textContent=x[0];$('bo-a').textContent=cl(x[2]);$('bo-p').textContent=cl(x[2]*0.8);
   $('bo-l').href='https://elsenordelostarros.cl/'+x[1];

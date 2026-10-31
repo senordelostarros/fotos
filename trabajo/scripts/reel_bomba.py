@@ -20,7 +20,22 @@ REELS = [
     ['VIERNES', '23 piezas para', 'todo el taller', 'Juego de dados 1/2" 23 piezas YATO', 'En caja metálica', 120989, 'juego-de-dados-12-23-piezas-caja-metalica'],
     ['SÁBADO', 'Presión exacta', 'en cada neumático', 'Inflador digital 0 a 120 psi YATO', 'Con pantalla digital', 49489, 'inflador-manual-0-a-120-psi-con-pantalla-digital'],
 ]
+# Ganchos de la semana 2 (1-7 nov): mismo producto, otro gancho
+GANCHOS2 = [('Ruedas sueltas', 'o pernos cortados?'), ('El rodamiento', 'no sale ni a palos'), ('¿Sigues levantando', 'con la gata del auto?'),
+            ('Un juego, todas', 'las medidas'), ('Calor justo', 'donde lo necesitas'), ('La caja que todo', 'maestro quiere'), ('¿Neumático bajo?', 'Lo mides al tiro')]
 N = int(sys.argv[1]); OUT = sys.argv[2]; TMP = sys.argv[3]
+if len(sys.argv) > 4 and sys.argv[4] == '2': REELS[N][1], REELS[N][2] = GANCHOS2[N]
+# Semana 1-7 nov: bombas nuevas (foto = ms5-<slug>.jpg)
+REELS3 = [
+    ['DOMINGO', 'Para el trabajo', 'fino del motor', 'Dados 1/4" cortos y largos 23 pzas', 'Medidas de 4 a 13 mm', 43989, 'juego-de-dados-cortos-y-largos-14-23-piezas'],
+    ['LUNES', 'Interior o exterior,', 'lo saca igual', 'Extractor universal 2 y 3 brazos', '12 piezas · brazos de 100 a 250 mm', 197989, 'juego-extractor-universal-de-2-y-3-brazos'],
+    ['MARTES', 'Baja, rápida', 'y liviana', 'Gata caimán hidráulica 2 t YATO', 'De 89 a 359 mm · mango giratorio', 160589, 'gata-caiman-hidraulica-2-toneladas'],
+    ['MIÉRCOLES', '¿Tapón de cárter', 'redondeado?', 'Dados para tapones de cárter YATO', '12 piezas · medidas más usadas', 75339, 'juego-de-dados-para-tapones-de-carter'],
+    ['JUEVES', 'Sensor de oxígeno', 'sin cortar el cable', 'Juego sensores de oxígeno YATO', '7 piezas · también inyección diésel', 65989, 'juego-para-sensores-de-oxigeno-e-inyeccion-diesel'],
+    ['VIERNES', '¿Rótula pegada?', 'Sale sin golpes', 'Extractores de rótulas 5 pzas YATO', 'Pasador de bola y de varilla', 50589, 'juego-de-extractores-de-rotulas-de-direccion-1'],
+    ['SÁBADO', 'Torx de impacto', 'que no se rinden', 'Dados torx de impacto 1/2" YATO', 'T30 a T80 · acero CrMo', 60489, 'juego-de-dados-torx-de-impacto-12'],
+]
+if len(sys.argv) > 4 and sys.argv[4] == '3': REELS = REELS3
 DIA, G1, G2, NOM, DET, PRECIO, PERMA = REELS[N]
 W, H, FPS = 1080, 1920, 30
 os.makedirs(TMP, exist_ok=True)
