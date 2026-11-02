@@ -36,6 +36,7 @@ REELS3 = [
     ['SÁBADO', 'Torx de impacto', 'que no se rinden', 'Dados torx de impacto 1/2" YATO', 'T30 a T80 · acero CrMo', 60489, 'juego-de-dados-torx-de-impacto-12'],
 ]
 if len(sys.argv) > 4 and sys.argv[4] == '3': REELS = REELS3
+WSP = len(sys.argv) > 5 and sys.argv[5] == 'wsp'  # versión para Estado de WhatsApp
 DIA, G1, G2, NOM, DET, PRECIO, PERMA = REELS[N]
 W, H, FPS = 1080, 1920, 30
 os.makedirs(TMP, exist_ok=True)
@@ -126,8 +127,8 @@ def frame(t):
     else:  # cierre
         c = fondo_c.copy(); u = t - ESC[2][0]
         logo_en(c, 170, 700, ease(u / .5))
-        texto(c, 'Bomba del día', f(FB, 76), 650, BLANCO, ease((u - .2) / .4))
-        texto(c, 'en el link del perfil', f(FB, 76), 745, AMAR, ease((u - .4) / .4))
+        texto(c, 'Responde este estado' if WSP else 'Bomba del día', f(FB, 70 if WSP else 76), 650, BLANCO, ease((u - .2) / .4))
+        texto(c, 'y te lo enviamos hoy' if WSP else 'en el link del perfil', f(FB, 70 if WSP else 76), 745, AMAR, ease((u - .4) / .4))
         pastilla(c, 'elsenordelostarros.cl', f(FB, 62), 930, TURQ, CARBON, back((u - .8) / .5))
         pastilla(c, 'WhatsApp +56 9 4969 1686', f(FB, 58), 1090, AMAR, CARBON, back((u - 1.1) / .5))
         texto(c, 'Precios netos · Emitimos factura', f(FM, 42), 1290, BLANCO, ease((u - 1.5) / .4))
