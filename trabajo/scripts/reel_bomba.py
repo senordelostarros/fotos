@@ -36,13 +36,17 @@ REELS3 = [
     ['SÁBADO', 'Torx de impacto', 'que no se rinden', 'Dados torx de impacto 1/2" YATO', 'T30 a T80 · acero CrMo', 60489, 'juego-de-dados-torx-de-impacto-12'],
 ]
 if len(sys.argv) > 4 and sys.argv[4] == '3': REELS = REELS3
+if len(sys.argv) > 4 and sys.argv[4] == '4':  # semana 8-14 nov (datos en semana_8nov_datos.py)
+    from semana_8nov_datos import BOMBAS as _B
+    _DN={'dom':'DOMINGO','lun':'LUNES','mar':'MARTES','mie':'MIÉRCOLES','jue':'JUEVES','vie':'VIERNES','sab':'SÁBADO'}
+    REELS = [[_DN[x[0]], x[10], x[11], x[12], x[13], x[5], x[2]] for x in _B]
 WSP = len(sys.argv) > 5 and sys.argv[5] == 'wsp'  # versión para Estado de WhatsApp
 DIA, G1, G2, NOM, DET, PRECIO, PERMA = REELS[N]
 W, H, FPS = 1080, 1920, 30
 os.makedirs(TMP, exist_ok=True)
 
 logo = Image.open(insta.LOGO).convert('RGBA')
-prod = recortar(R + '/ms5-' + PERMA + '.jpg')
+prod = recortar(R + '/' + PERMA if PERMA.endswith('.jpg') else R + '/ms5-' + PERMA + '.jpg')
 fondo_t = patron((W, H)).convert('RGBA')
 fondo_c = Image.new('RGBA', (W, H), CARBON + (255,))
 def cl(v): return '$' + f'{round(v):,}'.replace(',', '.')

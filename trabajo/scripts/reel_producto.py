@@ -26,6 +26,9 @@ REELS = [
     ['LUBRICACIÓN', 'Cambio de aceite', 'sin derrames', 'Recuperador de aceite 65 L YATO', 'Embudo de 5 L · aspiración', 302489, 'ms5-recuperador-de-aceite-65-litros-con-embudo.jpg'],
 ]
 N = int(sys.argv[1]); OUT = sys.argv[2]; TMP = sys.argv[3]
+if len(sys.argv) > 4 and sys.argv[4] == '2':  # semana 8-14 nov
+    from semana_8nov_datos import PRODS as _P
+    REELS = [[x[9], x[10], x[11], x[12], x[13], x[5], x[0]] for d in _P for x in d]
 ETQ, G1, G2, NOM, DET, PRECIO, FOTO = REELS[N]
 W, H, FPS = 1080, 1920, 30
 os.makedirs(TMP, exist_ok=True)
