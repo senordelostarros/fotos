@@ -132,13 +132,13 @@ a{color:inherit}
 }
 
 /* portada: banner fijo arriba (con categorías) y carrusel de promociones abajo */
-.pg{grid-template-areas:"nav hero" "rot rot";row-gap:16px}
+.pg{grid-template-areas:"rot rot" "nav hero";row-gap:16px}
 .pg nav.cat{grid-area:nav}
 .pg .hero{grid-area:hero}
 .pg .rot{grid-area:rot}
 .pg .rot .sl{min-height:400px}
 @media(max-width:760px){
-  .pg{grid-template-areas:"hero" "rot";grid-template-columns:1fr;row-gap:8px}
+  .pg{grid-template-areas:"rot" "hero";grid-template-columns:1fr;row-gap:8px}
   .hero .sl.cj .media{aspect-ratio:900/620!important}
   .pg nav.cat{display:none}
   .pg .rot .sl{min-height:0}
