@@ -20,7 +20,7 @@ REELS = [
     ['IMPACTO', 'Hechos para', 'la pistola de impacto', 'Dados de impacto largos 1/2" YATO', '10 a 24 mm · cromo-molibdeno', 49489, 'ms5-juego-de-dados-de-impacto-largos-12.jpg'],
     ['TAPICERÍA', 'Paneles fuera', 'sin quebrar clips', 'Extractores de tapicería 19 pzas', 'Clips, paneles, radio y tablero', 43989, 'ms5-juego-de-19-extractores-de-tapiceria-y-molduras.jpg'],
     ['HERRAMIENTA MANUAL', 'Remaches grandes', 'con menos fuerza', 'Remachadora tipo fuelle YATO', 'Remaches de 2,4 a 6,4 mm', 41239, 'ms5-remachadora-tipo-fuelle-extensible.jpg'],
-    ['FRENOS', 'Purga los frenos', 'sin ayudante', 'Purgador de frenos 22 pzas YATO', 'Bomba de vacío · purga y diagnóstico', 87989, 'ms5-bomba-de-vacio-con-purgador-de-frenos-22-piezas.jpg'],
+    ['FRENOS', 'Purga los frenos', 'sin ayudante', 'Purgador de frenos 22 pzas YATO', 'Bomba de vacío · purga y diagnóstico', 87989, 'ms6-bomba-de-vacio-con-purgador-de-frenos-22-piezas.jpg'],
     ['FRENOS', '¿Cambio de pastillas?', 'El pistón vuelve fácil', 'Juego para caliper 35 piezas YATO', 'Compresión de pistones de caliper', 109989, 'ms5-juego-para-caliper-de-freno-35-piezas.jpg'],
     ['LUBRICACIÓN', 'Engrasa con aire,', 'no con la mano', 'Engrasadora neumática 400 cc YATO', 'Acople rápido de aire comprimido', 41789, 'ms5-pistola-engrasadora-neumatica-400-cc.jpg'],
     ['LUBRICACIÓN', 'Cambio de aceite', 'sin derrames', 'Recuperador de aceite 65 L YATO', 'Embudo de 5 L · aspiración', 302489, 'ms5-recuperador-de-aceite-65-litros-con-embudo.jpg'],
@@ -34,7 +34,8 @@ W, H, FPS = 1080, 1920, 30
 os.makedirs(TMP, exist_ok=True)
 
 logo = Image.open(insta.LOGO).convert('RGBA')
-prod = recortar(R + '/' + FOTO)
+from recorte_todo import recortar_todo
+prod = (recortar_todo if 'ms6-bomba-de-vacio' in FOTO else recortar)(R + '/' + FOTO)
 fondo_t = patron((W, H)).convert('RGBA')
 fondo_c = Image.new('RGBA', (W, H), CARBON + (255,))
 def cl(v): return '$' + f'{round(v):,}'.replace(',', '.')
