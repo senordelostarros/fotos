@@ -138,15 +138,21 @@ a{color:inherit}
 .pg .rot{grid-area:rot}
 .pg .rot .sl{min-height:400px}
 @media(max-width:760px){
-  .pg{grid-template-areas:"rot" "hero";grid-template-columns:1fr;row-gap:8px}
-  .hero .sl.cj .media{aspect-ratio:900/620!important}
-  .pg nav.cat{display:none}
+  .pg{grid-template-areas:"nav" "rot" "hero";grid-template-columns:1fr;row-gap:8px}
+  .hero .sl.cj .media{aspect-ratio:900/520!important}
+  /* celular: categorías como fila de botones que se desliza */
+  .pg nav.cat{display:flex;gap:8px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;background:none;border:0;box-shadow:none;border-radius:0;padding:2px 0}
+  .pg nav.cat::-webkit-scrollbar{display:none}
+  .pg nav.cat h3{display:none}
+  .pg nav.cat a{flex:none;gap:6px;padding:8px 12px;border:1px solid #d6e9ee;border-radius:99px;background:#fff;font-size:13px;font-weight:600;white-space:nowrap}
+  .pg nav.cat a:after{content:none}
+  .pg nav.cat svg{width:18px;height:18px}
   .pg .rot .sl{min-height:0}
   .hero .tx p{display:none}
   .guia img{display:none}
   .guia li{padding:6px 10px}
   .guia{gap:6px;margin-bottom:12px}
-  .rot .bo .media{aspect-ratio:1/0.68!important}
+  .rot .bo .media{aspect-ratio:1/0.6!important}
   .rot .bo .card{width:60%;max-width:240px}
   .rot .sl:not(.bo) .media{aspect-ratio:900/600!important}
 }
