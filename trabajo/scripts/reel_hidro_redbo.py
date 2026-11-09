@@ -43,17 +43,62 @@ def logo_en(c, y, w, a=1):
 def franja(c):
     d = ImageDraw.Draw(c); d.rectangle((0, H - 150, W, H), fill=AMAR)
     d.text((W // 2, H - 75), 'Pedidos WhatsApp +56 9 4969 1686', font=f(FB, 44), fill=CARBON, anchor='mm')
-ESC = [0, 3.0, 7.5, 11.5, 16.0]
+
+import math
+def bici(c, cx, cy, sc, col, a=1):
+    lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay); k = col + (int(255 * a),); w = max(3, int(9 * sc))
+    r = 95 * sc; A = (cx - 160 * sc, cy); B = (cx + 160 * sc, cy)
+    for p in (A, B): d.ellipse((p[0] - r, p[1] - r, p[0] + r, p[1] + r), outline=k, width=w)
+    pd = (cx - 10 * sc, cy); st = (cx - 55 * sc, cy - 150 * sc); hd = (cx + 105 * sc, cy - 145 * sc)
+    for p, q in ((A, pd), (A, st), (pd, st), (st, hd), (pd, hd), (hd, B)): d.line((p, q), fill=k, width=w)
+    d.line(((st[0] - 40 * sc, st[1] - 18 * sc), (st[0] + 30 * sc, st[1] - 18 * sc)), fill=k, width=w + 4)
+    d.line((hd, (hd[0] - 10 * sc, hd[1] - 45 * sc)), fill=k, width=w); d.line(((hd[0] - 10 * sc, hd[1] - 45 * sc), (hd[0] + 45 * sc, hd[1] - 50 * sc)), fill=k, width=w)
+    d.ellipse((pd[0] - 22 * sc, pd[1] - 22 * sc, pd[0] + 22 * sc, pd[1] + 22 * sc), outline=k, width=w)
+    c.alpha_composite(lay)
+def moto(c, cx, cy, sc, col, a=1):
+    lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay); k = col + (int(255 * a),); w = max(3, int(9 * sc))
+    P = lambda x, y: (cx + x * sc, cy + y * sc)
+    r = 88 * sc
+    for (x, y) in ((-175, 0), (185, 0)):
+        X, Y = P(x, y); d.ellipse((X - r, Y - r, X + r, Y + r), outline=k, width=w + 8)
+        d.ellipse((X - 20 * sc, Y - 20 * sc, X + 20 * sc, Y + 20 * sc), fill=k)
+    d.line((P(185, 0), P(105, -175)), fill=k, width=w + 6)              # horquilla
+    d.line((P(-175, 0), P(-20, -40)), fill=k, width=w + 6)              # basculante
+    d.polygon([P(-40, -95), P(70, -110), P(105, -150), P(40, -165), P(-30, -140)], fill=k)   # estanque
+    d.polygon([P(-230, -125), P(-40, -125), P(-40, -100), P(-200, -100)], fill=k)          # asiento
+    d.polygon([P(-250, -115), P(-150, -95), P(-170, -85), P(-260, -100)], fill=k)          # tapabarro trasero
+    d.rounded_rectangle((P(-40, -90)[0], P(-40, -90)[1], P(40, -15)[0], P(40, -15)[1]), radius=int(14 * sc), fill=k)  # motor
+    d.line((P(-20, -25), P(-150, -60)), fill=k, width=w)                 # escape
+    d.line((P(80, -190), P(150, -205)), fill=k, width=w + 4)            # manubrio
+    d.line((P(105, -175), P(95, -195)), fill=k, width=w + 2)
+    d.ellipse((P(120, -165)[0] - 16 * sc, P(120, -165)[1] - 16 * sc, P(120, -165)[0] + 16 * sc, P(120, -165)[1] + 16 * sc), fill=k)  # foco
+    c.alpha_composite(lay)
+def gotas(c, y0, u):
+    lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+    for i in range(26):
+        ph = (u * 1.6 + i * 0.0385) % 1; x = -20 + ph * 520; y = y0 + ((i * 37) % 90 - 45) + ph * 40
+        al = int(255 * min(1, (1 - ph) * 1.6)); rr = 7 + (i % 3) * 3; d.ellipse((x - rr, y - rr, x + rr, y + rr), fill=(111, 200, 218, al))
+    c.alpha_composite(lay)
+ESC = [0, 3.0, 7.0, 10.5, 14.5, 18.5]
 def frame(t):
     if t < ESC[1]:  # gancho
         c = fondo_c.copy(); u = t
         logo_en(c, 170, 600, ease(u / .5))
-        texto(c, '¿Lavas el auto', f(FB, 88), 760, BLANCO, ease((u - .25) / .4), 40 * (1 - ease((u - .25) / .4)))
-        texto(c, 'con balde y esponja?', f(FB, 80), 870, AMAR, ease((u - .5) / .4), 40 * (1 - ease((u - .5) / .4)))
+        texto(c, '¿Bici o moto', f(FB, 88), 760, BLANCO, ease((u - .25) / .4), 40 * (1 - ease((u - .25) / .4)))
+        texto(c, 'llena de barro?', f(FB, 88), 870, AMAR, ease((u - .5) / .4), 40 * (1 - ease((u - .5) / .4)))
         pastilla(c, 'PROMO DE LA TARDE', f(FB, 58), 1100, ROJO, BLANCO, back((u - 1.0) / .5))
         texto(c, 'Agua a presión, sin enchufe', f(FM, 50), 1250, TURQ, ease((u - 1.4) / .4))
-    elif t < ESC[2]:  # producto
-        c = fondo_t.copy(); u = t - ESC[1]
+    elif t < ESC[2]:  # ideal para bicicletas y motos
+        c = fondo_c.copy(); u = t - ESC[1]
+        texto(c, 'IDEAL PARA', f(FB, 64), 150, TURQ, ease(u / .4))
+        texto(c, 'BICICLETAS', f(FB, 110), 240, AMAR, ease((u - .15) / .4), 30 * (1 - ease((u - .15) / .4)))
+        bici(c, W // 2, 700, 1.25 * back((u - .3) / .6) if u > .3 else 0.01, BLANCO, ease((u - .3) / .4))
+        texto(c, 'Y MOTOS', f(FB, 110), 920, AMAR, ease((u - 1.2) / .4), 30 * (1 - ease((u - 1.2) / .4)))
+        moto(c, W // 2 + 20, 1400, 1.15 * back((u - 1.4) / .6) if u > 1.4 else 0.01, BLANCO, ease((u - 1.4) / .4))
+        if u > 2.0: gotas(c, 640, u); gotas(c, 1300, u + .3)
+        texto(c, 'Barro y grasa fuera, sin enchufe', f(FM, 48), 1640, TURQ, ease((u - 2.4) / .4))
+    elif t < ESC[3]:  # producto
+        c = fondo_t.copy(); u = t - ESC[2]
         ImageDraw.Draw(c).rectangle((0, 0, W, 200), fill=CARBON)
         texto(c, 'HIDROLAVADORA INALÁMBRICA', f(FB, 54), 70, AMAR)
         pieza(c, g, W // 2, 720, 940, 760, back((u - .1) / .6), rot=-6 * (1 - ease(u / 1.2)))
@@ -62,10 +107,10 @@ def frame(t):
         texto(c, 'Redbo HL20BL · batería 20 V 4,0 Ah', f(FB, 48), 1300, BLANCO, ease((u - 1.1) / .4))
         texto(c, 'Motor brushless · 9 a 35 bar', f(FM, 44), 1385, BLANCO, ease((u - 1.4) / .4))
         texto(c, '4,09 L/min · agua de balde o llave', f(FM, 44), 1450, GR, ease((u - 1.7) / .4))
-        pastilla(c, 'Autos · motos · pisos · maquinaria', f(FB, 40), 1545, TURQ, CARBON, back((u - 2.0) / .5))
+        pastilla(c, 'Bicicletas · motos · autos · pisos', f(FB, 40), 1545, TURQ, CARBON, back((u - 2.0) / .5))
         franja(c)
-    elif t < ESC[3]:  # kit completo + precio
-        c = fondo_t.copy(); u = t - ESC[2]
+    elif t < ESC[4]:  # kit completo + precio
+        c = fondo_t.copy(); u = t - ESC[3]
         ImageDraw.Draw(c).rectangle((0, 0, W, 200), fill=CARBON)
         texto(c, 'KIT COMPLETO', f(FB, 64), 62, AMAR)
         pieza(c, kit, W // 2, 690, 900, 860, back((u - .1) / .6))
@@ -76,7 +121,7 @@ def frame(t):
         texto(c, '+ IVA · emitimos factura', f(FM, 46), 1560, BLANCO, ease((u - 1.9) / .4))
         franja(c)
     else:  # cierre
-        c = fondo_c.copy(); u = t - ESC[3]
+        c = fondo_c.copy(); u = t - ESC[4]
         logo_en(c, 170, 700, ease(u / .5))
         texto(c, 'Pídela esta tarde', f(FB, 80), 650, BLANCO, ease((u - .2) / .4))
         texto(c, 'y llega mañana', f(FB, 80), 750, AMAR, ease((u - .4) / .4))
@@ -90,5 +135,5 @@ n = int(ESC[-1] * FPS)
 for i in range(n): frame(i / FPS).convert('RGB').save(f'{TMP}/f{i:04d}.jpg', quality=90)
 subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-framerate', str(FPS), '-i', f'{TMP}/f%04d.jpg', '-f', 'lavfi', '-i', 'anullsrc=r=44100:cl=stereo', '-shortest',
     '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-profile:v', 'high', '-crf', '22', '-movflags', '+faststart', '-c:a', 'aac', '-b:a', '128k', OUT], check=True)
-for i in (60, 200, 320, 420): frame(i / FPS).convert('RGB').resize((360, 640)).save(f'{TMP}/prev{i}.jpg')
+for i in (60, 175, 270, 380, 500): frame(i / FPS).convert('RGB').resize((360, 640)).save(f'{TMP}/prev{i}.jpg')
 print('ok')
