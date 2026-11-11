@@ -83,20 +83,42 @@ footer{text-align:center;color:var(--gris);font-size:12px;margin-top:24px;line-h
 
 <script>
 (function(){
-  // POSTS: [imagen del post, producto en la tienda, nombre corto]. El primero es el más reciente.
+  // POSTS: [fecha, imagen, producto, nombre]. Se muestran solo los de hoy o antes (máx. 9).
   var POSTS=[
-    ['44-prensa-rapida-300.jpg','prensa-rapida-300mm-1','Prensa rápida 300'],
-    ['43-tornillo-banco-5.jpg','tornillo-mecanico-5-125mm-con-yunque-giratorio-360','Tornillo de banco 5"'],
-    ['42-bomba-extractor-universal.jpg','juego-de-extractor-universal-interior-y-exterior','Extractor universal'],
-    ['41-partidor-9000.jpg','cargador-partidor-compacto-9000mah-para-arranque-de-automoviles-y-alimentacion-de-dispositivos-portatiles','Partidor 9000 mAh'],
-    ['40-probador-bateria.jpg','probador-de-bateria-y-alternador-12-v','Probador de batería'],
-    ['39-bomba-dados-14-23-piezas.jpg','juego-de-dados-cortos-y-largos-14-23-piezas','Dados 1/4" 23 pzas'],
-    ['38-prensa-hidraulica-20t.jpg','prensa-hidraulica-para-20-toneladas','Prensa hidráulica 20 t'],
-    ['37-extractor-rodamientos-masa.jpg','juego-para-extraer-rodamientos-delanteros-23-piezas','Extractor de masa'],
-    ['36-bomba-dados-23-piezas.jpg','juego-de-dados-12-23-piezas-caja-metalica','Dados 1/2" 23 pzas']
+    ['2026-11-14','80-chicharra-14-360.jpg','llave-chicharra-14-cabeza-rotatoria-en-360-145-mml','Chicharra 1/4" cabeza 360°'],
+    ['2026-11-14','79-torque-210.jpg','llave-de-torque-cuadrante-12-30-210-nm','Llave torque 1/2" 30-210'],
+    ['2026-11-14','78-bomba-banquillos-2t.jpg','soporte-o-banquillos-para-2ton','Banquillos 2 t (par)'],
+    ['2026-11-13','77-pelacables.jpg','alicate-pelacables-automatico-170mml','Pelacables automático'],
+    ['2026-11-13','76-prensa-terminales.jpg','alicate-prensa-terminales-2','Alicate prensa terminales'],
+    ['2026-11-13','75-bomba-cargador-baterias.jpg','cargador-de-baterias-inteligente-electronico-612v-8a-5-200ah','Cargador de baterías 6/12 V'],
+    ['2026-11-12','74-sierra-copa.jpg','kit-de-sierra-copa-para-metal-9-piezas','Sierra copa metal 9 piezas'],
+    ['2026-11-12','73-grata-copa.jpg','grata-copa-trenzada-100mm-para-galletero-m14','Grata copa trenzada 100 mm'],
+    ['2026-11-12','72-bomba-esmeril-5.jpg','esmeril-angular-de-5-125mm-1100-w-1200-rpm','Esmeril angular 5" 1100 W'],
+    ['2026-11-11','71-destornilladores-18.jpg','jgo-destornilladores-paleta-cruz-y-torx-18-pzas','Destornilladores 18 piezas'],
+    ['2026-11-11','70-chicharra-38.jpg','llave-chicharra-reversible-38-170-mml-72-dientes','Chicharra 3/8" 72 dientes'],
+    ['2026-11-11','69-bomba-llaves-17.jpg','juego-de-llaves-punta-corona-8-32-mm-17-piezas','Llaves punta corona 17 pzas'],
+    ['2026-11-10','68-dados-inyeccion-diesel.jpg','juego-de-dados-profesionales-para-inyeccion-en-motor-diesel','Dados para inyección diésel'],
+    ['2026-11-10','67-dados-alternador.jpg','juego-de-dados-y-puntas-para-alternador-22-piezas','Dados alternador 22 pzas'],
+    ['2026-11-10','66-bomba-compresimetro.jpg','compresimetro-para-motores-diesel-y-gasolina-50-piezas','Compresímetro 50 piezas'],
+    ['2026-11-09','65-extractor-rotula-100.jpg','extractor-de-rotulas-100-mm','Extractor de rótulas 100 mm'],
+    ['2026-11-09','64-extractor-homocinetica.jpg','extractor-de-homocineticas','Extractor de homocinéticas'],
+    ['2026-11-09','63-bomba-multiplicador-torque.jpg','multiplicador-de-torque-para-soltar-pernos-de-rueda-cuadrante-1-158-torque-max','Multiplicador de torque 1"'],
+    ['2026-11-08','62-caja-metalica.jpg','caja-pherramientas-metalica-plegable-360x150x115mm','Caja metálica plegable'],
+    ['2026-11-08','61-lampara-taller.jpg','lampara-de-taller-recargable-yato-con-luz-principal-de-100lm-y-linterna-de-45lm','Lámpara de taller recargable'],
+    ['2026-11-08','60-bomba-maleta-77.jpg','maleta-con-77-herramientas','Maleta con 77 herramientas'],
+    ['2026-11-01','44-prensa-rapida-300.jpg','prensa-rapida-300mm-1','Prensa rápida 300'],
+    ['2026-11-01','43-tornillo-banco-5.jpg','tornillo-mecanico-5-125mm-con-yunque-giratorio-360','Tornillo de banco 5"'],
+    ['2026-11-01','42-bomba-extractor-universal.jpg','juego-de-extractor-universal-interior-y-exterior','Extractor universal'],
+    ['2026-11-01','41-partidor-9000.jpg','cargador-partidor-compacto-9000mah-para-arranque-de-automoviles-y-alimentacion-de-dispositivos-portatiles','Partidor 9000 mAh'],
+    ['2026-11-01','40-probador-bateria.jpg','probador-de-bateria-y-alternador-12-v','Probador de batería'],
+    ['2026-11-01','39-bomba-dados-14-23-piezas.jpg','juego-de-dados-cortos-y-largos-14-23-piezas','Dados 1/4" 23 pzas'],
+    ['2026-11-01','38-prensa-hidraulica-20t.jpg','prensa-hidraulica-para-20-toneladas','Prensa hidráulica 20 t'],
+    ['2026-11-01','37-extractor-rodamientos-masa.jpg','juego-para-extraer-rodamientos-delanteros-23-piezas','Extractor de masa'],
+    ['2026-11-01','36-bomba-dados-23-piezas.jpg','juego-de-dados-12-23-piezas-caja-metalica','Dados 1/2" 23 pzas']
   ];
-  var g=document.getElementById('grid'),h='';
-  POSTS.forEach(function(p){h+='<a href="https://elsenordelostarros.cl/'+p[1]+'"><img src="trabajo/instagram/'+p[0]+'" alt="'+p[2]+'" loading="lazy"><span>'+p[2]+'</span></a>'});
+  var g=document.getElementById('grid'),h='',n=0;
+  var hoyP=new Date().toLocaleDateString('en-CA',{timeZone:'America/Santiago'});
+  POSTS.forEach(function(p){if(p[0]>hoyP||n>=9)return;n++;h+='<a href="https://elsenordelostarros.cl/'+p[2]+'"><img src="trabajo/instagram/'+p[1]+'" alt="'+p[3].replace(/"/g,'&quot;')+'" loading="lazy"><span>'+p[3]+'</span></a>'});
   g.innerHTML=h;
 
   // BOMBA DEL DÍA (misma lista que el banner de la tienda; 0=domingo)
