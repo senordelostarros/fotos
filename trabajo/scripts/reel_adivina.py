@@ -23,7 +23,11 @@ DATOS = {
     'sierra': ['ms-kit-de-sierra-copa-para-metal-9-piezas.jpg', (0.20, 0.32), 'Es un kit de sierra copa',
                'Sierra copa para metal 9 piezas YATO', 'YT3380',
                ['De 22 a 73 mm', 'Corta hasta 40 mm de profundidad', 'Acero inoxidable, tubos y madera'], 54439, False],
+    'cable': ['ms-cable-usb-c-a-usb-b-impresora-escaner.jpg', (0.72, 0.80), 'Es un cable USB-C a USB-B',
+              'Cable USB-C a USB-B', 'USBC-USBB',
+              ['Impresoras y escáneres', 'A notebook o celular USB-C', 'Malla trenzada resistente'], 15900, False],
 }
+PREG = {'cable': ('¿Sabes qué', 'cable es este?')}
 CLAVE, OUT, TMP = sys.argv[1], sys.argv[2], sys.argv[3]
 FOTO, ZP, ES, NOM, COD, USOS, PRECIO, BOMBA = DATOS[CLAVE]
 W, H, FPS = 1080, 1920, 30
@@ -89,8 +93,9 @@ TOTAL = ESC[-1][1]
 def frame(t):
     if t < ESC[0][1]:  # detalle + pregunta + cuenta regresiva
         c = fondo_c.copy(); u = t
-        texto(c, '¿Adivinas qué', f(FB, 92), 170, BLANCO, ease(u / .4), dy=30 * (1 - ease(u / .4)))
-        texto(c, 'herramienta es?', f(FB, 92), 280, AMAR, ease((u - .25) / .4), dy=30 * (1 - ease((u - .25) / .4)))
+        P1, P2 = PREG.get(CLAVE, ('¿Adivinas qué', 'herramienta es?'))
+        texto(c, P1, f(FB, 92), 170, BLANCO, ease(u / .4), dy=30 * (1 - ease(u / .4)))
+        texto(c, P2, f(FB, 92), 280, AMAR, ease((u - .25) / .4), dy=30 * (1 - ease((u - .25) / .4)))
         z = 0.30 + 0.10 * (u / ESC[0][1])  # zoom que se abre lento
         q = lupa(z); s = back((u - .3) / .6)
         if s > .01:
