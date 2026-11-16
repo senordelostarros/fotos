@@ -386,6 +386,13 @@ function alertaVacia(){$('tabla').querySelector('.vacio')&&($('tabla').querySele
 
 // ?add=YT0363:2,YT1055 → agrega desde un enlace
 try{var a=new URLSearchParams(location.search).get('add'); if(a){a.split(',').forEach(function(x){var s=x.split(':'),k=norm(s[0]); if(IDX[k]!==undefined)agregar(IDX[k],s[1]||1)}); history.replaceState(null,'',location.pathname)}}catch(e){}
+// ?cat=herramientas-manuales  o  ?cat=herramientas-manuales/llaves → abre filtrado en esa categoría
+try{(function(){var c=new URLSearchParams(location.search).get('cat');if(!c)return;
+  function sl(x){return sinAcento(x).replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}
+  var p=c.toLowerCase().split('/');
+  FAMS.forEach(function(f,i){if(sl(f)===sl(p[0]))famSel=i});
+  if(famSel>=0&&p[1])CATS.forEach(function(x,i){var q=x.split(' / ');if(q[0]===FAMS[famSel]&&sl(q[1])===sl(p[1]))subSel=i});
+})()}catch(e){}
 chipsFam();filtrar();pintar();
 })();
 </script>
