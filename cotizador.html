@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cotizador · El Señor de los Tarros</title>
+<meta name="description" content="Pega tu lista de códigos o busca productos y arma tu cotización con precios netos. Te respondemos por WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--carbon:#1D2126;--turq:#6FC8DA;--amar:#FFC72C;--gris:#6b7480;--linea:#e3e7eb;--fondo:#f5f7f8;--rojo:#E0473A}
+*{box-sizing:border-box}
+body{margin:0;font-family:Poppins,system-ui,sans-serif;background:var(--fondo);color:var(--carbon);font-size:15px;line-height:1.45}
+a{color:inherit}
+header{background:var(--carbon);color:#fff}
+.top{max-width:1040px;margin:0 auto;padding:14px 16px;display:flex;align-items:center;gap:14px;justify-content:space-between}
+.top img{height:54px;display:block}
+.top a.wsp{background:var(--amar);color:var(--carbon);text-decoration:none;font-weight:700;padding:9px 14px;border-radius:10px;font-size:14px;white-space:nowrap}
+.hero{max-width:1040px;margin:0 auto;padding:18px 16px 26px}
+.hero small{color:var(--turq);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:12px}
+.hero h1{margin:6px 0 8px;font-size:clamp(26px,5vw,40px);line-height:1.1;font-weight:800}
+.hero h1 span{color:var(--amar)}
+.hero p{margin:0;color:#c9d0d7;max-width:640px}
+main{max-width:1040px;margin:0 auto;padding:18px 16px 60px;display:grid;gap:18px;grid-template-columns:1fr}
+@media(min-width:900px){main{grid-template-columns:1fr 1fr}.full{grid-column:1/-1}}
+.card{background:#fff;border-radius:16px;border:1px solid var(--linea);padding:18px}
+.card h2{margin:0 0 4px;font-size:18px;display:flex;align-items:center;gap:10px}
+.num{background:var(--amar);border-radius:50%;width:30px;height:30px;display:inline-flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;flex:none}
+.card .ayuda{margin:0 0 12px;color:var(--gris);font-size:13.5px}
+textarea,input[type=text],input[type=tel],input[type=search]{width:100%;font:inherit;border:1.5px solid var(--linea);border-radius:10px;padding:11px 12px;background:#fff;color:var(--carbon)}
+textarea:focus,input:focus{outline:none;border-color:var(--turq)}
+textarea{min-height:140px;resize:vertical}
+.btn{font:inherit;font-weight:700;border:0;border-radius:10px;padding:11px 16px;cursor:pointer;background:var(--carbon);color:#fff}
+.btn.amar{background:var(--amar);color:var(--carbon)}
+.btn.turq{background:var(--turq);color:var(--carbon)}
+.btn.claro{background:#fff;color:var(--carbon);border:1.5px solid var(--linea)}
+.fila{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.msg{font-size:13.5px;margin-top:10px;color:var(--gris)}
+.msg b{color:var(--carbon)}
+#res{margin-top:10px;display:grid;gap:8px}
+.it{display:flex;gap:10px;align-items:center;border:1px solid var(--linea);border-radius:12px;padding:8px}
+.it img{width:52px;height:52px;object-fit:contain;flex:none;background:#fff;border-radius:8px}
+.it .tx{flex:1;min-width:0}
+.it .nm{font-weight:600;font-size:14px;line-height:1.25}
+.it .cd{font-size:12px;color:var(--gris)}
+.it .pr{font-weight:700;font-size:14px}
+.it .btn{padding:8px 12px;font-size:14px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{text-align:left;font-size:12px;color:var(--gris);font-weight:600;border-bottom:2px solid var(--carbon);padding:6px 6px}
+td{border-bottom:1px solid var(--linea);padding:8px 6px;vertical-align:middle}
+td.r,th.r{text-align:right;white-space:nowrap}
+td .nm{font-weight:600;line-height:1.25}
+td .cd{font-size:12px;color:var(--gris)}
+td img{width:44px;height:44px;object-fit:contain}
+td input{width:62px;text-align:center;padding:7px 4px}
+.quitar{background:none;border:0;font-size:20px;line-height:1;color:var(--gris);cursor:pointer;padding:4px}
+.cotizar{display:inline-block;background:#fff4d1;color:#8a6400;font-size:11.5px;font-weight:700;border-radius:6px;padding:2px 7px}
+.tot{margin-top:12px;margin-left:auto;max-width:330px}
+.tot div{display:flex;justify-content:space-between;padding:4px 0}
+.tot .t{border-top:2px solid var(--carbon);margin-top:4px;padding-top:8px;font-weight:800;font-size:18px}
+.vacio{color:var(--gris);text-align:center;padding:26px 8px;border:2px dashed var(--linea);border-radius:12px}
+.datos{display:grid;gap:10px;grid-template-columns:1fr;margin-top:12px}
+@media(min-width:640px){.datos{grid-template-columns:1fr 1fr 1fr}}
+.datos label{font-size:12.5px;font-weight:600;color:var(--gris)}
+.nota{font-size:12.5px;color:var(--gris);margin-top:12px}
+.acciones{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.acciones .btn{flex:1 1 200px;padding:14px 16px;font-size:15.5px}
+.pasos{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:700px){.pasos{grid-template-columns:repeat(3,1fr)}}
+.paso{display:flex;gap:10px;align-items:flex-start;font-size:14px}
+.paso b{display:block}
+footer{background:var(--carbon);color:#c9d0d7;font-size:13px}
+footer div{max-width:1040px;margin:0 auto;padding:18px 16px}
+.solo-pdf{display:none}
+.pu-m{display:none}
+@media(max-width:600px){.cd-img,.pu{display:none}.pu-m{display:block}td,th{padding:7px 3px}table{font-size:13.5px}td input{width:52px}}
+/* PDF */
+@media print{
+  .pu{display:table-cell!important}.pu-m{display:none!important}.cd-img{display:none!important}
+  @page{size:A4;margin:14mm}
+  body{background:#fff;font-size:11.5px}
+  header,.hero,.no-pdf,footer,.quitar,.cd-img{display:none!important}
+  main{display:block;padding:0;max-width:none}
+  .card{border:0;padding:0}
+  .solo-pdf{display:block}
+  td input{border:0;width:auto;padding:0}
+  td img{width:34px;height:34px}
+  .pdf-head{display:flex;justify-content:space-between;align-items:center;border-bottom:3px solid var(--amar);padding-bottom:10px;margin-bottom:12px}
+  .pdf-head img{height:62px}
+  .pdf-head .d{text-align:right;font-size:11px;line-height:1.5}
+  .pdf-cli{margin:0 0 10px;font-size:12px}
+  .pdf-pie{margin-top:18px;border-top:1px solid #ccc;padding-top:8px;font-size:10.5px;color:#444}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="top">
+    <a href="https://elsenordelostarros.cl"><img src="trabajo/marca/logo-000.png" alt="El Señor de los Tarros"></a>
+    <a class="wsp" href="https://wa.me/56949691686">WhatsApp +56 9 4969 1686</a>
+  </div>
+  <div class="hero">
+    <small>Cotizador para talleres</small>
+    <h1>Pega tu lista y <span>te cotizamos al tiro</span></h1>
+    <p>Pega los códigos con sus cantidades, o busca por nombre. Te mostramos los precios netos de nuestro catálogo y nos mandas la cotización por WhatsApp con un toque. Lo que no esté en el catálogo, igual lo buscamos.</p>
+  </div>
+</header>
+
+<main>
+  <section class="card no-pdf">
+    <h2><span class="num">1</span>Pega tu lista</h2>
+    <p class="ayuda">Un producto por línea: código y cantidad. Por ejemplo:<br><b>YT0363 x2</b> · <b>3 YT1055</b> · <b>SO-40 6</b>. Si no sabes el código, escribe lo que necesitas.</p>
+    <textarea id="lista" placeholder="YT0363 x2&#10;YT1055 3&#10;Discos de corte 4,5&quot; x 25"></textarea>
+    <div class="fila"><button class="btn amar" id="agregarLista">Agregar a la cotización</button><button class="btn claro" id="limpiarLista">Borrar texto</button></div>
+    <div class="msg" id="msgLista"></div>
+  </section>
+
+  <section class="card no-pdf">
+    <h2><span class="num">2</span>Busca por nombre o código</h2>
+    <p class="ayuda">Escribe, por ejemplo, "llave de torque", "dados impacto" o "limpia frenos".</p>
+    <input type="search" id="buscar" placeholder="¿Qué necesitas?" autocomplete="off">
+    <div id="res"></div>
+  </section>
+
+  <section class="card full">
+    <div class="solo-pdf">
+      <div class="pdf-head">
+        <img src="trabajo/marca/logo-000.png" alt="">
+        <div class="d"><b>COTIZACIÓN</b><br>El Señor de los Tarros SPA · RUT 77.279.942-K<br>Ñuñoa, Santiago · WhatsApp +56 9 4969 1686<br>elsenordelostarros.cl<br>Fecha: <span id="pdfFecha"></span></div>
+      </div>
+      <p class="pdf-cli" id="pdfCli"></p>
+    </div>
+    <h2 class="no-pdf"><span class="num">3</span>Tu cotización</h2>
+    <div id="tabla"></div>
+    <div class="datos no-pdf">
+      <div><label for="empresa">Empresa o taller</label><input type="text" id="empresa" placeholder="Opcional"></div>
+      <div><label for="nombre">Tu nombre</label><input type="text" id="nombre" placeholder="Opcional"></div>
+      <div><label for="comuna">Comuna de despacho</label><input type="text" id="comuna" placeholder="Opcional"></div>
+    </div>
+    <p class="nota">Precios netos (sin IVA) de nuestro catálogo, referenciales: confirmamos precio y stock al responder. Despacho en 24 horas, gratis dentro de Américo Vespucio en compras sobre $50.000 + IVA. Emitimos factura.</p>
+    <div class="acciones no-pdf">
+      <button class="btn amar" id="enviar">Enviar por WhatsApp</button>
+      <button class="btn turq" id="pdf">Descargar PDF</button>
+      <button class="btn claro" id="vaciar">Vaciar</button>
+    </div>
+    <div class="solo-pdf pdf-pie">Cotización generada en elsenordelostarros.cl. Precios netos referenciales, sujetos a confirmación de stock. Validez 7 días.</div>
+  </section>
+
+  <section class="card full no-pdf">
+    <div class="pasos">
+      <div class="paso"><span class="num">1</span><div><b>Arma tu lista</b>Pega códigos o busca productos.</div></div>
+      <div class="paso"><span class="num">2</span><div><b>Envíala por WhatsApp</b>Nos llega todo ordenado.</div></div>
+      <div class="paso"><span class="num">3</span><div><b>Te respondemos</b>Con stock, precio final y despacho.</div></div>
+    </div>
+  </section>
+</main>
+
+<footer><div>El Señor de los Tarros SPA · Insumos para talleres · Ñuñoa, Santiago · <a href="https://elsenordelostarros.cl">elsenordelostarros.cl</a></div></footer>
+
+<script src="cotizador-datos.js"></script>
+<script>
+(function(){
+var WSP='56949691686';
+function $(i){return document.getElementById(i)}
+function norm(s){return String(s||'').toUpperCase().replace(/[\s\-\.\/_]/g,'')}
+function sinAcento(s){return String(s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'')}
+function cl(v){return '$'+Math.round(v).toLocaleString('es-CL')}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function img(p){return p?(/^https?:/.test(p)?p:IMGPRE+p):''}
+
+// índice por código (si hay repetidos, gana el que tiene precio)
+var IDX={},BUS=[];
+CAT.forEach(function(p,i){
+  var k=norm(p[0]); if(k){ if(!IDX[k]||(!CAT[IDX[k]][2]&&p[2]))IDX[k]=i; }
+  BUS.push(sinAcento(p[0]+' '+p[1]+' '+p[5]));
+});
+
+var items=[]; // {i: índice CAT o -1, txt, q}
+try{var g=JSON.parse(localStorage.getItem('sdt-cotiz')||'null'); if(g&&g.items)items=g.items; if(g&&g.d){$('empresa').value=g.d[0]||'';$('nombre').value=g.d[1]||'';$('comuna').value=g.d[2]||''}}catch(e){}
+function guardar(){try{localStorage.setItem('sdt-cotiz',JSON.stringify({items:items,d:[$('empresa').value,$('nombre').value,$('comuna').value]}))}catch(e){}}
+
+function agregar(i,q,txt){
+  q=Math.max(1,parseInt(q,10)||1);
+  if(i>=0){for(var k=0;k<items.length;k++)if(items[k].i===i){items[k].q+=q;return}}
+  items.push({i:i,q:q,txt:txt||''});
+}
+
+var RQ=/^(?:x|\*)?(\d{1,4})(?:x|u|un|und|unid|unidades|uds|pzs|pzas|c\/u)?$/i;
+function leerLinea(l){
+  var t=l.replace(/[;\t:|]+|,(?!\d)/g,' ').trim().split(/\s+/).filter(Boolean);
+  if(!t.length)return null;
+  var cod=-1,usado={};
+  // código: un token, o dos tokens juntos ("YT 0363")
+  for(var a=0;a<t.length&&cod<0;a++){
+    var k=norm(t[a]); if(IDX[k]!==undefined&&k.length>=3){cod=IDX[k];usado[a]=1;break}
+    if(a+1<t.length){var k2=norm(t[a]+t[a+1]); if(IDX[k2]!==undefined){cod=IDX[k2];usado[a]=usado[a+1]=1;break}}
+  }
+  var q=null,mx=l.match(/(?:^|\s)(?:x|\*)\s*(\d{1,4})\b/i)||l.match(/\b(\d{1,4})\s*(?:x|u|un|und|unid|unidades|uds|pzs|pzas)(?:\s|$)/i);
+  if(mx)q=mx[1];
+  if(q===null){ var nums=[]; for(var b=0;b<t.length;b++){ if(usado[b])continue; var m=t[b].match(RQ); if(m)nums.push(m[1]) }
+    if(nums.length)q=(cod>=0)?nums[0]:nums[nums.length-1]; }
+  if(q===null){ var m2=l.match(/(?:cant(?:idad)?\.?\s*)(\d+)/i); if(m2)q=m2[1]; }
+  return {cod:cod,q:q||1,txt:l.trim()};
+}
+
+$('agregarLista').onclick=function(){
+  var ls=$('lista').value.split(/\n/),ok=0,no=0;
+  ls.forEach(function(l){ if(!l.trim())return; var r=leerLinea(l); if(!r)return;
+    if(r.cod>=0){agregar(r.cod,r.q);ok++}else{agregar(-1,r.q,r.txt);no++} });
+  $('msgLista').innerHTML=(ok||no)?('<b>'+ok+'</b> encontrados en el catálogo'+(no?(' · <b>'+no+'</b> los buscamos nosotros (quedan "a cotizar")'):'')+'.'):'Escribe al menos un producto.';
+  if(ok||no){$('lista').value='';pintar();$('tabla').scrollIntoView({behavior:'smooth',block:'start'})}
+};
+$('limpiarLista').onclick=function(){$('lista').value='';$('msgLista').textContent=''};
+
+var tb;
+$('buscar').oninput=function(){clearTimeout(tb);tb=setTimeout(buscar,150)};
+function buscar(){
+  var q=sinAcento($('buscar').value).trim(),box=$('res');
+  if(q.length<2){box.innerHTML='';return}
+  var ws=q.split(/\s+/),r=[];
+  var kq=norm(q); if(IDX[kq]!==undefined)r.push(IDX[kq]);
+  for(var i=0;i<BUS.length&&r.length<40;i++){ if(r[0]===i)continue; var s=BUS[i],ok=true; for(var w=0;w<ws.length;w++)if(s.indexOf(ws[w])<0){ok=false;break} if(ok)r.push(i) }
+  r.sort(function(a,b){return (CAT[b][2]>0)-(CAT[a][2]>0)}); r=r.slice(0,8);
+  if(!r.length){box.innerHTML='<div class="msg">No lo encontramos en el catálogo. <button class="btn claro" id="addLibre">Agregarlo igual "a cotizar"</button></div>';
+    $('addLibre').onclick=function(){agregar(-1,1,$('buscar').value.trim());$('buscar').value='';box.innerHTML='';pintar()};return}
+  box.innerHTML=r.map(function(i){var p=CAT[i];return '<div class="it"><img loading="lazy" src="'+esc(img(p[4]))+'" alt=""><div class="tx"><div class="nm">'+esc(p[1])+'</div><div class="cd">'+esc(p[0])+(p[5]?' · '+esc(p[5]):'')+'</div><div class="pr">'+(p[2]?cl(p[2])+' + IVA':'<span class="cotizar">A cotizar</span>')+'</div></div><button class="btn amar" data-i="'+i+'">Agregar</button></div>'}).join('');
+  Array.prototype.forEach.call(box.querySelectorAll('button[data-i]'),function(b){b.onclick=function(){agregar(+b.dataset.i,1);b.textContent='✓ Listo';b.className='btn turq';pintar()}});
+}
+
+function totales(){var n=0;items.forEach(function(it){if(it.i>=0)n+=CAT[it.i][2]*it.q});var iva=Math.round(n*0.19);return [n,iva,n+iva]}
+function pintar(){
+  var el=$('tabla');
+  if(!items.length){el.innerHTML='<div class="vacio">Tu cotización está vacía. Pega una lista o busca productos arriba.</div>';guardar();return}
+  var h='<table><thead><tr><th class="cd-img"></th><th>Producto</th><th class="r">Cant.</th><th class="r pu">Neto c/u</th><th class="r">Subtotal</th><th class="no-pdf"></th></tr></thead><tbody>';
+  items.forEach(function(it,k){
+    var p=it.i>=0?CAT[it.i]:null;
+    h+='<tr><td class="cd-img">'+(p&&p[4]?'<img loading="lazy" src="'+esc(img(p[4]))+'" alt="">':'')+'</td>'+
+      '<td>'+(p?'<div class="nm">'+(p[3]?'<a href="https://elsenordelostarros.cl/'+esc(p[3])+'" target="_blank" rel="noopener">'+esc(p[1])+'</a>':esc(p[1]))+'</div><div class="cd">Código '+esc(p[0])+'</div><div class="cd pu-m">'+(p[2]?cl(p[2])+' c/u':'A cotizar')+'</div>':'<div class="nm">'+esc(it.txt)+'</div><div class="cd">Fuera de catálogo: lo buscamos</div>')+'</td>'+
+      '<td class="r"><input type="number" min="1" value="'+it.q+'" data-k="'+k+'" aria-label="Cantidad"></td>'+
+      '<td class="r pu">'+(p&&p[2]?cl(p[2]):'<span class="cotizar">A cotizar</span>')+'</td>'+
+      '<td class="r">'+(p&&p[2]?cl(p[2]*it.q):'—')+'</td>'+
+      '<td class="no-pdf"><button class="quitar" data-x="'+k+'" aria-label="Quitar">×</button></td></tr>';
+  });
+  var t=totales();
+  h+='</tbody></table><div class="tot"><div><span>Neto</span><b>'+cl(t[0])+'</b></div><div><span>IVA 19%</span><span>'+cl(t[1])+'</span></div><div class="t"><span>Total</span><span>'+cl(t[2])+'</span></div></div>';
+  if(items.some(function(it){return it.i<0||!CAT[it.i][2]}))h+='<p class="nota">Los productos "a cotizar" no están sumados: te enviamos su precio al responder.</p>';
+  el.innerHTML=h;
+  Array.prototype.forEach.call(el.querySelectorAll('input[data-k]'),function(inp){inp.onchange=function(){items[+inp.dataset.k].q=Math.max(1,parseInt(inp.value,10)||1);pintar()}});
+  Array.prototype.forEach.call(el.querySelectorAll('button[data-x]'),function(b){b.onclick=function(){items.splice(+b.dataset.x,1);pintar()}});
+  guardar();
+}
+['empresa','nombre','comuna'].forEach(function(i){$(i).oninput=guardar});
+
+$('enviar').onclick=function(){
+  if(!items.length){alertaVacia();return}
+  var L=['Hola, quiero cotizar estos productos:',''];
+  items.forEach(function(it){var p=it.i>=0?CAT[it.i]:null;
+    L.push(p?('• '+it.q+' × '+p[0]+' — '+p[1]+(p[2]?' ('+cl(p[2])+' + IVA c/u)':' (a cotizar)')):('• '+it.q+' × '+it.txt+' (a cotizar)'))});
+  var t=totales(); L.push('','Neto: '+cl(t[0])+' · IVA: '+cl(t[1])+' · Total: '+cl(t[2]));
+  var d=[['Empresa',$('empresa').value],['Nombre',$('nombre').value],['Comuna',$('comuna').value]].filter(function(x){return x[1].trim()});
+  if(d.length){L.push('');d.forEach(function(x){L.push(x[0]+': '+x[1].trim())})}
+  window.open('https://wa.me/'+WSP+'?text='+encodeURIComponent(L.join('\n')),'_blank');
+};
+$('pdf').onclick=function(){
+  if(!items.length){alertaVacia();return}
+  $('pdfFecha').textContent=new Date().toLocaleDateString('es-CL');
+  var d=[$('empresa').value,$('nombre').value,$('comuna').value].map(function(s){return s.trim()});
+  $('pdfCli').innerHTML=(d[0]?'<b>Cliente:</b> '+esc(d[0])+' &nbsp; ':'')+(d[1]?'<b>Atención:</b> '+esc(d[1])+' &nbsp; ':'')+(d[2]?'<b>Comuna:</b> '+esc(d[2]):'');
+  window.print();
+};
+$('vaciar').onclick=function(){items=[];pintar()};
+function alertaVacia(){$('tabla').querySelector('.vacio')&&($('tabla').querySelector('.vacio').style.borderColor='#E0473A')}
+
+// ?add=YT0363:2,YT1055 → agrega desde un enlace
+try{var a=new URLSearchParams(location.search).get('add'); if(a){a.split(',').forEach(function(x){var s=x.split(':'),k=norm(s[0]); if(IDX[k]!==undefined)agregar(IDX[k],s[1]||1)}); history.replaceState(null,'',location.pathname)}}catch(e){}
+pintar();
+})();
+</script>
+</body>
+</html>
