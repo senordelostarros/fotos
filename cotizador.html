@@ -98,6 +98,17 @@ footer div{max-width:1040px;margin:0 auto;padding:18px 16px}
 .barra.ver{display:block}
 .barra div{max-width:1040px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:10px}
 .barra b{color:var(--amar)}
+.barra small{display:block;font-size:12px;color:#c9d0d7;line-height:1.3}
+.barra small b{color:var(--turq)}
+.tot .dsc{color:#1f8a5b}
+.tot b,.tot span:last-child{white-space:nowrap;padding-left:8px}
+.tramo{margin:12px 0 0;background:#eaf7fa;border-radius:10px;padding:10px 12px;font-size:14px;text-align:center}
+.volumen{background:var(--amar);color:var(--carbon);border-radius:14px;padding:12px 14px;margin-top:16px;max-width:640px}
+.volumen b{display:block;font-size:15.5px;margin-bottom:6px}
+.volumen ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.volumen li{background:var(--carbon);color:#fff;border-radius:8px;padding:5px 10px;font-size:13px;font-weight:600}
+.volumen li span{color:var(--amar)}
+.volumen p{margin:6px 0 0;font-size:12px;color:var(--carbon)}
 .barra a.btn{text-decoration:none;white-space:nowrap;padding:10px 14px}
 details.card summary{cursor:pointer;list-style:none}
 details.card summary::-webkit-details-marker{display:none}
@@ -134,6 +145,9 @@ details.card[open] summary h2:after{content:"−"}
     <small>Cotizador para talleres</small>
     <h1>Marca lo que necesitas y <span>te cotizamos al tiro</span></h1>
     <p>Toca el círculo de cada producto para agregarlo, sin saber el código. Si ya tienes tu lista de códigos, pégala. Te mostramos los precios netos de nuestro catálogo y nos mandas la cotización por WhatsApp con un toque. Lo que no esté en el catálogo, igual lo buscamos.</p>
+    <div class="volumen"><b>Mientras más cotizas, mejor precio</b>
+      <ul><li>Desde $100.000 <span>−5%</span></li><li>Desde $250.000 <span>−10%</span></li><li>Desde $500.000 <span>−15%</span></li></ul>
+      <p>Descuento en productos YATO, según el neto total de tu cotización. Se calcula solo.</p></div>
   </div>
 </header>
 
@@ -190,7 +204,7 @@ details.card[open] summary h2:after{content:"−"}
   </section>
 </main>
 
-<div class="barra" id="barra"><div><span><b id="nsel">0</b> productos en tu cotización</span><a class="btn amar" href="#cotiz">Ver cotización</a></div></div>
+<div class="barra" id="barra"><div><span><b id="nsel">0</b> productos en tu cotización<small id="btramo"></small></span><a class="btn amar" href="#cotiz">Ver cotización</a></div></div>
 <footer><div>El Señor de los Tarros SPA · Insumos para talleres · Ñuñoa, Santiago · <a href="https://elsenordelostarros.cl">elsenordelostarros.cl</a></div></footer>
 
 <script src="cotizador-datos.js"></script>
@@ -302,12 +316,27 @@ function grilla(){
 function marcarGrid(){
   Array.prototype.forEach.call($('grid').querySelectorAll('.pc'),function(b){var on=enCot(+b.dataset.i)>=0;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)});
   $('nsel').textContent=items.length; $('barra').classList.toggle('ver',items.length>0);
+  var t=totales(); $('btramo').innerHTML=avisoTramo(t);
 }
 var tb;
 $('buscar').oninput=function(){clearTimeout(tb);tb=setTimeout(function(){mostrar=24;if($('buscar').value.trim()&&(famSel!==-1||subSel!==-1)){famSel=-1;subSel=-1;chipsFam()}filtrar()},180)};
 $('mas').onclick=function(){mostrar+=24;grilla()};
 
-function totales(){var n=0;items.forEach(function(it){if(it.i>=0)n+=CAT[it.i][2]*it.q});var iva=Math.round(n*0.19);return [n,iva,n+iva]}
+// Precio por volumen: según el neto total de la cotización; el descuento se aplica a productos YATO
+var TRAMOS=[[500000,15],[250000,10],[100000,5]];
+function esYato(p){return /yato/i.test(p[5]||'')}
+function totales(){
+  var n=0,y=0;items.forEach(function(it){if(it.i>=0){var v=CAT[it.i][2]*it.q;n+=v;if(esYato(CAT[it.i]))y+=v}});
+  var pct=0;for(var k=0;k<TRAMOS.length;k++)if(n>=TRAMOS[k][0]){pct=TRAMOS[k][1];break}
+  var prox=null;for(var j=TRAMOS.length-1;j>=0;j--)if(n<TRAMOS[j][0]){prox=TRAMOS[j];break}
+  var d=Math.round(y*pct/100),nd=n-d,iva=Math.round(nd*0.19);
+  return {n:n,y:y,pct:pct,d:d,nd:nd,iva:iva,tot:nd+iva,prox:prox,falta:prox?prox[0]-n:0};
+}
+function avisoTramo(t){
+  if(!t.n)return '';
+  if(t.prox)return 'Te faltan <b>'+cl(t.falta)+'</b> para <b>'+t.prox[1]+'% de descuento</b> en YATO'+(t.pct?' (hoy tienes '+t.pct+'%)':'');
+  return '¡Tienes el <b>15% de descuento</b> en YATO, el máximo!';
+}
 function pintar(){
   var el=$('tabla');
   if(!items.length){el.innerHTML='<div class="vacio">Tu cotización está vacía. Marca productos arriba o pega tu lista.</div>';guardar();marcarGrid();return}
@@ -322,7 +351,9 @@ function pintar(){
       '<td class="no-pdf"><button class="quitar" data-x="'+k+'" aria-label="Quitar">×</button></td></tr>';
   });
   var t=totales();
-  h+='</tbody></table><div class="tot"><div><span>Neto</span><b>'+cl(t[0])+'</b></div><div><span>IVA 19%</span><span>'+cl(t[1])+'</span></div><div class="t"><span>Total</span><span>'+cl(t[2])+'</span></div></div>';
+  h+='</tbody></table><div class="tot">'+(t.d?'<div><span>Neto lista</span><span>'+cl(t.n)+'</span></div><div class="dsc"><span>Dcto. volumen '+t.pct+'% YATO</span><b>−'+cl(t.d)+'</b></div>':'')+
+    '<div><span>Neto</span><b>'+cl(t.nd)+'</b></div><div><span>IVA 19%</span><span>'+cl(t.iva)+'</span></div><div class="t"><span>Total</span><span>'+cl(t.tot)+'</span></div></div>';
+  if(t.n)h+='<p class="tramo no-pdf">'+avisoTramo(t)+'</p>';
   if(items.some(function(it){return it.i<0||!CAT[it.i][2]}))h+='<p class="nota">Los productos "a cotizar" no están sumados: te enviamos su precio al responder.</p>';
   el.innerHTML=h;
   Array.prototype.forEach.call(el.querySelectorAll('input[data-k]'),function(inp){inp.onchange=function(){items[+inp.dataset.k].q=Math.max(1,parseInt(inp.value,10)||1);pintar()}});
@@ -336,7 +367,9 @@ $('enviar').onclick=function(){
   var L=['Hola, quiero cotizar estos productos:',''];
   items.forEach(function(it){var p=it.i>=0?CAT[it.i]:null;
     L.push(p?('• '+it.q+' × '+p[0]+' — '+p[1]+(p[2]?' ('+cl(p[2])+' + IVA c/u)':' (a cotizar)')):('• '+it.q+' × '+it.txt+' (a cotizar)'))});
-  var t=totales(); L.push('','Neto: '+cl(t[0])+' · IVA: '+cl(t[1])+' · Total: '+cl(t[2]));
+  var t=totales();
+  if(t.d)L.push('','Neto lista: '+cl(t.n),'Descuento por volumen '+t.pct+'% en YATO: −'+cl(t.d));
+  L.push((t.d?'':'\n')+'Neto: '+cl(t.nd)+' · IVA: '+cl(t.iva)+' · Total: '+cl(t.tot));
   var d=[['Empresa',$('empresa').value],['Nombre',$('nombre').value],['Comuna',$('comuna').value]].filter(function(x){return x[1].trim()});
   if(d.length){L.push('');d.forEach(function(x){L.push(x[0]+': '+x[1].trim())})}
   window.open('https://wa.me/'+WSP+'?text='+encodeURIComponent(L.join('\n')),'_blank');
