@@ -26,6 +26,15 @@ DATOS = {
     'cable': ['ms-cable-usb-c-a-usb-b-impresora-escaner.jpg', (0.72, 0.80), 'Es un cable USB-C a USB-B',
               'Cable USB-C a USB-B', 'USBC-USBB',
               ['Impresoras y escáneres', 'A notebook o celular USB-C', 'Malla trenzada resistente'], 15900, False],
+    'impacto': ['ms2-llave-de-impacto-inalambrica-18-v-350nm-cuadrante-de-12.jpg', (0.72, 0.20), 'Es una llave de impacto inalámbrica',
+                'Llave de impacto inalámbrica 18 V YATO', 'YT8277925',
+                ['350 Nm de apriete, 500 Nm para soltar', 'Sin carbones, cuadrante de 1/2"', '2 baterías 2 Ah, cargador y bolso'], 164989, True],
+    'dados-largos': ['ms2-juego-de-dados-de-impacto-largos-de-12-1.jpg', (0.30, 0.58), 'Son dados de impacto largos',
+                     'Dados de impacto largos 1/2" YATO', 'YT1055',
+                     ['15 dados de 10 a 32 mm', 'Largo 78 mm: llegan más hondo', 'En caja metálica'], 76989, False],
+    'dados-allen': ['ms2-juego-de-dados-allen-de-impacto-12.jpg', (0.40, 0.25), 'Son dados Allen de impacto',
+                    'Dados Allen de impacto 1/2" YATO', 'YT1066',
+                    ['8 piezas de 6 a 19 mm', 'Acero CrMo, dureza HRC 54', 'Para llave de impacto'], 60489, False],
 }
 PREG = {'cable': ('¿Sabes qué', 'cable es este?')}
 CLAVE, OUT, TMP = sys.argv[1], sys.argv[2], sys.argv[3]
