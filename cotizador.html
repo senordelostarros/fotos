@@ -290,7 +290,7 @@ function filtrar(){
     if(ws.length){var s=BUS[i],ok=true;for(var w=0;w<ws.length;w++)if(s.indexOf(ws[w])<0){ok=false;break} if(!ok&&norm(p[0])!==kq)continue}
     lista.push(i);
   }
-  if(!ws.length)lista.sort(function(a,b){return (/^ms/.test(CAT[b][4]))-(/^ms/.test(CAT[a][4]))||a-b});
+  if(!ws.length)lista.sort(function(a,b){return (/(^|\/)ms\d*-/.test(CAT[b][4]))-(/(^|\/)ms\d*-/.test(CAT[a][4]))||a-b});
   if(ws.length)lista.sort(function(a,b){var A=CAT[a],B=CAT[b];return ((B[2]>0)+(!!B[4]))-((A[2]>0)+(!!A[4]))||(norm(A[0])===kq?-1:norm(B[0])===kq?1:0)});
   if(kq&&IDX[kq]!==undefined){var j=lista.indexOf(IDX[kq]);if(j>0){lista.splice(j,1);lista.unshift(IDX[kq])}}
   grilla();
