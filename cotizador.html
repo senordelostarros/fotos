@@ -22,6 +22,7 @@ header{background:var(--carbon);color:#fff}
 .hero h1 span{color:var(--amar)}
 .hero p{margin:0;color:#c9d0d7;max-width:640px}
 main{max-width:1040px;margin:0 auto;padding:18px 16px 60px;display:grid;gap:18px;grid-template-columns:1fr}
+main>*{min-width:0}
 @media(min-width:900px){main{grid-template-columns:1fr 1fr}.full{grid-column:1/-1}}
 .card{background:#fff;border-radius:16px;border:1px solid var(--linea);padding:18px}
 .card h2{margin:0 0 4px;font-size:18px;display:flex;align-items:center;gap:10px}
@@ -72,6 +73,36 @@ td input{width:62px;text-align:center;padding:7px 4px}
 footer{background:var(--carbon);color:#c9d0d7;font-size:13px}
 footer div{max-width:1040px;margin:0 auto;padding:18px 16px}
 .solo-pdf{display:none}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:2px 0 8px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;font:inherit;font-size:13.5px;font-weight:600;border:1.5px solid var(--linea);background:#fff;color:var(--carbon);border-radius:99px;padding:7px 13px;cursor:pointer;white-space:nowrap}
+.chip.on{background:var(--carbon);border-color:var(--carbon);color:#fff}
+.chips.sub .chip{font-size:12.5px;padding:5px 11px}
+.chips.sub .chip.on{background:var(--turq);border-color:var(--turq);color:var(--carbon)}
+#grid{display:grid;gap:10px;grid-template-columns:repeat(2,1fr);margin-top:10px}
+@media(min-width:640px){#grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:900px){#grid{grid-template-columns:repeat(4,1fr)}}
+.pc{position:relative;background:#fff;border:2px solid var(--linea);border-radius:14px;padding:8px 8px 10px;cursor:pointer;display:flex;flex-direction:column;text-align:left;font:inherit;color:inherit;-webkit-tap-highlight-color:transparent}
+.pc img{width:100%;aspect-ratio:1;object-fit:contain;background:#fff;border-radius:10px}
+.pc .nm{font-size:13px;font-weight:600;line-height:1.25;margin-top:6px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.pc .cd{font-size:11.5px;color:var(--gris);margin-top:2px}
+.pc .pr{font-weight:800;font-size:14.5px;margin-top:auto;padding-top:6px}
+.pc .pr small{font-weight:500;color:var(--gris);font-size:11.5px}
+.tic{position:absolute;top:8px;right:8px;width:32px;height:32px;border-radius:50%;border:2.5px solid #c3cbd2;background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center}
+.tic svg{width:18px;height:18px;stroke:#fff;stroke-width:3.5;fill:none;opacity:0}
+.pc.on{border-color:var(--turq);box-shadow:0 0 0 2px var(--turq) inset}
+.pc.on .tic{background:var(--turq);border-color:var(--turq)}
+.pc.on .tic svg{opacity:1;stroke:var(--carbon)}
+.mas{display:block;margin:14px auto 0}
+.barra{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--carbon);color:#fff;padding:10px 16px calc(10px + env(safe-area-inset-bottom));display:none}
+.barra.ver{display:block}
+.barra div{max-width:1040px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.barra b{color:var(--amar)}
+.barra a.btn{text-decoration:none;white-space:nowrap;padding:10px 14px}
+details.card summary{cursor:pointer;list-style:none}
+details.card summary::-webkit-details-marker{display:none}
+details.card summary h2:after{content:"+";margin-left:auto;font-size:22px;color:var(--gris)}
+details.card[open] summary h2:after{content:"−"}
 .pu-m{display:none}
 @media(max-width:600px){.cd-img,.pu{display:none}.pu-m{display:block}td,th{padding:7px 3px}table{font-size:13.5px}td input{width:52px}}
 /* PDF */
@@ -79,7 +110,7 @@ footer div{max-width:1040px;margin:0 auto;padding:18px 16px}
   .pu{display:table-cell!important}.pu-m{display:none!important}.cd-img{display:none!important}
   @page{size:A4;margin:14mm}
   body{background:#fff;font-size:11.5px}
-  header,.hero,.no-pdf,footer,.quitar,.cd-img{display:none!important}
+  header,.hero,.no-pdf,footer,.barra,.quitar,.cd-img{display:none!important}
   main{display:block;padding:0;max-width:none}
   .card{border:0;padding:0}
   .solo-pdf{display:block}
@@ -101,28 +132,32 @@ footer div{max-width:1040px;margin:0 auto;padding:18px 16px}
   </div>
   <div class="hero">
     <small>Cotizador para talleres</small>
-    <h1>Pega tu lista y <span>te cotizamos al tiro</span></h1>
-    <p>Pega los códigos con sus cantidades, o busca por nombre. Te mostramos los precios netos de nuestro catálogo y nos mandas la cotización por WhatsApp con un toque. Lo que no esté en el catálogo, igual lo buscamos.</p>
+    <h1>Marca lo que necesitas y <span>te cotizamos al tiro</span></h1>
+    <p>Toca el círculo de cada producto para agregarlo, sin saber el código. Si ya tienes tu lista de códigos, pégala. Te mostramos los precios netos de nuestro catálogo y nos mandas la cotización por WhatsApp con un toque. Lo que no esté en el catálogo, igual lo buscamos.</p>
   </div>
 </header>
 
 <main>
-  <section class="card no-pdf">
-    <h2><span class="num">1</span>Pega tu lista</h2>
+  <section class="card full no-pdf">
+    <h2><span class="num">1</span>Elige con foto</h2>
+    <p class="ayuda">Toca el producto (o su círculo ○) y queda marcado ✓ para tu cotización. Filtra por categoría o busca por nombre.</p>
+    <input type="search" id="buscar" placeholder="Buscar: llave de torque, dados, limpia frenos…" autocomplete="off">
+    <div class="chips" id="fam" style="margin-top:10px"></div>
+    <div class="chips sub" id="sub"></div>
+    <div class="msg" id="cuenta"></div>
+    <div id="grid"></div>
+    <button class="btn claro mas" id="mas">Ver más productos</button>
+  </section>
+
+  <details class="card full no-pdf">
+    <summary><h2><span class="num">2</span>¿Tienes los códigos? Pega tu lista</h2></summary>
     <p class="ayuda">Un producto por línea: código y cantidad. Por ejemplo:<br><b>YT0363 x2</b> · <b>3 YT1055</b> · <b>SO-40 6</b>. Si no sabes el código, escribe lo que necesitas.</p>
     <textarea id="lista" placeholder="YT0363 x2&#10;YT1055 3&#10;Discos de corte 4,5&quot; x 25"></textarea>
     <div class="fila"><button class="btn amar" id="agregarLista">Agregar a la cotización</button><button class="btn claro" id="limpiarLista">Borrar texto</button></div>
     <div class="msg" id="msgLista"></div>
-  </section>
+  </details>
 
-  <section class="card no-pdf">
-    <h2><span class="num">2</span>Busca por nombre o código</h2>
-    <p class="ayuda">Escribe, por ejemplo, "llave de torque", "dados impacto" o "limpia frenos".</p>
-    <input type="search" id="buscar" placeholder="¿Qué necesitas?" autocomplete="off">
-    <div id="res"></div>
-  </section>
-
-  <section class="card full">
+  <section class="card full" id="cotiz">
     <div class="solo-pdf">
       <div class="pdf-head">
         <img src="trabajo/marca/logo-000.png" alt="">
@@ -148,13 +183,14 @@ footer div{max-width:1040px;margin:0 auto;padding:18px 16px}
 
   <section class="card full no-pdf">
     <div class="pasos">
-      <div class="paso"><span class="num">1</span><div><b>Arma tu lista</b>Pega códigos o busca productos.</div></div>
+      <div class="paso"><span class="num">1</span><div><b>Marca tus productos</b>Con foto, o pega tu lista de códigos.</div></div>
       <div class="paso"><span class="num">2</span><div><b>Envíala por WhatsApp</b>Nos llega todo ordenado.</div></div>
       <div class="paso"><span class="num">3</span><div><b>Te respondemos</b>Con stock, precio final y despacho.</div></div>
     </div>
   </section>
 </main>
 
+<div class="barra" id="barra"><div><span><b id="nsel">0</b> productos en tu cotización</span><a class="btn amar" href="#cotiz">Ver cotización</a></div></div>
 <footer><div>El Señor de los Tarros SPA · Insumos para talleres · Ñuñoa, Santiago · <a href="https://elsenordelostarros.cl">elsenordelostarros.cl</a></div></footer>
 
 <script src="cotizador-datos.js"></script>
@@ -166,7 +202,7 @@ function norm(s){return String(s||'').toUpperCase().replace(/[\s\-\.\/_]/g,'')}
 function sinAcento(s){return String(s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'')}
 function cl(v){return '$'+Math.round(v).toLocaleString('es-CL')}
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
-function img(p){return p?(/^https?:/.test(p)?p:IMGPRE+p):''}
+function img(p){return p?(/^https?:|^ms\d*-/.test(p)?p:IMGPRE+p):''}
 
 // índice por código (si hay repetidos, gana el que tiene precio)
 var IDX={},BUS=[];
@@ -212,25 +248,69 @@ $('agregarLista').onclick=function(){
 };
 $('limpiarLista').onclick=function(){$('lista').value='';$('msgLista').textContent=''};
 
-var tb;
-$('buscar').oninput=function(){clearTimeout(tb);tb=setTimeout(buscar,150)};
-function buscar(){
-  var q=sinAcento($('buscar').value).trim(),box=$('res');
-  if(q.length<2){box.innerHTML='';return}
-  var ws=q.split(/\s+/),r=[];
-  var kq=norm(q); if(IDX[kq]!==undefined)r.push(IDX[kq]);
-  for(var i=0;i<BUS.length&&r.length<40;i++){ if(r[0]===i)continue; var s=BUS[i],ok=true; for(var w=0;w<ws.length;w++)if(s.indexOf(ws[w])<0){ok=false;break} if(ok)r.push(i) }
-  r.sort(function(a,b){return (CAT[b][2]>0)-(CAT[a][2]>0)}); r=r.slice(0,8);
-  if(!r.length){box.innerHTML='<div class="msg">No lo encontramos en el catálogo. <button class="btn claro" id="addLibre">Agregarlo igual "a cotizar"</button></div>';
-    $('addLibre').onclick=function(){agregar(-1,1,$('buscar').value.trim());$('buscar').value='';box.innerHTML='';pintar()};return}
-  box.innerHTML=r.map(function(i){var p=CAT[i];return '<div class="it"><img loading="lazy" src="'+esc(img(p[4]))+'" alt=""><div class="tx"><div class="nm">'+esc(p[1])+'</div><div class="cd">'+esc(p[0])+(p[5]?' · '+esc(p[5]):'')+'</div><div class="pr">'+(p[2]?cl(p[2])+' + IVA':'<span class="cotizar">A cotizar</span>')+'</div></div><button class="btn amar" data-i="'+i+'">Agregar</button></div>'}).join('');
-  Array.prototype.forEach.call(box.querySelectorAll('button[data-i]'),function(b){b.onclick=function(){agregar(+b.dataset.i,1);b.textContent='✓ Listo';b.className='btn turq';pintar()}});
+// ---- Catálogo con foto ----
+var FAMS=[],FI={};
+CATS.forEach(function(c,i){var f=c.split(' / ')[0];if(FI[f]===undefined){FI[f]=FAMS.length;FAMS.push(f)}});
+var famSel=-1,subSel=-1,mostrar=24,lista=[];
+function enCot(i){for(var k=0;k<items.length;k++)if(items[k].i===i)return k;return -1}
+function chipsFam(){
+  var h='<button class="chip'+(famSel<0?' on':'')+'" data-f="-1">Todo</button>';
+  FAMS.forEach(function(f,i){h+='<button class="chip'+(famSel===i?' on':'')+'" data-f="'+i+'">'+esc(f)+'</button>'});
+  h+='<button class="chip'+(famSel===-2?' on':'')+'" data-f="-2">Otros</button>';
+  $('fam').innerHTML=h;
+  Array.prototype.forEach.call($('fam').querySelectorAll('.chip'),function(b){b.onclick=function(){famSel=+b.dataset.f;subSel=-1;mostrar=24;chipsFam();filtrar()}});
+  var sh='';
+  if(famSel>=0){sh='<button class="chip'+(subSel<0?' on':'')+'" data-s="-1">Todas</button>';
+    CATS.forEach(function(c,i){if(c.split(' / ')[0]===FAMS[famSel]&&c.split(' / ')[1]!=='Otros')sh+='<button class="chip'+(subSel===i?' on':'')+'" data-s="'+i+'">'+esc(c.split(' / ')[1])+'</button>'})}
+  $('sub').innerHTML=sh; $('sub').style.display=sh?'flex':'none';
+  Array.prototype.forEach.call($('sub').querySelectorAll('.chip'),function(b){b.onclick=function(){subSel=+b.dataset.s;mostrar=24;chipsFam();filtrar()}});
 }
+function filtrar(){
+  var q=sinAcento($('buscar').value).trim(),ws=q?q.split(/\s+/):[],kq=norm(q);
+  lista=[];
+  for(var i=0;i<CAT.length;i++){
+    var p=CAT[i],c=p[6];
+    if(famSel===-2&&c>=0)continue;
+    if(famSel>=0&&(c<0||CATS[c].split(' / ')[0]!==FAMS[famSel]))continue;
+    if(subSel>=0&&c!==subSel)continue;
+    if(ws.length){var s=BUS[i],ok=true;for(var w=0;w<ws.length;w++)if(s.indexOf(ws[w])<0){ok=false;break} if(!ok&&norm(p[0])!==kq)continue}
+    lista.push(i);
+  }
+  if(!ws.length)lista.sort(function(a,b){return (/^ms/.test(CAT[b][4]))-(/^ms/.test(CAT[a][4]))||a-b});
+  if(ws.length)lista.sort(function(a,b){var A=CAT[a],B=CAT[b];return ((B[2]>0)+(!!B[4]))-((A[2]>0)+(!!A[4]))||(norm(A[0])===kq?-1:norm(B[0])===kq?1:0)});
+  if(kq&&IDX[kq]!==undefined){var j=lista.indexOf(IDX[kq]);if(j>0){lista.splice(j,1);lista.unshift(IDX[kq])}}
+  grilla();
+}
+var CHK='<svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>';
+function grilla(){
+  var g=$('grid'),h='',n=Math.min(mostrar,lista.length);
+  for(var k=0;k<n;k++){var i=lista[k],p=CAT[i];
+    h+='<button type="button" class="pc'+(enCot(i)>=0?' on':'')+'" data-i="'+i+'" aria-pressed="'+(enCot(i)>=0)+'"><span class="tic">'+CHK+'</span>'+
+      (p[4]?'<img loading="lazy" src="'+esc(img(p[4]))+'" alt="" onerror="this.onerror=null;this.src=\'trabajo/marca/logo-000.png\';this.style.cssText=\'padding:22%;background:#1D2126\'">':'<img src="trabajo/marca/logo-000.png" alt="" style="padding:22%;background:#1D2126">')+
+      '<span class="nm">'+esc(p[1])+'</span><span class="cd">'+esc(p[0])+(p[5]?' · '+esc(p[5]):'')+'</span>'+
+      '<span class="pr">'+(p[2]?cl(p[2])+' <small>+ IVA</small>':'<span class="cotizar">A cotizar</span>')+'</span></button>';
+  }
+  if(!lista.length){h='<div class="vacio" style="grid-column:1/-1">No lo encontramos en el catálogo. <button class="btn claro" id="addLibre" style="margin-top:8px">Agregar "'+esc($('buscar').value.trim())+'" para que lo busquemos</button></div>'}
+  g.innerHTML=h;
+  $('cuenta').textContent=lista.length?(lista.length+' productos'):'';
+  $('mas').style.display=lista.length>mostrar?'block':'none';
+  Array.prototype.forEach.call(g.querySelectorAll('.pc'),function(b){b.onclick=function(){
+    var i=+b.dataset.i,k=enCot(i); if(k>=0)items.splice(k,1); else agregar(i,1); pintar();
+  }});
+  var al=$('addLibre'); if(al)al.onclick=function(){if($('buscar').value.trim()){agregar(-1,1,$('buscar').value.trim());$('buscar').value='';filtrar();pintar()}};
+}
+function marcarGrid(){
+  Array.prototype.forEach.call($('grid').querySelectorAll('.pc'),function(b){var on=enCot(+b.dataset.i)>=0;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)});
+  $('nsel').textContent=items.length; $('barra').classList.toggle('ver',items.length>0);
+}
+var tb;
+$('buscar').oninput=function(){clearTimeout(tb);tb=setTimeout(function(){mostrar=24;if($('buscar').value.trim()&&(famSel!==-1||subSel!==-1)){famSel=-1;subSel=-1;chipsFam()}filtrar()},180)};
+$('mas').onclick=function(){mostrar+=24;grilla()};
 
 function totales(){var n=0;items.forEach(function(it){if(it.i>=0)n+=CAT[it.i][2]*it.q});var iva=Math.round(n*0.19);return [n,iva,n+iva]}
 function pintar(){
   var el=$('tabla');
-  if(!items.length){el.innerHTML='<div class="vacio">Tu cotización está vacía. Pega una lista o busca productos arriba.</div>';guardar();return}
+  if(!items.length){el.innerHTML='<div class="vacio">Tu cotización está vacía. Marca productos arriba o pega tu lista.</div>';guardar();marcarGrid();return}
   var h='<table><thead><tr><th class="cd-img"></th><th>Producto</th><th class="r">Cant.</th><th class="r pu">Neto c/u</th><th class="r">Subtotal</th><th class="no-pdf"></th></tr></thead><tbody>';
   items.forEach(function(it,k){
     var p=it.i>=0?CAT[it.i]:null;
@@ -247,7 +327,7 @@ function pintar(){
   el.innerHTML=h;
   Array.prototype.forEach.call(el.querySelectorAll('input[data-k]'),function(inp){inp.onchange=function(){items[+inp.dataset.k].q=Math.max(1,parseInt(inp.value,10)||1);pintar()}});
   Array.prototype.forEach.call(el.querySelectorAll('button[data-x]'),function(b){b.onclick=function(){items.splice(+b.dataset.x,1);pintar()}});
-  guardar();
+  guardar();marcarGrid();
 }
 ['empresa','nombre','comuna'].forEach(function(i){$(i).oninput=guardar});
 
@@ -273,7 +353,7 @@ function alertaVacia(){$('tabla').querySelector('.vacio')&&($('tabla').querySele
 
 // ?add=YT0363:2,YT1055 → agrega desde un enlace
 try{var a=new URLSearchParams(location.search).get('add'); if(a){a.split(',').forEach(function(x){var s=x.split(':'),k=norm(s[0]); if(IDX[k]!==undefined)agregar(IDX[k],s[1]||1)}); history.replaceState(null,'',location.pathname)}}catch(e){}
-pintar();
+chipsFam();filtrar();pintar();
 })();
 </script>
 </body>

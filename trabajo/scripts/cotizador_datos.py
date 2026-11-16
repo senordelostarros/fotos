@@ -13,6 +13,13 @@ for a in sys.argv[1:]:
         elif r.get('Name'):
             rows[p] = {'Permalink': p, 'Name': r['Name'], 'SKU': r.get('SKU', ''), 'Price': r.get('Price', '0'),
                        'Images': r.get('Images', ''), 'Status': 'available', 'Brand': r.get('Brand', '')}
+cats = {}
+for r in csv.DictReader(open(R + '/trabajo/datos/categorias-8.csv')):
+    cs = [c.strip() for c in re.split(r',(?=[A-ZÁÉÍÓÚ])', r['Categories']) if c.strip()]
+    sub = [c for c in cs if ' / ' in c]
+    cats[r['Permalink']] = sub[0] if sub else (cs[0] + ' / Otros' if cs else '')
+CATS = sorted(set(c for c in cats.values() if c))
+CI = {c: i for i, c in enumerate(CATS)}
 out = []
 for p, r in rows.items():
     if r.get('Status') != 'available': continue
@@ -20,7 +27,10 @@ for p, r in rows.items():
     except ValueError: pr = 0
     img = (r.get('Images') or '').split(',')[0].strip()
     img = img[len(PRE):] if img.startswith(PRE) else img
-    out.append([r['SKU'].strip(), r['Name'].strip(), pr, p, img, (r.get('Brand') or '').strip()])
-js = 'var CAT=' + json.dumps(out, ensure_ascii=False, separators=(',', ':')) + ';\nvar IMGPRE=' + json.dumps(PRE) + ';\n'
+    for pre in ('ms2-', 'ms-', 'ms5-', 'ms6-'):
+        if os.path.exists(f'{R}/{pre}{p}.jpg'):
+            img = f'{pre}{p}.jpg'; break
+    out.append([r['SKU'].strip(), r['Name'].strip(), pr, p, img, (r.get('Brand') or '').strip(), CI.get(cats.get(p, ''), -1)])
+js = 'var CAT=' + json.dumps(out, ensure_ascii=False, separators=(',', ':')) + ';\nvar CATS=' + json.dumps(CATS, ensure_ascii=False) + ';\nvar IMGPRE=' + json.dumps(PRE) + ';\n'
 open(R + '/cotizador-datos.js', 'w').write(js)
 print(len(out), 'productos', len(js) // 1024, 'KB')
