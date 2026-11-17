@@ -183,7 +183,7 @@ details.card[open] summary h2:after{content:"−"}
     <div id="tabla"></div>
     <div class="datos no-pdf">
       <div><label for="empresa">Empresa o taller</label><input type="text" id="empresa" placeholder="Opcional"></div>
-      <div><label for="nombre">Tu nombre</label><input type="text" id="nombre" placeholder="Opcional"></div>
+      <div><label for="nombre">Tu nombre <b style="color:#E0473A">*</b></label><input type="text" id="nombre" placeholder="Obligatorio"><small id="errNombre" style="display:none;color:#E0473A;font-size:12px;font-weight:600">Escribe tu nombre para continuar</small></div>
       <div><label for="comuna">Comuna de despacho</label><input type="text" id="comuna" placeholder="Opcional"></div>
     </div>
     <p class="nota">Precios netos (sin IVA) de nuestro catálogo, referenciales: confirmamos precio y stock al responder. Despacho en 24 horas, gratis dentro de Américo Vespucio en compras sobre $50.000 + IVA. Emitimos factura.</p>
@@ -192,6 +192,7 @@ details.card[open] summary h2:after{content:"−"}
       <button class="btn turq" id="pdf">Descargar PDF</button>
       <button class="btn claro" id="vaciar">Vaciar</button>
     </div>
+    <div class="tramo no-pdf" id="trasPdf" style="display:none;text-align:left"><b>¿Quieres tu precio por volumen confirmado?</b> Envíanos esta misma cotización por WhatsApp y te respondemos con stock y despacho.<br><button class="btn amar" style="margin-top:8px" onclick="document.getElementById('enviar').click()">Enviar por WhatsApp</button></div>
     <div class="solo-pdf pdf-pie">Cotización generada en elsenordelostarros.cl. Precios netos referenciales, sujetos a confirmación de stock. Validez 7 días.</div>
   </section>
 
@@ -364,6 +365,7 @@ function pintar(){
 
 $('enviar').onclick=function(){
   if(!items.length){alertaVacia();return}
+  if(!pideNombre())return;
   var L=['Hola, quiero cotizar estos productos:',''];
   items.forEach(function(it){var p=it.i>=0?CAT[it.i]:null;
     L.push(p?('• '+it.q+' × '+p[0]+' — '+p[1]+(p[2]?' ('+cl(p[2])+' + IVA c/u)':' (a cotizar)')):('• '+it.q+' × '+it.txt+' (a cotizar)'))});
@@ -376,12 +378,21 @@ $('enviar').onclick=function(){
 };
 $('pdf').onclick=function(){
   if(!items.length){alertaVacia();return}
+  if(!pideNombre())return;
   $('pdfFecha').textContent=new Date().toLocaleDateString('es-CL');
   var d=[$('empresa').value,$('nombre').value,$('comuna').value].map(function(s){return s.trim()});
   $('pdfCli').innerHTML=(d[0]?'<b>Cliente:</b> '+esc(d[0])+' &nbsp; ':'')+(d[1]?'<b>Atención:</b> '+esc(d[1])+' &nbsp; ':'')+(d[2]?'<b>Comuna:</b> '+esc(d[2]):'');
   window.print();
+  setTimeout(function(){$('trasPdf').style.display='block';$('trasPdf').scrollIntoView({behavior:'smooth',block:'center'})},600);
 };
 $('vaciar').onclick=function(){items=[];pintar()};
+function pideNombre(){
+  var ok=$('nombre').value.trim().length>=2;
+  $('errNombre').style.display=ok?'none':'block'; $('nombre').style.borderColor=ok?'':'#E0473A';
+  if(!ok){$('nombre').scrollIntoView({behavior:'smooth',block:'center'});$('nombre').focus()}
+  return ok;
+}
+$('nombre').addEventListener('input',function(){if($('nombre').value.trim().length>=2){$('errNombre').style.display='none';$('nombre').style.borderColor=''}});
 function alertaVacia(){$('tabla').querySelector('.vacio')&&($('tabla').querySelector('.vacio').style.borderColor='#E0473A')}
 
 // ?add=YT0363:2,YT1055 → agrega desde un enlace
