@@ -35,6 +35,15 @@ DATOS = {
     'dados-allen': ['ms2-juego-de-dados-allen-de-impacto-12.jpg', (0.40, 0.25), 'Son dados Allen de impacto',
                     'Dados Allen de impacto 1/2" YATO', 'YT1066',
                     ['8 piezas de 6 a 19 mm', 'Acero CrMo, dureza HRC 54', 'Para llave de impacto'], 60489, False],
+    'partidor': ['ms-dispositivo-de-arranque-banco-de-energia-12000mah-con-pantalla-lcd.jpg', (0.50, 0.40), 'Es un partidor de baterías',
+                 'Partidor y banco de energía YATO', 'YT83082',
+                 ['300 A, peak de 500 A', 'Bencina y diésel, 12 V', 'Carga el celular por USB'], 142989, True],
+    'densimetro': ['ms-densimetro-para-baterias.jpg', (0.50, 0.50), 'Es un densímetro de baterías',
+                   'Densímetro para baterías', 'VI2504',
+                   ['Revisa el electrolito', 'Te dice si la batería está cargada', 'Para baterías de plomo-ácido'], 8250, False],
+    'cargador4': ['ms3-cargador-de-baterias-4-en-1.jpg', (0.50, 0.50), 'Es un cargador de baterías 4 en 1',
+                  'Cargador de baterías 4 en 1 YATO', 'YT83033',
+                  ['Carga baterías de 6 y 12 V', 'Prueba alternador y arranque', 'Protección contra sobrecarga'], 82489, False],
 }
 PREG = {'cable': ('¿Sabes qué', 'cable es este?')}
 CLAVE, OUT, TMP = sys.argv[1], sys.argv[2], sys.argv[3]
