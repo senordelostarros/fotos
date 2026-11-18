@@ -44,6 +44,15 @@ DATOS = {
     'cargador4': ['ms3-cargador-de-baterias-4-en-1.jpg', (0.50, 0.50), 'Es un cargador de baterías 4 en 1',
                   'Cargador de baterías 4 en 1 YATO', 'YT83033',
                   ['Carga baterías de 6 y 12 V', 'Prueba alternador y arranque', 'Protección contra sobrecarga'], 82489, False],
+    'ext2': ['ms2-extractor-de-rodamientos-de-2-brazos-de-8-180-mm.jpg', (0.50, 0.30), 'Es un extractor de rodamientos',
+             'Extractor de rodamientos 2 brazos 8" YATO', 'YT2518',
+             ['Fuerza máxima 5 toneladas', 'Brazos de 8" (180 mm)', 'Saca rodamientos y engranajes'], 52789, True],
+    'ext3': ['ms3-extractor-de-rodamientos-de-3-brazos-de-6-150-mm.jpg', (0.50, 0.30), 'Es un extractor de 3 brazos',
+             'Extractor de rodamientos 3 brazos 6" YATO', 'YT2513',
+             ['Para diámetros de 80 a 300 mm', '3 brazos: agarre parejo', 'Eje central de 19 mm'], 52789, False],
+    'polea': ['ms3-extractor-de-polea-40-165-mm.jpg', (0.50, 0.35), 'Es un extractor de poleas',
+              'Extractor de polea 40-165 mm YATO', 'YT25480',
+              ['Rango de 40 a 165 mm', 'Para poleas y engranajes', 'Saca poleas pegadas'], 34639, False],
 }
 PREG = {'cable': ('¿Sabes qué', 'cable es este?')}
 CLAVE, OUT, TMP = sys.argv[1], sys.argv[2], sys.argv[3]
