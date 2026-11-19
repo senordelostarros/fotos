@@ -81,19 +81,22 @@ def tiles(c,prods,x0,y0,cols,size,gap):
         p=p.resize((max(1,int(p.width*s)),max(1,int(p.height*s))),Image.LANCZOS)
         c.alpha_composite(p,(x+(size-p.width)//2,y+(size-p.height)//2))
 MIX=[LL,MF,GN,DH,'ms-limpia-frenos-60l.jpg',AM,TK,JB,H7]
+def caber(p,w,h):
+    k=min(w/p.width,h/p.height); return p.resize((int(p.width*k),int(p.height*k)),Image.LANCZOS)
+F82='force/force-2503.jpg'  # v3 (19 nov): juego Force 82 piezas, foto profesional
 def caja_v2():
     W,H=1600,900
     c=Image.new("RGBA",(W,H),CARBON+(255,)); pt=patron((W,H)).convert("RGBA")
     m=Image.new("L",(W,H),0); ImageDraw.Draw(m).polygon([(0,0),(820,0),(690,H),(0,H)],fill=255)
     c.paste(pt,(0,0),m); ImageDraw.Draw(c).line([(820,0),(690,H)],fill=AMAR,width=9)
-    pegar(c,fit(recortar(R+CD),400),400,90)
+    pegar(c,caber(recortar(R+F82),640,430),370,110)
     tiles(c,MIX,880,135,3,190,22)
     c.convert("RGB").save(R+'banner-caja-escritorio.jpg',quality=86)
     W,H=900,700
     c=Image.new("RGBA",(W,H),CARBON+(255,)); pt=patron((W,H)).convert("RGBA")
     m=Image.new("L",(W,H),0); ImageDraw.Draw(m).polygon([(0,0),(470,0),(400,H),(0,H)],fill=255)
     c.paste(pt,(0,0),m); ImageDraw.Draw(c).line([(470,0),(400,H)],fill=AMAR,width=7)
-    pegar(c,fit(recortar(R+CD),330),220,170)
+    pegar(c,caber(recortar(R+F82),380,330),205,190)
     tiles(c,MIX,470,80,3,128,14)
     c.convert("RGB").save(R+'banner-caja-celular.jpg',quality=86)
 caja_v2()
