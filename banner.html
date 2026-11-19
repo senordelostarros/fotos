@@ -156,6 +156,18 @@ a{color:inherit}
   .rot .bo .card{width:60%;max-width:240px}
   .rot .sl:not(.bo) .media{aspect-ratio:900/600!important}
 }
+/* celular: listas compactas para que no sobre espacio en los demás slides */
+@media(max-width:760px){
+  #sl-box .guia{grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:14px}
+  #sl-box .guia li{flex-direction:column;gap:4px;padding:6px 4px;border-left:1px solid #e3e6e8;text-align:center}
+  #sl-box .guia small{font-size:0;line-height:1}
+  #sl-box .guia small i{font-size:11px;line-height:1.25;display:block;color:#2a9db3}
+  #sl-box .tx:has(.reg)>p{display:none}
+  #sl-box .reg{grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:14px}
+  #sl-box .reg li{padding:6px;font-size:11px;line-height:1.3;border-radius:8px;background:#fff;border:1px solid #e3e6e8;text-align:center}
+  #sl-box .reg li:before{display:none}
+  #sl-box .reg b{font-size:11px}
+}
 @media(prefers-reduced-motion:reduce){.sl{transition:none}}
 nav.cat a.cot{background:#FFC72C;color:#1D2126;font-weight:700}
 nav.cat a.cot svg{stroke:#1D2126}
@@ -261,9 +273,9 @@ nav.cat a.cot svg{stroke:#1D2126}
         <span class="tag">Línea completa Senfineco</span>
         <h2>Químicos para <span>motor y frenos</span></h2>
         <ul class="guia">
-          <li><img src="ms-motor-flush-motorbike-10min.jpg" alt="MotorFlush Senfineco"><div><b>Motor</b><small><i>MotorFlush:</i> limpia el motor por dentro antes del cambio de aceite</small></div></li>
-          <li><img src="ms-limpia-inyector-gasolina.jpg" alt="Limpia inyectores Senfineco"><div><b>Inyección</b><small><i>Limpia inyectores:</i> recupera potencia y baja el consumo</small></div></li>
-          <li><img src="ms-limpia-frenos-660ml.jpg" alt="Limpia frenos Senfineco"><div><b>Frenos</b><small><i>Limpia frenos:</i> desengrasa discos, calipers y piezas</small></div></li>
+          <li><img src="ms-motor-flush-motorbike-10min.jpg" alt="MotorFlush Senfineco"><div><b>Motor</b><small><i>MotorFlush</i>: limpia el motor por dentro antes del cambio de aceite</small></div></li>
+          <li><img src="ms-limpia-inyector-gasolina.jpg" alt="Limpia inyectores Senfineco"><div><b>Inyección</b><small><i>Limpia inyectores</i>: recupera potencia y baja el consumo</small></div></li>
+          <li><img src="ms-limpia-frenos-660ml.jpg" alt="Limpia frenos Senfineco"><div><b>Frenos</b><small><i>Limpia frenos</i>: desengrasa discos, calipers y piezas</small></div></li>
         </ul>
         <a class="btn" target="_top" href="https://elsenordelostarros.cl/insumos-de-taller/quimicos-y-lubricantes">Ver productos</a>
       </div>
