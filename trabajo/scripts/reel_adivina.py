@@ -71,6 +71,15 @@ DATOS = {
     'fo-seguros': ['ms-alicate-para-seguros-plano-9.jpg', (0.50, 0.30), 'Es un alicate para seguros',
                    'Alicate para seguros plano 9" Force', '6399555',
                    ['Para anillos seeger', 'Monta y desmonta seguros', 'Largo de 9 pulgadas'], 54937, False],
+    'pinza': ['ms2-pinza-amperimetrica-digital.jpg', (0.50, 0.22), 'Es una pinza amperimétrica',
+              'Pinza amperimétrica digital YATO', 'YT73093',
+              ['Mide corriente sin cortar cables', 'Detecta voltaje sin contacto', 'Mide temperatura y capacitancia'], 98989, True],
+    'fo-copas': ['force/force-3178.jpg', (0.50, 0.40), 'Es un juego de copas para filtros',
+                 'Juego de copas para filtros 31 piezas Force', '6399615',
+                 ['Saca filtros de aceite apretados', '31 copas para distintas marcas', 'Se usa con chicharra o barrote'], 195187, False],
+    'fo-fuga': ['force/force-2870.jpg', (0.40, 0.62), 'Es un tester de fuga de cilindros',
+                'Tester de fuga de cilindros Force', '6399120',
+                ['Mide la fuga de cada cilindro', 'Ubica fallas en válvulas o anillos', 'Escala en PSI, BAR y %'], 195782, False],
 }
 PREG = {'cable': ('¿Sabes qué', 'cable es este?')}
 CLAVE, OUT, TMP = sys.argv[1], sys.argv[2], sys.argv[3]
