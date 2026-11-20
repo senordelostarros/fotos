@@ -171,6 +171,13 @@ a{color:inherit}
 @media(prefers-reduced-motion:reduce){.sl{transition:none}}
 nav.cat a.cot{background:#FFC72C;color:#1D2126;font-weight:700}
 nav.cat a.cot svg{stroke:#1D2126}
+.pagos{margin:10px 16px 0;background:#1D2126;border-radius:12px;border-left:6px solid #FFC72C;display:flex;align-items:center;gap:14px;padding:12px 16px;font-family:Poppins,Arial,sans-serif;box-sizing:border-box}
+.pagos svg{flex:0 0 34px;width:34px;height:34px;stroke:#FFC72C;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.pagos p{margin:0;color:#fff;font-size:15px;line-height:1.35;flex:1}
+.pagos p b{color:#FFC72C}
+.pagos p small{display:block;color:#cfd4d8;font-size:12.5px}
+.pagos a{background:#25D366;color:#fff!important;font-weight:700;font-size:13px;padding:9px 14px;border-radius:8px;text-decoration:none;white-space:nowrap}
+@media(max-width:700px){.pagos{flex-wrap:wrap;gap:10px;padding:12px;margin:8px 10px 0}.pagos p{font-size:13.5px;flex-basis:calc(100% - 48px)}.pagos a{width:100%;text-align:center}}
 </style>
 </head>
 <body>
@@ -257,6 +264,7 @@ nav.cat a.cot svg{stroke:#1D2126}
   </div>
 </div>
 
+<div class="pagos"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg><p><b>Paga con tarjeta de débito o crédito vía Webpay</b><small>Te enviamos el link de pago por WhatsApp. También aceptamos transferencia.</small></p><a target="_top" href="https://wa.me/56949691686?text=Hola%2C%20quiero%20pagar%20con%20tarjeta%20v%C3%ADa%20Webpay">Pedir link de pago</a></div>
 <script>
 (function(){
   // PRODUCTOS DESTACADOS (slides de tienda). [etiqueta, nombre, permalink, precio neto, foto]
