@@ -38,3 +38,8 @@ C-7DW210V	carro-c-210-herramientas-c7dw210v	5 fotos
 JAI-1114K	kit-llave-de-impacto-1-2-incluye-dados-jai-1114k	6 fotos
 JAR-1064	chicharra-neumatica-1-2-jar-1064	7 fotos
 JA-HVLP-300C	pistola-de-pintar-boquilla-1-3mm-ja-hvlp-300c	3 fotos
+S06H414S	set-de-dados-torx-1-4-3-8-1-2-14-piezas-s06h	2 fotos
+W93108S	juego-de-llaves-combinacion-con-chicharra-8-pcs-w9	3 fotos
+H06SM	juego-de-llaves-hexagonales-punta-bola-9-pcs-h06sm	3 fotos
+H12S10S	juego-de-llaves-torx-extra-largas-10-piezas-h12s1	2 fotos
+AG010002SP	juego-alicates-seguros-segers-4-piezas	1 fotos
