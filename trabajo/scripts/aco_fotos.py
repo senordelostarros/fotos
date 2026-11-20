@@ -4,11 +4,14 @@ UA={'User-Agent':'Mozilla/5.0'}
 def get(u):
     return urllib.request.urlopen(urllib.request.Request(u,headers=UA),timeout=60).read()
 os.makedirs('aco/raw',exist_ok=True); log=[]
+FIJOS=dict(l.rstrip('\n').split('\t') for l in open('aco/handles.txt') if l.strip()) if os.path.exists('aco/handles.txt') else {}
 for r in csv.DictReader(open('trabajo/datos/jonnesway-40.csv')):
     m=(r.get('modelo_web') or r['modelo']).strip()
+    if FIJOS and m not in FIJOS: continue
     q='https://acomayorista.cl/search/suggest.json?'+urllib.parse.urlencode({'q':m,'resources[type]':'product','resources[limit]':'5'})
     try:
-        ps=json.loads(get(q))['resources']['results']['products']
+        if m in FIJOS: ps=[{'handle':FIJOS[m],'title':m}]
+        else: ps=json.loads(get(q))['resources']['results']['products']
         key=re.sub(r'[^a-z0-9]','',m.lower())
         p=next((p for p in ps if re.sub(r'[^a-z0-9]','',p['title'].lower()).endswith(key)),None) or next((p for p in ps if key in re.sub(r'[^a-z0-9]','',p['title'].lower())),None)
         if not p: log.append(f'{m}\tSIN RESULTADO'); continue
@@ -19,4 +22,4 @@ for r in csv.DictReader(open('trabajo/datos/jonnesway-40.csv')):
     except Exception as e:
         log.append(f'{m}\tERROR {e}')
     time.sleep(1.5)
-open('aco/log.txt','w').write('\n'.join(log)+'\n')
+open('aco/log.txt','a').write('\n'.join(log)+'\n')
