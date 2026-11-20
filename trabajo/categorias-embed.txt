@@ -1,0 +1,1 @@
+<iframe class="sdt-cat" src="https://senordelostarros.github.io/fotos/categorias.html" title="Compra por categoría" loading="lazy" style="width:100%;height:800px;border:0;display:block"></iframe><script>window.addEventListener('message',function(e){if(e.data&&e.data.sdtcat){var f=document.querySelector('.sdt-cat');if(f)f.style.height=e.data.sdtcat+'px'}});</script>
