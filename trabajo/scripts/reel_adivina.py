@@ -80,6 +80,15 @@ DATOS = {
     'fo-fuga': ['force/force-2870.jpg', (0.40, 0.62), 'Es un tester de fuga de cilindros',
                 'Tester de fuga de cilindros Force', '6399120',
                 ['Mide la fuga de cada cilindro', 'Ubica fallas en válvulas o anillos', 'Escala en PSI, BAR y %'], 195782, False],
+    'caliper': ['ms-juego-universal-prensa-para-caliper-manual-12pzas.jpg', (0.47, 0.64), 'Es una prensa para caliper',
+                'Prensa para caliper 12 piezas YATO', 'YT0611',
+                ['Retrae el pistón del caliper', 'Para el cambio de pastillas', 'Adaptadores para varias marcas'], 47289, True],
+    'jw-impacto': ['jonnesway/aco-jai-1114k.jpg', (0.52, 0.62), 'Es una llave de impacto neumática',
+                   'Kit llave de impacto 1/2" Jonnesway', 'JAI-1114K',
+                   ['880 Nm de trabajo, 1350 Nm máximo', '9.500 rpm, cuadrante de 1/2"', 'Incluye dados en maleta'], 292320, False],
+    'jw-dados94': ['jonnesway/aco-s04h52494s.jpg', (0.36, 0.66), 'Es un juego de dados de 94 piezas',
+                   'Juego de dados 1/4" y 1/2" 94 piezas Jonnesway', 'S04H52494S',
+                   ['Dados de 1/4" y de 1/2"', 'Chicharras, extensiones y puntas', 'Todo en una maleta'], 210000, False],
 }
 PREG = {'cable': ('¿Sabes qué', 'cable es este?')}
 CLAVE, OUT, TMP = sys.argv[1], sys.argv[2], sys.argv[3]
