@@ -20,7 +20,7 @@ P = [
  ['Guante con palma reforzada', 'ESDLT-0013', 'Más agarre y más duración', 8900, 'ms-guante-con-palma-reforzada.jpg'],
  ['Jabón mecánico YATO 2 litros', 'YT01234T', 'Saca grasa y aceite de las manos', 14289, 'ms-jabon-mecanico-2-litros.jpg'],
  ['Limpia frenos y piezas Senfineco 660 ml', '11632', 'Seca rápido y no deja residuos', 7630, 'ms-limpia-frenos-660ml.jpg'],
- ['Limpia frenos Senfineco granel 60 L', '11735', 'Para talleres de alto consumo', 425832, 'ms-limpia-frenos-60l.jpg'],
+ ['Limpia frenos Senfineco granel 60 L', '11735', 'Para talleres de alto consumo', 179900, 'ms-limpia-frenos-60l.jpg'],
  ['Limpia contactos Senfineco 450 ml', '11602', 'Para conectores y sensores', 7938, 'ms-limpia-contacto.jpg'],
  ['Silicona RTV negra Senfineco 100 g', '11639', 'Formador de juntas', 4656, 'ms-silicona-negra-rtv.jpg'],
  ['Silicona en spray Senfineco 450 ml', '11635', 'Lubrica y protege gomas y plásticos', 6745, 'ms-silicona-spray.jpg'],
