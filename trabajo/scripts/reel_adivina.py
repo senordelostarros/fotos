@@ -101,8 +101,11 @@ DATOS = {
     'fundas280': ['ms-cubre-asientos-desechables-rollo-280.jpg', (0.42, 0.44), 'Es un rollo de fundas cubre asiento',
                   'Rollo de 280 fundas cubre asiento', '0920207',
                   ['280 fundas plásticas por rollo', 'Plástico de 18 micras', 'Cuida el tapiz del cliente'], 49900, False],
+    'williams': ['ms-refrigerante-williams-rojo-50-50-galon.jpg', (0.40, 0.70), 'Es refrigerante rojo 50/50',
+                 'Refrigerante rojo Williams 50/50, 1 galón', '>Precio por galón llevando 6',
+                 ['Premezclado 50/50: no lleva agua', 'Listo para usar', 'Galón de 3,785 litros'], 4900, False],
 }
-PREG = {'cable': ('¿Sabes qué', 'cable es este?')}
+PREG = {'cable': ('¿Sabes qué', 'cable es este?'), 'williams': ('¿Adivinas qué', 'producto es?'), 'fundas280': ('¿Adivinas qué', 'producto es?')}
 CLAVE, OUT, TMP = sys.argv[1], sys.argv[2], sys.argv[3]
 FOTO, ZP, ES, NOM, COD, USOS, PRECIO, BOMBA = DATOS[CLAVE]
 W, H, FPS = 1080, 1920, 30
@@ -221,7 +224,7 @@ def frame(t):
         producto(c, 700, 860, 760, 1)
         box = Image.new('RGBA', (W, 560), CARBON + (235,)); c.alpha_composite(box, (0, 1180))
         texto(c, NOM, f(FB, 50 if len(NOM) < 32 else 44), 1220, BLANCO, ease(u / .4))
-        texto(c, 'Código ' + COD, f(FM, 40), 1300, GRIS, ease((u - .2) / .4))
+        texto(c, COD[1:] if COD.startswith('>') else 'Código ' + COD, f(FM, 40), 1300, GRIS, ease((u - .2) / .4))
         y = 1380
         if BOMBA:
             a = ease((u - .4) / .4)
