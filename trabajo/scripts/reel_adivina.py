@@ -98,13 +98,14 @@ DATOS = {
     'jw-seguros': ['jonnesway/aco-ag010002sp.jpg', (0.50, 0.40), 'Es un juego de alicates para seguros',
                    'Alicates para seguros 4 piezas Jonnesway', 'AG010002SP',
                    ['Para seguros seeger', 'Interior y exterior', 'Puntas rectas y curvas'], 70800, False],
-    'fundas280': ['ms-cubre-asientos-desechables-rollo-280.jpg', (0.42, 0.44), 'Es un rollo de fundas cubre asiento',
+    'fundas280': ['ms-cubre-asientos-desechables-rollo-280.jpg', (0.40, 0.50), 'Es un rollo de fundas cubre asiento',
                   'Rollo de 280 fundas cubre asiento', '0920207',
                   ['280 fundas plásticas por rollo', 'Plástico de 18 micras', 'Cuida el tapiz del cliente'], 49900, False],
     'williams': ['ms-refrigerante-williams-rojo-50-50-galon.jpg', (0.40, 0.70), 'Es refrigerante rojo 50/50',
                  'Refrigerante rojo Williams 50/50, 1 galón', '>Precio por galón llevando 6',
                  ['Premezclado 50/50: no lleva agua', 'Listo para usar', 'Galón de 3,785 litros'], 4900, False],
 }
+CARD = {'fundas280': 'card-fundas-280.png'}
 PREG = {'cable': ('¿Sabes qué', 'cable es este?'), 'williams': ('¿Adivinas qué', 'producto es?'), 'fundas280': ('¿Adivinas qué', 'producto es?')}
 CLAVE, OUT, TMP = sys.argv[1], sys.argv[2], sys.argv[3]
 FOTO, ZP, ES, NOM, COD, USOS, PRECIO, BOMBA = DATOS[CLAVE]
@@ -113,7 +114,7 @@ os.makedirs(TMP, exist_ok=True)
 
 logo = Image.open(insta.LOGO).convert('RGBA')
 orig = Image.open(R + '/' + FOTO).convert('RGB')
-prod = recortar(R + '/' + FOTO)
+prod = Image.open(R + '/trabajo/marca/' + CARD[CLAVE]).convert('RGBA') if CLAVE in CARD else recortar(R + '/' + FOTO)
 fondo_t = patron((W, H)).convert('RGBA')
 fondo_c = Image.new('RGBA', (W, H), CARBON + (255,))
 def cl(v): return '$' + f'{round(v):,}'.replace(',', '.')

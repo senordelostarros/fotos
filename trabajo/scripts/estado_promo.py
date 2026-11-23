@@ -15,7 +15,7 @@ c.paste(l, ((W - l.width) // 2, 35), l)
 d.rectangle([0, 300, W, 312], fill=TURQ); d.rectangle([0, 312, W, 320], fill=AMAR)
 d.rounded_rectangle([W // 2 - 230, 370, W // 2 + 230, 450], radius=40, fill=(224, 71, 58))
 d.text((W // 2, 410), 'PROMOCIÓN', font=f(FB, 48), fill=BLANCO, anchor='mm')
-colocar(c, recortar(R + foto), (90, 500, W - 90, 1080))
+colocar(c, (Image.open(R + foto).convert('RGBA') if foto.endswith('.png') else recortar(R + foto)), (90, 500, W - 90, 1080))
 ft, ls = texto_ajustado(d, tit, FB, W - 140, 66, 44); y = 1150
 for ln in ls: d.text((W // 2, y), ln, font=ft, fill=CARBON, anchor='mm'); y += ft.size + 12
 d.text((W // 2, y + 10), d1, font=f(FM, 40), fill=(90, 98, 108), anchor='mm')
