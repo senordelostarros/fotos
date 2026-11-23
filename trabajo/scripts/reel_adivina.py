@@ -98,6 +98,9 @@ DATOS = {
     'jw-seguros': ['jonnesway/aco-ag010002sp.jpg', (0.50, 0.40), 'Es un juego de alicates para seguros',
                    'Alicates para seguros 4 piezas Jonnesway', 'AG010002SP',
                    ['Para seguros seeger', 'Interior y exterior', 'Puntas rectas y curvas'], 70800, False],
+    'fundas280': ['ms-cubre-asientos-desechables-rollo-280.jpg', (0.42, 0.44), 'Es un rollo de fundas cubre asiento',
+                  'Rollo de 280 fundas cubre asiento', '0920207',
+                  ['280 fundas plásticas por rollo', 'Plástico de 18 micras', 'Cuida el tapiz del cliente'], 49900, False],
 }
 PREG = {'cable': ('¿Sabes qué', 'cable es este?')}
 CLAVE, OUT, TMP = sys.argv[1], sys.argv[2], sys.argv[3]
