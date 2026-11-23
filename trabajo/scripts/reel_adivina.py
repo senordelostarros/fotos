@@ -89,6 +89,15 @@ DATOS = {
     'jw-dados94': ['jonnesway/aco-s04h52494s.jpg', (0.36, 0.66), 'Es un juego de dados de 94 piezas',
                    'Juego de dados 1/4" y 1/2" 94 piezas Jonnesway', 'S04H52494S',
                    ['Dados de 1/4" y de 1/2"', 'Chicharras, extensiones y puntas', 'Todo en una maleta'], 210000, False],
+    'jw-pernos': ['jonnesway/aco-ag010104.jpg', (0.50, 0.62), 'Es un extractor de pernos',
+                  'Extractor de pernos 8 piezas Jonnesway', 'AG010104',
+                  ['Saca pernos cortados o rodados', 'Rosca inversa: entra y afloja', '8 medidas en caja plástica'], 51700, True],
+    'jw-filtros': ['jonnesway/aco-ai050049.jpg', (0.72, 0.42), 'Es una llave saca filtros de cadena',
+                   'Llave saca filtros de cadena Jonnesway', 'AI050049',
+                   ['Para filtros de 30 a 160 mm', 'La cadena agarra y no resbala', 'Mango de 220 mm'], 21740, False],
+    'jw-seguros': ['jonnesway/aco-ag010002sp.jpg', (0.50, 0.40), 'Es un juego de alicates para seguros',
+                   'Alicates para seguros 4 piezas Jonnesway', 'AG010002SP',
+                   ['Para seguros seeger', 'Interior y exterior', 'Puntas rectas y curvas'], 70800, False],
 }
 PREG = {'cable': ('¿Sabes qué', 'cable es este?')}
 CLAVE, OUT, TMP = sys.argv[1], sys.argv[2], sys.argv[3]
