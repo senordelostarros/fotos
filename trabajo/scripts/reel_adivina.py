@@ -104,6 +104,15 @@ DATOS = {
     'williams': ['ms-refrigerante-williams-rojo-50-50-galon.jpg', (0.40, 0.70), 'Es refrigerante rojo 50/50',
                  'Refrigerante rojo Williams 50/50, 1 galón', '>Precio por galón llevando 6',
                  ['Premezclado 50/50: no lleva agua', 'Listo para usar', 'Galón de 3,785 litros'], 4900, False],
+    'torque210': ['ms-llave-de-torque-cuadrante-12-30-210-nm.jpg', (0.14, 0.50), 'Es una llave de torque',
+                  'Llave de torque 1/2" 30-210 Nm YATO', 'YT0760',
+                  ['Aprieta al torque exacto', 'De 30 a 210 Nm', 'Cuadrante de 1/2"'], 98989, True],
+    'jw-maleta78': ['jonnesway/aco-c-ha78s.jpg', (0.45, 0.45), 'Es una maleta de 78 herramientas',
+                    'Maleta de herramientas 78 piezas Jonnesway', 'C-HA78S',
+                    ['Llaves, dados y chicharra', 'Alicates y destornilladores', 'Todo en un bolso de lona'], 789000, False],
+    'jw-compresimetro': ['jonnesway/aco-ai020052.jpg', (0.45, 0.40), 'Es un compresímetro',
+                         'Compresímetro bencinero Jonnesway', 'AI020052',
+                         ['Mide la compresión del motor', 'Manómetro de 80 mm', 'Adaptadores M14 y M18'], 198450, False],
 }
 CARD = {'fundas280': 'card-fundas-250.png'}
 PREG = {'cable': ('¿Sabes qué', 'cable es este?'), 'williams': ('¿Adivinas qué', 'producto es?'), 'fundas280': ('¿Adivinas qué', 'producto es?')}
