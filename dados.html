@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dados sueltos · El Señor de los Tarros</title>
+<meta name="description" content="¿Se te rompió o perdió un dado? Búscalo suelto por cuadrante, tipo y medida y cotízalo por WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--carbon:#1D2126;--turq:#6FC8DA;--amar:#FFC72C;--gris:#6b7480;--linea:#e3e7eb;--fondo:#f5f7f8}
+*{box-sizing:border-box}
+body{margin:0;font-family:Poppins,system-ui,sans-serif;background:var(--fondo);color:var(--carbon);font-size:15px;line-height:1.45;padding-bottom:110px}
+header{background:var(--carbon);color:#fff}
+.top{max-width:1040px;margin:0 auto;padding:14px 16px;display:flex;align-items:center;gap:14px;justify-content:space-between}
+.top img{height:54px;display:block}
+.top a.wsp{background:var(--amar);color:var(--carbon);text-decoration:none;font-weight:700;padding:9px 14px;border-radius:10px;font-size:14px;white-space:nowrap}
+.hero{max-width:1040px;margin:0 auto;padding:12px 16px 24px}
+.hero small{color:var(--turq);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:12px}
+.hero h1{margin:6px 0 8px;font-size:clamp(26px,5vw,40px);line-height:1.1;font-weight:800}
+.hero h1 span{color:var(--amar)}
+.hero p{margin:0;color:#c9d0d7;max-width:640px}
+main{max-width:1040px;margin:0 auto;padding:18px 16px 30px;display:grid;gap:14px}
+.card{background:#fff;border-radius:16px;border:1px solid var(--linea);padding:16px}
+.card h2{margin:0 0 10px;font-size:17px;display:flex;align-items:center;gap:10px}
+.num{background:var(--amar);border-radius:50%;width:30px;height:30px;display:inline-flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;flex:none}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:inherit;font-weight:600;font-size:14px;border:1.5px solid var(--linea);background:#fff;color:var(--carbon);border-radius:999px;padding:8px 14px;cursor:pointer}
+.chip.on{background:var(--carbon);border-color:var(--carbon);color:var(--amar)}
+.chip small{color:var(--gris);font-weight:500;margin-left:4px}
+.chip.on small{color:#c9d0d7}
+.chip.med{min-width:64px;text-align:center}
+.vacio{color:var(--gris);font-size:14px;margin:0}
+.largo{margin-top:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+.pc{background:#fff;border:1.5px solid var(--linea);border-radius:14px;padding:10px;display:flex;flex-direction:column;gap:6px}
+.pc.on{border-color:var(--amar);box-shadow:0 0 0 2px var(--amar) inset}
+.pc .ph{aspect-ratio:1;display:flex;align-items:center;justify-content:center;background:#fff;border-radius:10px;overflow:hidden}
+.pc .ph img{max-width:100%;max-height:100%;object-fit:contain}
+.pc .ph span{font-size:44px}
+.pc b{font-size:13.5px;line-height:1.25}
+.pc .cod{font-size:12px;color:var(--gris)}
+.pc .pr{font-weight:800;font-size:16px}
+.pc .pr small{font-weight:500;font-size:12px;color:var(--gris)}
+.pc a{font-size:12px;color:var(--gris)}
+.cant{display:flex;align-items:center;gap:6px;margin-top:auto}
+.cant button{font:inherit;font-weight:800;width:34px;height:34px;border-radius:10px;border:0;background:var(--fondo);cursor:pointer;font-size:18px}
+.cant .add{flex:1;width:auto;background:var(--amar);font-size:14px}
+.cant span{min-width:24px;text-align:center;font-weight:700}
+.no{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--carbon);color:#fff;border-radius:16px;padding:16px}
+.no p{margin:0}
+.no b{color:var(--amar)}
+.btn{font:inherit;font-weight:700;border:0;border-radius:10px;padding:11px 16px;cursor:pointer;background:var(--amar);color:var(--carbon);text-decoration:none;display:inline-block}
+.btn.claro{background:#fff}
+.barra{position:fixed;left:0;right:0;bottom:0;background:var(--carbon);color:#fff;z-index:9;box-shadow:0 -4px 18px rgba(0,0,0,.18)}
+.barra .in{max-width:1040px;margin:0 auto;padding:12px 16px;display:flex;gap:12px;align-items:center;justify-content:space-between}
+.barra .t{font-size:14px}
+.barra .t b{color:var(--amar);font-size:17px}
+.lista{max-width:1040px;margin:0 auto;padding:0 16px 4px;max-height:40vh;overflow:auto;display:none;font-size:13.5px}
+.lista.ver{display:block}
+.lista div{display:flex;justify-content:space-between;gap:10px;border-top:1px solid #2f353c;padding:7px 0}
+.lista button{background:none;border:0;color:#c9d0d7;cursor:pointer;font:inherit}
+.verl{background:none;border:0;color:var(--turq);font:inherit;font-size:13px;cursor:pointer;padding:0;text-decoration:underline}
+</style>
+</head>
+<body>
+<header>
+  <div class="top">
+    <a href="https://elsenordelostarros.cl" target="_top"><img src="trabajo/marca/logo-000.png" alt="El Señor de los Tarros"></a>
+    <a class="wsp" href="https://wa.me/56949691686" target="_blank">WhatsApp +56 9 4969 1686</a>
+  </div>
+  <div class="hero">
+    <small>Dados sueltos</small>
+    <h1>¿Se te rompió o perdió <span>un dado?</span></h1>
+    <p>No compres el juego completo. Elige cuadrante, tipo y medida, arma tu lista y cotízala por WhatsApp. Precios netos + IVA.</p>
+  </div>
+</header>
+<main>
+  <section class="card"><h2><span class="num">1</span>Cuadrante</h2><div class="chips" id="cuad"></div></section>
+  <section class="card"><h2><span class="num">2</span>Tipo de dado</h2><div class="chips" id="tipo"></div></section>
+  <section class="card"><h2><span class="num">3</span>Medida</h2><div class="chips" id="med"></div><div class="chips largo" id="largo"></div></section>
+  <section id="res"><div class="grid" id="grid"></div></section>
+  <section class="no">
+    <p><b>¿No encuentras tu dado?</b><br>Escríbenos la medida y lo buscamos.</p>
+    <a class="btn claro" id="noEnc" href="#" target="_blank">No encuentro mi dado</a>
+  </section>
+</main>
+<div class="barra" id="barra">
+  <div class="lista" id="lista"></div>
+  <div class="in">
+    <div class="t" id="tot">Tu lista está vacía</div>
+    <a class="btn" id="cotizar" href="#" target="_blank">Cotizar por WhatsApp</a>
+  </div>
+</div>
+<script src="dados-datos.js"></script>
+<script>
+(function(){
+var WSP='56949691686',TIENDA='https://elsenordelostarros.cl/';
+var CUADS=['1/4"','3/8"','1/2"','3/4"','1"'];
+var TIPOS=['Hexagonal (6 puntas)','Poligonal (12 puntas)','Impacto','Torx','Allen / Spline','Multifuncional','Bujía','Adaptador'];
+var sel={c:null,t:null,m:null,l:-1},lista=[];
+try{lista=JSON.parse(localStorage.getItem('sdt-dados')||'[]')}catch(e){}
+function $(i){return document.getElementById(i)}
+function cl(v){return '$'+Math.round(v).toLocaleString('es-CL').replace(/,/g,'.')}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function img(p){return p?(/^https?:/.test(p)?p:/^ms\d*-/.test(p)?p:IMGPRE+p):''}
+function guardar(){try{localStorage.setItem('sdt-dados',JSON.stringify(lista))}catch(e){}}
+function medVal(m){var x=m.match(/^(\d+(?:,\d)?) mm$/);if(x)return +x[1].replace(',','.');x=m.match(/^(?:(\d) )?(\d+)\/(\d+)"$/);if(x)return 100+(+(x[1]||0))+x[2]/x[3];x=m.match(/^([A-Z])(\d+)$/);if(x)return 200+x[1].charCodeAt(0)*1000+(+x[2]);return 999}
+function filtro(c,t,m,l){return DADOS.filter(function(d){return (!c||d[6]===c)&&(!t||d[7]===t)&&(!m||d[8]===m)&&(l==null||l<0||d[9]===l)})}
+function chips(id,vals,key,cls){
+  var h='';vals.forEach(function(v){var n=v[1];h+='<button class="chip'+(cls||'')+(sel[key]===v[0]?' on':'')+'" data-v="'+esc(v[0])+'">'+esc(v[2]||v[0])+(n!==undefined?'<small>'+n+'</small>':'')+'</button>'});
+  $(id).innerHTML=h||'<p class="vacio">Elige primero el paso anterior.</p>';
+  Array.prototype.forEach.call($(id).querySelectorAll('.chip'),function(b){b.onclick=function(){var v=b.dataset.v;if(key==='l')v=+v;sel[key]=(sel[key]===v&&key!=='l')?null:v;if(key==='c'){sel.t=null;sel.m=null;sel.l=-1}if(key==='t'){sel.m=null;sel.l=-1}if(key==='m')sel.l=-1;pintar()}});
+}
+function pintar(){
+  chips('cuad',CUADS.map(function(c){return [c,filtro(c).length]}).filter(function(x){return x[1]}),'c');
+  if(sel.c){chips('tipo',TIPOS.map(function(t){return [t,filtro(sel.c,t).length]}).filter(function(x){return x[1]}),'t')}else chips('tipo',[],'t');
+  if(sel.c&&sel.t){
+    var ms={};filtro(sel.c,sel.t).forEach(function(d){ms[d[8]]=1});
+    chips('med',Object.keys(ms).sort(function(a,b){return medVal(a)-medVal(b)}).map(function(m){return [m]}),'m',' med');
+    var f=filtro(sel.c,sel.t,sel.m),nl=f.filter(function(d){return d[9]}).length;
+    if(nl&&nl<f.length)chips('largo',[[-1,undefined,'Todos'],[0,undefined,'Cortos'],[1,undefined,'Largos']],'l');else $('largo').innerHTML='';
+  }else{chips('med',[],'m');$('largo').innerHTML=''}
+  grilla();barra();
+}
+function enLista(c){for(var i=0;i<lista.length;i++)if(lista[i][0]===c)return i;return -1}
+function grilla(){
+  if(!sel.c||!sel.t){$('grid').innerHTML='';alto();return}
+  var r=filtro(sel.c,sel.t,sel.m,sel.l).sort(function(a,b){return medVal(a[8])-medVal(b[8])||a[9]-b[9]||a[2]-b[2]}),h='';
+  r.forEach(function(d){var k=enLista(d[0]),q=k>=0?lista[k][3]:0,im=img(d[4]);
+    h+='<div class="pc'+(q?' on':'')+'"><div class="ph">'+(im?'<img loading="lazy" src="'+esc(im)+'" alt="">':'<span>🔩</span>')+'</div><b>'+esc(d[1])+'</b><span class="cod">'+esc(d[5]||'')+' · Código '+esc(d[0])+'</span><span class="pr">'+(d[2]?cl(d[2])+' <small>+ IVA</small>':'<small>Precio a consultar</small>')+'</span><a href="'+TIENDA+esc(d[3])+'" target="_top">Ver en la tienda →</a><div class="cant">'+(q?'<button data-c="'+esc(d[0])+'" data-d="-1">−</button><span>'+q+'</span><button data-c="'+esc(d[0])+'" data-d="1">+</button>':'<button class="add" data-c="'+esc(d[0])+'" data-d="1">Agregar</button>')+'</div></div>'});
+  $('grid').innerHTML=h||'<p class="vacio">No hay dados con esa combinación.</p>';
+  Array.prototype.forEach.call($('grid').querySelectorAll('.cant button'),function(b){b.onclick=function(){cambiar(b.dataset.c,+b.dataset.d)}});
+  alto();
+}
+function cambiar(c,dq){
+  var k=enLista(c);
+  if(k<0){var d=DADOS.filter(function(x){return x[0]===c})[0];if(!d)return;lista.push([d[0],d[1],d[2],dq]);}
+  else{lista[k][3]+=dq;if(lista[k][3]<=0)lista.splice(k,1)}
+  guardar();grilla();barra();
+}
+function barra(){
+  var n=0,t=0,h='';lista.forEach(function(x){n+=x[3];t+=x[2]*x[3];h+='<div><span>'+x[3]+' × '+esc(x[1])+'</span><span>'+(x[2]?cl(x[2]*x[3]):'consultar')+' <button data-c="'+esc(x[0])+'" aria-label="Quitar">✕</button></span></div>'});
+  $('lista').innerHTML=h;
+  Array.prototype.forEach.call($('lista').querySelectorAll('button'),function(b){b.onclick=function(){var k=enLista(b.dataset.c);if(k>=0){lista.splice(k,1);guardar();grilla();barra()}}});
+  $('tot').innerHTML=n?'<b>'+n+' dado'+(n>1?'s':'')+' · '+cl(t)+'</b> + IVA<br><button class="verl" id="verl">'+($('lista').classList.contains('ver')?'Ocultar':'Ver')+' lista</button>':'Tu lista está vacía';
+  if($('verl'))$('verl').onclick=function(){$('lista').classList.toggle('ver');barra()};
+  if(!n)$('lista').classList.remove('ver');
+  var L=['Hola, quiero cotizar estos dados sueltos:',''];
+  lista.forEach(function(x){L.push('• '+x[3]+' × '+x[1]+' (cód. '+x[0]+')'+(x[2]?' — '+cl(x[2]*x[3])+' + IVA':''))});
+  L.push('','Total referencial: '+cl(t)+' + IVA');
+  $('cotizar').href=n?'https://wa.me/'+WSP+'?text='+encodeURIComponent(L.join('\n')):'#';
+  $('cotizar').style.opacity=n?1:.45;
+  var q='Hola, busco un dado suelto'+(sel.c?' de cuadrante '+sel.c:'')+(sel.t?', tipo '+sel.t.toLowerCase():'')+(sel.m?', medida '+sel.m:'')+' y no lo encuentro en la página. ¿Lo tienen?';
+  $('noEnc').href='https://wa.me/'+WSP+'?text='+encodeURIComponent(q);
+}
+$('cotizar').onclick=function(e){if(!lista.length)e.preventDefault()};
+function alto(){try{parent.postMessage({sdtdados:document.body.scrollHeight},'*')}catch(e){}}
+window.addEventListener('resize',alto);
+pintar();
+})();
+</script>
+</body>
+</html>
