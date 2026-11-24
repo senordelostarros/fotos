@@ -1,5 +1,5 @@
 """Estados de WhatsApp 1080x1920 (fondo blanco) para los más vendidos a talleres.
-Uso: python3 scripts/estados_wsp.py <carpeta_salida>
+Uso: python3 scripts/estados_wsp.py <carpeta_salida> [set.py con lista P]
 """
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -33,6 +33,8 @@ P = [
  ['Juego de dados hexagonales 3/8" 22 piezas YATO', 'YT38561', 'Con chicharra y accesorios', 52789, 'ms-juego-de-dados-hexagonales-de-38-22-piezas.jpg'],
  ['Buzo de trabajo YATO', 'YT80196', 'Tallas M a XXL', 60489, 'ms-buzo-de-trabajo-talla-l.jpg'],
 ]
+if len(sys.argv) > 2:  # set alternativo: archivo .py con lista P
+    P = eval(open(sys.argv[2], encoding='utf-8').read())
 def cl(v): return '$' + f'{round(v):,}'.replace(',', '.')
 logo = Image.open(insta.LOGO).convert('RGBA')
 for i, (nom, cod, det, pre, foto) in enumerate(P, 1):
