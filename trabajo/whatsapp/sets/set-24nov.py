@@ -8,7 +8,7 @@
  ['Flexómetro 10 metros YATO', 'YT71146', 'Cinta ancha y resistente', 10989, 'ms-flexometro-largo-10mts.jpg'],
  ['Acoples rápidos neumáticos', 'MP2119', 'Conecta y desconecta en segundos', 11990, 'ms-juego-de-acoples-rapidos-para-conectar-y-desconectar-las-herramientas-neumaticas.jpg'],
  ['Llave de correa para filtros 1/2"', '373503', 'Saca filtros de aceite sin dañarlos', 9339, 'ms-llave-de-correa-filtros-de-aceite-cuadrante-12.jpg'],
- ['Medidor de desgaste de frenos', 'MDF8H', 'Revisa pastillas en segundos', 10890, 'ms-medidor-de-desgaste-de-frenos.jpg'],
+ ['Medidor de desgaste de frenos', 'MDF8H', 'Revisa pastillas en segundos', 10890, 'ms2-medidor-de-desgaste-de-frenos.jpg'],
  ['Kit 50 empalmadores eléctricos', 'KTE050', 'Rojos y azules', 9790, 'ms-kit-de-50-empalmadores-electricos-rojos-y-azules.jpg'],
  ['Probador de corriente 6-24 V Hella', 'AL018003798001', 'Diagnóstico eléctrico rápido', 9889, 'ms-probador-de-corriente-6-24v.jpg'],
  ['Surtido de O-rings en mm YATO', 'YT06877', 'Todas las medidas en una caja', 9339, 'ms-display-surtido-de-o-ring-en-mm.jpg'],
