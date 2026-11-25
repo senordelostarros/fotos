@@ -113,6 +113,9 @@ DATOS = {
     'jw-compresimetro': ['jonnesway/aco-ai020052.jpg', (0.45, 0.40), 'Es un compresímetro',
                          'Compresímetro bencinero Jonnesway', 'AI020052',
                          ['Mide la compresión del motor', 'Manómetro de 80 mm', 'Adaptadores M14 y M18'], 198450, False],
+    'linterna': ['ms-linterna-de-taller-tipo-lapiz-recargable-y-magnetica.jpg', (0.40, 0.50), 'Es una linterna lápiz',
+                 'Linterna lápiz recargable y magnética IRIMO', 'L-PEN-1',
+                 ['Luz LED de 150 lm', 'Imán para dejarla pegada', 'Recargable con cable'], 9490, True],
 }
 CARD = {'fundas280': 'card-fundas-250.png'}
 PREG = {'cable': ('¿Sabes qué', 'cable es este?'), 'williams': ('¿Adivinas qué', 'producto es?'), 'fundas280': ('¿Adivinas qué', 'producto es?')}
@@ -126,6 +129,32 @@ orig = Image.open(R + '/' + FOTO).convert('RGB')
 prod = Image.open(R + '/trabajo/marca/' + CARD[CLAVE]).convert('RGBA') if CLAVE in CARD else recortar(R + '/' + FOTO)
 fondo_t = patron((W, H)).convert('RGBA')
 fondo_c = Image.new('RGBA', (W, H), CARBON + (255,))
+# Temas de fondo (variable de entorno TEMA): clasico | panel | plano | peligro
+TEMA = os.environ.get('TEMA', 'clasico')
+def _panel(base, hoyo, borde):
+    im = Image.new('RGB', (W, H), base); d = ImageDraw.Draw(im)
+    for y in range(30, H, 64):
+        for x in range(30 + (32 if (y // 64) % 2 else 0), W, 64):
+            d.ellipse((x - 9, y - 9, x + 9, y + 9), fill=hoyo); d.arc((x - 10, y - 10, x + 10, y + 10), 200, 360, fill=borde, width=2)
+    return im.convert('RGBA')
+def _plano(base, fina, gruesa):
+    im = Image.new('RGB', (W, H), base); d = ImageDraw.Draw(im)
+    for k in range(0, max(W, H), 30):
+        col = gruesa if k % 150 == 0 else fina; w_ = 2 if k % 150 == 0 else 1
+        d.line((k, 0, k, H), fill=col, width=w_); d.line((0, k, W, k), fill=col, width=w_)
+    return im.convert('RGBA')
+def _peligro(base):
+    im = Image.new('RGB', (W, H), base); d = ImageDraw.Draw(im)
+    for y0, y1 in ((0, 46), (H - 196, H - 150)):
+        d.rectangle((0, y0, W, y1), fill=AMAR)
+        for x in range(-100, W + 100, 80): d.polygon([(x, y1), (x + 40, y1), (x + 86, y0), (x + 46, y0)], fill=CARBON)
+    return im.convert('RGBA')
+if TEMA == 'panel':
+    fondo_t = _panel((214, 196, 164), (96, 80, 60), (238, 226, 204)); fondo_c = _panel((34, 38, 44), (14, 16, 19), (58, 64, 72))
+elif TEMA == 'plano':
+    fondo_t = _plano((30, 86, 140), (52, 110, 166), (96, 150, 200)); fondo_c = _plano((16, 46, 78), (28, 64, 100), (52, 96, 140))
+elif TEMA == 'peligro':
+    fondo_t = _peligro((236, 238, 240)); fondo_c = _peligro(CARBON)
 def cl(v): return '$' + f'{round(v):,}'.replace(',', '.')
 def ease(t): t = max(0, min(1, t)); return 1 - (1 - t) ** 3
 def back(t):
@@ -260,6 +289,9 @@ def frame(t):
     return c
 
 n = int(TOTAL * FPS)
+if os.environ.get('PREVIEW'):
+    for i in (75, 160, 260, 360, 460): frame(i / FPS).convert('RGB').resize((360, 640)).save(f'{TMP}/prev{i}.jpg')
+    sys.exit(0)
 for i in range(n):
     frame(i / FPS).convert('RGB').save(f'{TMP}/f{i:04d}.jpg', quality=90)
 subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-framerate', str(FPS), '-i', f'{TMP}/f%04d.jpg',
