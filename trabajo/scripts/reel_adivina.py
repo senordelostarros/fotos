@@ -122,9 +122,18 @@ DATOS = {
     'probador': ['ms-probador-de-corriente-6-24v.jpg', (0.72, 0.78), 'Es un probador de corriente',
                  'Probador de corriente 6-24 V Hella', 'AL018003798001',
                  ['Detecta si llega corriente', 'Encuentra cortocircuitos', 'Sirve de 6 a 24 V'], 9889, False],
+    'jabon': ['ms-jabon-mecanico-2-litros.jpg', (0.50, 0.12), 'Es jabón mecánico',
+              'Jabón mecánico 2 litros YATO', 'YT01234T',
+              ['Saca grasa y aceite de las manos', 'Con partículas que friccionan', 'Bidón de 2 litros'], 14289, True],
+    'aceitera': ['ms-aceitera-manual-con-aplicador-flexible-500cc.jpg', (0.42, 0.22), 'Es una aceitera',
+                 'Aceitera con aplicador flexible YATO 500 cc', 'YT06914',
+                 ['Lubrica donde no llegas', 'Pitón flexible', 'Capacidad 500 cc'], 10659, False],
+    'orings': ['ms-display-surtido-de-o-ring-en-mm.jpg', (0.45, 0.45), 'Es un surtido de O-rings',
+               'Surtido de O-rings en mm YATO', 'YT06877',
+               ['Todas las medidas en una caja', 'Para sellos de aceite y agua', 'Ordenados por compartimiento'], 9339, False],
 }
 CARD = {'fundas280': 'card-fundas-250.png'}
-PREG = {'cable': ('¿Sabes qué', 'cable es este?'), 'williams': ('¿Adivinas qué', 'producto es?'), 'fundas280': ('¿Adivinas qué', 'producto es?')}
+PREG = {'jabon': ('¿Adivinas qué', 'producto es?'), 'orings': ('¿Adivinas qué', 'producto es?'), 'cable': ('¿Sabes qué', 'cable es este?'), 'williams': ('¿Adivinas qué', 'producto es?'), 'fundas280': ('¿Adivinas qué', 'producto es?')}
 CLAVE, OUT, TMP = sys.argv[1], sys.argv[2], sys.argv[3]
 FOTO, ZP, ES, NOM, COD, USOS, PRECIO, BOMBA = DATOS[CLAVE]
 W, H, FPS = 1080, 1920, 30
