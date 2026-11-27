@@ -49,6 +49,10 @@ a{color:inherit}
 
 
 /* bomba del día */
+.bo.bf,.bo.bf .media{background:#0b0b0b!important;background-image:repeating-linear-gradient(135deg,#0b0b0b 0 26px,#141414 26px 52px)!important}
+.bo.bf .tag{background:#000;color:#FFC72C;border:2px solid #FFC72C}
+.bo.bf h2 span{color:#FFC72C}
+.bo.bf .off{background:#FFC72C;color:#000}
 .sl.bo .tx{width:52%}
 .bo .card{position:absolute;right:7%;top:50%;transform:translateY(-50%);width:34%;max-width:330px;aspect-ratio:1;background:#fff;border-radius:16px;box-shadow:0 18px 40px rgba(0,0,0,.35);display:flex;align-items:center;justify-content:center;padding:14px}
 .bo .card img{width:100%;height:100%;object-fit:contain}
@@ -219,8 +223,8 @@ nav.cat a.cot svg{stroke:#1D2126}
       <div class="media" style="background-image:url(banner-bomba-celular.jpg)"><div class="card"><img id="bo-img" alt=""><span class="off">-20%</span></div></div>
       <div class="card bo-pc"><img id="bo-img2" alt=""><span class="off">-20%</span></div>
       <div class="tx">
-        <span class="tag">Bomba del día · solo hoy</span>
-        <h2>Danos hoy nuestra <span>promoción de cada día</span></h2>
+        <span class="tag" id="bo-tag">Bomba del día · solo hoy</span>
+        <h2 id="bo-h2">Danos hoy nuestra <span>promoción de cada día</span></h2>
         <p class="pn" id="bo-n"></p>
         <div class="pr"><s id="bo-a"></s><b id="bo-p"></b><em>+ IVA</em></div>
         <p class="hoy">Precio válido solo por hoy o hasta agotar stock</p>
@@ -344,6 +348,7 @@ nav.cat a.cot svg{stroke:#1D2126}
   $('bo-img').src=img;$('bo-img2').src=img;$('bo-img').alt=$('bo-img2').alt=x[0];
   $('bo-n').textContent=x[0];$('bo-a').textContent=cl(x[2]);$('bo-p').textContent=cl(x[2]*0.8);
   $('bo-l').href='https://elsenordelostarros.cl/'+x[1];
+  if(hoy>='2026-11-27'&&hoy<='2026-11-30'){el.classList.add('bf');$('bo-tag').textContent=(hoy==='2026-11-30'?'Cyber Monday':'Black Friday')+' · bomba de hoy';$('bo-h2').innerHTML='Black Friday en <span>El Señor de los Tarros</span>';}
 })();
 (function(){
   var box=document.getElementById('sl-box'),sl=box.querySelectorAll('.sl'),dots=document.getElementById('dots'),i=0,t,b=[];
