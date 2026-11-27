@@ -1,0 +1,20 @@
+name: Jumpseller probar
+on:
+  push:
+    paths: ['jumpseller/probar.txt']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  probar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 trabajo/scripts/js_probar.py
+        env:
+          JS_LOGIN: ${{ secrets.JUMPSELLER_LOGIN }}
+          JS_TOKEN: ${{ secrets.JUMPSELLER_TOKEN }}
+      - run: |
+          git config user.name "fotos-bot"; git config user.email "fotos-bot@users.noreply.github.com"
+          git add jumpseller/estado.txt; git commit -m "Jumpseller: prueba de conexión" || true
+          git pull --rebase origin ${GITHUB_REF_NAME}; git push origin HEAD:${GITHUB_REF_NAME}
