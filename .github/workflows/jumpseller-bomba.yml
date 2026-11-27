@@ -1,0 +1,23 @@
+name: Bomba del dia
+on:
+  schedule:
+    - cron: '2 10 * * *'   # 07:02 hora de Chile (UTC-3)
+  push:
+    paths: ['jumpseller/bomba-prueba.txt']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  bomba:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 trabajo/scripts/js_bomba.py
+        env:
+          JS_LOGIN: ${{ secrets.JUMPSELLER_LOGIN }}
+          JS_TOKEN: ${{ secrets.JUMPSELLER_TOKEN }}
+          DRY: ${{ github.event_name == 'push' && '1' || '0' }}
+      - run: |
+          git config user.name "fotos-bot"; git config user.email "fotos-bot@users.noreply.github.com"
+          git add jumpseller/bomba-log.txt; git commit -m "Bomba del día (API)" || true
+          git pull --rebase origin ${GITHUB_REF_NAME}; git push origin HEAD:${GITHUB_REF_NAME}
