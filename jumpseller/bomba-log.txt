@@ -1,0 +1,4 @@
+2026-11-27 18:31 UTC · hoy 2026-11-27 · PRUEBA (no cambia nada)
+vuelve a precio normal: Jabón mecánico 2 litros (id 27697791) precio 14289.0 -> 14289
+BOMBA -20%: ESTETOSCOPIO PARA DETECTAR RUIDO DE MOTORES (id 27697880) precio 8712.0 -> 8712
+
