@@ -1,1118 +1,1114 @@
-YT-06877	search	2 fotos (6 encontradas)
-YT-0505	search	3 fotos (7 encontradas)
-YT-0198	search	3 fotos (12 encontradas)
-YT-01877	search	1 fotos (2 encontradas)
-YT-0783	search	1 fotos (47 encontradas)
-YT0138	search	1 fotos (2 encontradas)
-YT7024	https://toya24.pl/product-pol-10005298-ZSZYWACZ-TAPICERSKI-6-14-MM.html	3 fotos (12 encontradas)
-YT0192	search	3 fotos (12 encontradas)
-YT1223	search	2 fotos (6 encontradas)
+YT0138	DUDOSO sin foto con el código en el nombre	search
+YT7024	DUDOSO sin foto con el código en el nombre	https://toya24.pl/product-pol-10005298-ZSZYWACZ-TAPICERSKI-6-14-MM.html
+YT0192	DUDOSO sin foto con el código en el nombre	search
+YT1223	DUDOSO sin foto con el código en el nombre	search
 YT2162	SIN RESULTADO	0 links
-YT38861	search	1 fotos (2 encontradas)
-YT12942	search	1 fotos (2 encontradas)
-YT0618	search	2 fotos (6 encontradas)
-YT04323	search	2 fotos (6 encontradas)
-YT8273	search	2 fotos (6 encontradas)
-YT07753	search	3 fotos (12 encontradas)
-YT22861	search	1 fotos (3 encontradas)
-YT7430	search	1 fotos (2 encontradas)
-YT5837	search	3 fotos (9 encontradas)
-YT2071	search	1 fotos (2 encontradas)
-YT81352	search	1 fotos (33 encontradas)
-YT1345	search	3 fotos (15 encontradas)
-YT38831	search	3 fotos (11 encontradas)
-YT1400	search	1 fotos (2 encontradas)
-YT2775	search	1 fotos (117 encontradas)
+YT38861	DUDOSO sin foto con el código en el nombre	search
+YT12942	DUDOSO sin foto con el código en el nombre	search
+YT0618	DUDOSO sin foto con el código en el nombre	search
+YT04323	DUDOSO sin foto con el código en el nombre	search
+YT8273	DUDOSO sin foto con el código en el nombre	search
+YT07753	DUDOSO sin foto con el código en el nombre	search
+YT22861	DUDOSO sin foto con el código en el nombre	search
+YT7430	DUDOSO sin foto con el código en el nombre	search
+YT5837	DUDOSO sin foto con el código en el nombre	search
+YT2071	DUDOSO sin foto con el código en el nombre	search
+YT81352	DUDOSO sin foto con el código en el nombre	search
+YT1345	DUDOSO sin foto con el código en el nombre	search
+YT38831	DUDOSO sin foto con el código en el nombre	search
+YT1400	DUDOSO sin foto con el código en el nombre	search
+YT2775	DUDOSO sin foto con el código en el nombre	search
 YT4879	SIN RESULTADO	0 links
-YT04345	search	2 fotos (6 encontradas)
-YT0599	search	1 fotos (2 encontradas)
+YT04345	DUDOSO sin foto con el código en el nombre	search
+YT0599	DUDOSO sin foto con el código en el nombre	search
 YT2163	SIN RESULTADO	0 links
-YT05810	search	2 fotos (6 encontradas)
-YT01385	search	1 fotos (2 encontradas)
-YT0193	search	3 fotos (12 encontradas)
-YT22862	search	3 fotos (11 encontradas)
-YT82471	search	1 fotos (55 encontradas)
-YT1224	search	2 fotos (6 encontradas)
-YT12943	search	2 fotos (6 encontradas)
-YT04324	search	2 fotos (6 encontradas)
-YT2072	search	2 fotos (6 encontradas)
-YT5838	search	1 fotos (2 encontradas)
-YT0837	search	2 fotos (6 encontradas)
-YT38801	search	3 fotos (11 encontradas)
-YT3842	search	1 fotos (2 encontradas)
-YT61711	search	2 fotos (6 encontradas)
-YT6233	search	1 fotos (2 encontradas)
-YT2776	search	1 fotos (33 encontradas)
+YT05810	DUDOSO sin foto con el código en el nombre	search
+YT01385	DUDOSO sin foto con el código en el nombre	search
+YT0193	DUDOSO sin foto con el código en el nombre	search
+YT22862	DUDOSO sin foto con el código en el nombre	search
+YT82471	DUDOSO sin foto con el código en el nombre	search
+YT1224	DUDOSO sin foto con el código en el nombre	search
+YT12943	DUDOSO sin foto con el código en el nombre	search
+YT04324	DUDOSO sin foto con el código en el nombre	search
+YT2072	DUDOSO sin foto con el código en el nombre	search
+YT5838	DUDOSO sin foto con el código en el nombre	search
+YT0837	DUDOSO sin foto con el código en el nombre	search
+YT38801	DUDOSO sin foto con el código en el nombre	search
+YT3842	DUDOSO sin foto con el código en el nombre	search
+YT61711	DUDOSO sin foto con el código en el nombre	search
+YT6233	DUDOSO sin foto con el código en el nombre	search
+YT2776	DUDOSO sin foto con el código en el nombre	search
 YT4880	SIN RESULTADO	0 links
 YT71555	SIN RESULTADO	0 links
 YT7738	SIN RESULTADO	0 links
-YT2461	search	3 fotos (9 encontradas)
-YT05811	search	2 fotos (6 encontradas)
-YT0139	search	1 fotos (2 encontradas)
-YT0194	search	3 fotos (12 encontradas)
-YT0840	search	2 fotos (6 encontradas)
-YT74371	search	3 fotos (9 encontradas)
-YT82473	search	1 fotos (57 encontradas)
+YT2461	DUDOSO sin foto con el código en el nombre	search
+YT05811	DUDOSO sin foto con el código en el nombre	search
+YT0139	DUDOSO sin foto con el código en el nombre	search
+YT0194	DUDOSO sin foto con el código en el nombre	search
+YT0840	DUDOSO sin foto con el código en el nombre	search
+YT74371	DUDOSO sin foto con el código en el nombre	search
+YT82473	DUDOSO sin foto con el código en el nombre	search
 YT3865	SIN RESULTADO	0 links
-YT1225	search	2 fotos (6 encontradas)
-YT12944	search	2 fotos (6 encontradas)
-YT07531	search	1 fotos (17 encontradas)
-YT04328	search	2 fotos (6 encontradas)
-YT2073	search	1 fotos (2 encontradas)
+YT1225	DUDOSO sin foto con el código en el nombre	search
+YT12944	DUDOSO sin foto con el código en el nombre	search
+YT07531	DUDOSO sin foto con el código en el nombre	search
+YT04328	DUDOSO sin foto con el código en el nombre	search
+YT2073	DUDOSO sin foto con el código en el nombre	search
 YT2806	SIN RESULTADO	0 links
-YT07190	search	3 fotos (12 encontradas)
-YT0844	search	3 fotos (9 encontradas)
-YT38875	search	3 fotos (9 encontradas)
-YT3843	search	1 fotos (2 encontradas)
-YT61712	search	3 fotos (9 encontradas)
-YT2778	search	1 fotos (21 encontradas)
-YT6235	search	1 fotos (2 encontradas)
-YT55568	search	2 fotos (6 encontradas)
+YT07190	DUDOSO sin foto con el código en el nombre	search
+YT0844	DUDOSO sin foto con el código en el nombre	search
+YT38875	DUDOSO sin foto con el código en el nombre	search
+YT3843	DUDOSO sin foto con el código en el nombre	search
+YT61712	DUDOSO sin foto con el código en el nombre	search
+YT2778	DUDOSO sin foto con el código en el nombre	search
+YT6235	DUDOSO sin foto con el código en el nombre	search
+YT55568	DUDOSO sin foto con el código en el nombre	search
 YT4881	SIN RESULTADO	0 links
-YT2463	search	3 fotos (9 encontradas)
-YT04346	search	1 fotos (2 encontradas)
-YT05812	search	2 fotos (6 encontradas)
-YT0195	search	3 fotos (12 encontradas)
-YT0140	search	1 fotos (2 encontradas)
-YT76040	search	3 fotos (19 encontradas)
-YT7434	search	1 fotos (35 encontradas)
-YT0830	search	3 fotos (16 encontradas)
-YT1226	search	2 fotos (6 encontradas)
+YT2463	DUDOSO sin foto con el código en el nombre	search
+YT04346	DUDOSO sin foto con el código en el nombre	search
+YT05812	DUDOSO sin foto con el código en el nombre	search
+YT0195	DUDOSO sin foto con el código en el nombre	search
+YT0140	DUDOSO sin foto con el código en el nombre	search
+YT76040	DUDOSO sin foto con el código en el nombre	search
+YT7434	DUDOSO sin foto con el código en el nombre	search
+YT0830	DUDOSO sin foto con el código en el nombre	search
+YT1226	DUDOSO sin foto con el código en el nombre	search
 YT12621	SIN RESULTADO	0 links
-YT12945	search	2 fotos (6 encontradas)
-YT07532	search	1 fotos (15 encontradas)
-YT0500	search	3 fotos (9 encontradas)
-YT2801	search	1 fotos (2 encontradas)
-YT1037	search	3 fotos (9 encontradas)
-YT04329	search	2 fotos (6 encontradas)
-YT2074	search	1 fotos (2 encontradas)
+YT12945	DUDOSO sin foto con el código en el nombre	search
+YT07532	DUDOSO sin foto con el código en el nombre	search
+YT0500	DUDOSO sin foto con el código en el nombre	search
+YT2801	DUDOSO sin foto con el código en el nombre	search
+YT1037	DUDOSO sin foto con el código en el nombre	search
+YT04329	DUDOSO sin foto con el código en el nombre	search
+YT2074	DUDOSO sin foto con el código en el nombre	search
 YT12685	SIN RESULTADO	0 links
-YT3844	search	1 fotos (2 encontradas)
-YT2731	search	1 fotos (37 encontradas)
-YT55570	search	3 fotos (18 encontradas)
+YT3844	DUDOSO sin foto con el código en el nombre	search
+YT2731	DUDOSO sin foto con el código en el nombre	search
+YT55570	DUDOSO sin foto con el código en el nombre	search
 YT4882	SIN RESULTADO	0 links
-YT62245	search	1 fotos (2 encontradas)
-YT2466	search	2 fotos (6 encontradas)
-YT0198	search	3 fotos (12 encontradas)
+YT62245	DUDOSO sin foto con el código en el nombre	search
+YT2466	DUDOSO sin foto con el código en el nombre	search
+YT0198	DUDOSO sin foto con el código en el nombre	search
 YT0183	SIN RESULTADO	0 links
-YT1957	search	1 fotos (119 encontradas)
-YT3790	search	1 fotos (121 encontradas)
-YT3023	search	3 fotos (15 encontradas)
-YT7440	search	1 fotos (121 encontradas)
+YT1957	DUDOSO sin foto con el código en el nombre	search
+YT3790	DUDOSO sin foto con el código en el nombre	search
+YT3023	DUDOSO sin foto con el código en el nombre	search
+YT7440	DUDOSO sin foto con el código en el nombre	search
 YT0780	SIN RESULTADO	0 links
-YT0880	search	2 fotos (3 encontradas)
-YT82460	search	3 fotos (15 encontradas)
-YT1227	search	2 fotos (6 encontradas)
-YT12946	search	2 fotos (6 encontradas)
-YT0505	search	3 fotos (7 encontradas)
-YT07533	search	1 fotos (7 encontradas)
-YT1039	search	3 fotos (9 encontradas)
-YT24240	search	3 fotos (8 encontradas)
+YT0880	DUDOSO sin foto con el código en el nombre	search
+YT82460	DUDOSO sin foto con el código en el nombre	search
+YT1227	DUDOSO sin foto con el código en el nombre	search
+YT12946	DUDOSO sin foto con el código en el nombre	search
+YT0505	DUDOSO sin foto con el código en el nombre	search
+YT07533	DUDOSO sin foto con el código en el nombre	search
+YT1039	DUDOSO sin foto con el código en el nombre	search
+YT24240	DUDOSO sin foto con el código en el nombre	search
 YT38928	SIN RESULTADO	0 links
-YT4750	search	1 fotos (2 encontradas)
-YT3845	search	1 fotos (2 encontradas)
+YT4750	DUDOSO sin foto con el código en el nombre	search
+YT3845	DUDOSO sin foto con el código en el nombre	search
 YT4883	SIN RESULTADO	0 links
-YT06985	search	2 fotos (6 encontradas)
-YT21151	search	2 fotos (6 encontradas)
-YT6234	search	1 fotos (2 encontradas)
-YT2468	search	1 fotos (2 encontradas)
-YT1301	search	2 fotos (6 encontradas)
-YT2075	search	1 fotos (2 encontradas)
-YT2510	search	3 fotos (30 encontradas)
-YT25863	search	1 fotos (2 encontradas)
-YT0200	search	3 fotos (12 encontradas)
-YT0186	search	1 fotos (61 encontradas)
-YT1958	search	1 fotos (121 encontradas)
-YT3024	search	3 fotos (15 encontradas)
-YT3791	search	1 fotos (41 encontradas)
-YT0782	search	3 fotos (15 encontradas)
-YT0831	search	1 fotos (2 encontradas)
-YT1228	search	2 fotos (6 encontradas)
+YT06985	DUDOSO sin foto con el código en el nombre	search
+YT21151	DUDOSO sin foto con el código en el nombre	search
+YT6234	DUDOSO sin foto con el código en el nombre	search
+YT2468	DUDOSO sin foto con el código en el nombre	search
+YT1301	DUDOSO sin foto con el código en el nombre	search
+YT2075	DUDOSO sin foto con el código en el nombre	search
+YT2510	DUDOSO sin foto con el código en el nombre	search
+YT25863	DUDOSO sin foto con el código en el nombre	search
+YT0200	DUDOSO sin foto con el código en el nombre	search
+YT0186	DUDOSO sin foto con el código en el nombre	search
+YT1958	DUDOSO sin foto con el código en el nombre	search
+YT3024	DUDOSO sin foto con el código en el nombre	search
+YT3791	DUDOSO sin foto con el código en el nombre	search
+YT0782	DUDOSO sin foto con el código en el nombre	search
+YT0831	DUDOSO sin foto con el código en el nombre	search
+YT1228	DUDOSO sin foto con el código en el nombre	search
 YT3870	SIN RESULTADO	0 links
-YT0506	search	1 fotos (2 encontradas)
-YT12947	search	2 fotos (6 encontradas)
-YT73921	search	3 fotos (18 encontradas)
-YT1041	search	3 fotos (9 encontradas)
-YT24242	search	2 fotos (3 encontradas)
-YT38811	search	3 fotos (15 encontradas)
-YT4751	search	1 fotos (2 encontradas)
-YT2625	search	1 fotos (121 encontradas)
+YT0506	DUDOSO sin foto con el código en el nombre	search
+YT12947	DUDOSO sin foto con el código en el nombre	search
+YT73921	DUDOSO sin foto con el código en el nombre	search
+YT1041	DUDOSO sin foto con el código en el nombre	search
+YT24242	DUDOSO sin foto con el código en el nombre	search
+YT38811	DUDOSO sin foto con el código en el nombre	search
+YT4751	DUDOSO sin foto con el código en el nombre	search
+YT2625	DUDOSO sin foto con el código en el nombre	search
 YT4884	SIN RESULTADO	0 links
-YT21152	search	2 fotos (6 encontradas)
-YT36007	search	3 fotos (16 encontradas)
-YT4515	search	1 fotos (2 encontradas)
-YT2449	search	2 fotos (6 encontradas)
-YT6236	search	1 fotos (2 encontradas)
-YT2515	search	2 fotos (6 encontradas)
-YT1302	search	2 fotos (6 encontradas)
-YT0189	search	3 fotos (9 encontradas)
-YT2176	search	1 fotos (109 encontradas)
+YT21152	DUDOSO sin foto con el código en el nombre	search
+YT36007	DUDOSO sin foto con el código en el nombre	search
+YT4515	DUDOSO sin foto con el código en el nombre	search
+YT2449	DUDOSO sin foto con el código en el nombre	search
+YT6236	DUDOSO sin foto con el código en el nombre	search
+YT2515	DUDOSO sin foto con el código en el nombre	search
+YT1302	DUDOSO sin foto con el código en el nombre	search
+YT0189	DUDOSO sin foto con el código en el nombre	search
+YT2176	DUDOSO sin foto con el código en el nombre	search
 YT0187	SIN RESULTADO	0 links
-YT2575	search	1 fotos (117 encontradas)
+YT2575	DUDOSO sin foto con el código en el nombre	search
 YT88880	SIN RESULTADO	0 links
-YT10670	search	1 fotos (55 encontradas)
-YT07822	search	2 fotos (6 encontradas)
-YT1229	search	2 fotos (6 encontradas)
-YT12671	search	3 fotos (9 encontradas)
-YT0509	search	3 fotos (9 encontradas)
-YT0313	search	1 fotos (2 encontradas)
-YT12948	search	2 fotos (6 encontradas)
-YT82021	search	3 fotos (24 encontradas)
-YT0400	search	3 fotos (11 encontradas)
-YT1042	search	3 fotos (9 encontradas)
-YT24243	search	2 fotos (3 encontradas)
-YT38841	search	3 fotos (11 encontradas)
-YT4755	search	2 fotos (3 encontradas)
-YT2626	search	1 fotos (69 encontradas)
-YT7377	search	3 fotos (11 encontradas)
-YT21153	search	3 fotos (9 encontradas)
+YT10670	DUDOSO sin foto con el código en el nombre	search
+YT07822	DUDOSO sin foto con el código en el nombre	search
+YT1229	DUDOSO sin foto con el código en el nombre	search
+YT12671	DUDOSO sin foto con el código en el nombre	search
+YT0509	DUDOSO sin foto con el código en el nombre	search
+YT0313	DUDOSO sin foto con el código en el nombre	search
+YT12948	DUDOSO sin foto con el código en el nombre	search
+YT82021	DUDOSO sin foto con el código en el nombre	search
+YT0400	DUDOSO sin foto con el código en el nombre	search
+YT1042	DUDOSO sin foto con el código en el nombre	search
+YT24243	DUDOSO sin foto con el código en el nombre	search
+YT38841	DUDOSO sin foto con el código en el nombre	search
+YT4755	DUDOSO sin foto con el código en el nombre	search
+YT2626	DUDOSO sin foto con el código en el nombre	search
+YT7377	DUDOSO sin foto con el código en el nombre	search
+YT21153	DUDOSO sin foto con el código en el nombre	search
 YT4885	SIN RESULTADO	0 links
-YT4516	search	2 fotos (6 encontradas)
-YT2516	search	2 fotos (6 encontradas)
-YT6222	search	1 fotos (2 encontradas)
-YT0201	search	3 fotos (12 encontradas)
-YT1303	search	2 fotos (6 encontradas)
-YT0143	search	2 fotos (3 encontradas)
-YT3461	search	3 fotos (9 encontradas)
+YT4516	DUDOSO sin foto con el código en el nombre	search
+YT2516	DUDOSO sin foto con el código en el nombre	search
+YT6222	DUDOSO sin foto con el código en el nombre	search
+YT0201	DUDOSO sin foto con el código en el nombre	search
+YT1303	DUDOSO sin foto con el código en el nombre	search
+YT0143	DUDOSO sin foto con el código en el nombre	search
+YT3461	DUDOSO sin foto con el código en el nombre	search
 YT88881	SIN RESULTADO	0 links
-YT2177	search	1 fotos (95 encontradas)
-YT1230	search	2 fotos (6 encontradas)
-YT3875	search	1 fotos (121 encontradas)
+YT2177	DUDOSO sin foto con el código en el nombre	search
+YT1230	DUDOSO sin foto con el código en el nombre	search
+YT3875	DUDOSO sin foto con el código en el nombre	search
 YT07291	SIN RESULTADO	0 links
-YT12949	search	2 fotos (6 encontradas)
-YT2374	search	2 fotos (3 encontradas)
-YT0411	search	3 fotos (12 encontradas)
-YT1067	search	1 fotos (2 encontradas)
-YT73460	search	3 fotos (34 encontradas)
-YT38941	search	3 fotos (20 encontradas)
-YT4757	search	1 fotos (2 encontradas)
-YT2627	search	1 fotos (121 encontradas)
-YT21154	search	3 fotos (9 encontradas)
-YT7368	search	3 fotos (9 encontradas)
-YT1757	search	2 fotos (3 encontradas)
-YT4517	search	1 fotos (107 encontradas)
-YT2517	search	3 fotos (21 encontradas)
-YT0202	search	3 fotos (12 encontradas)
-YT6237	search	1 fotos (2 encontradas)
+YT12949	DUDOSO sin foto con el código en el nombre	search
+YT2374	DUDOSO sin foto con el código en el nombre	search
+YT0411	DUDOSO sin foto con el código en el nombre	search
+YT1067	DUDOSO sin foto con el código en el nombre	search
+YT73460	DUDOSO sin foto con el código en el nombre	search
+YT38941	DUDOSO sin foto con el código en el nombre	search
+YT4757	DUDOSO sin foto con el código en el nombre	search
+YT2627	DUDOSO sin foto con el código en el nombre	search
+YT21154	DUDOSO sin foto con el código en el nombre	search
+YT7368	DUDOSO sin foto con el código en el nombre	search
+YT1757	DUDOSO sin foto con el código en el nombre	search
+YT4517	DUDOSO sin foto con el código en el nombre	search
+YT2517	DUDOSO sin foto con el código en el nombre	search
+YT0202	DUDOSO sin foto con el código en el nombre	search
+YT6237	DUDOSO sin foto con el código en el nombre	search
 YT0190	SIN RESULTADO	0 links
-YT34611	search	1 fotos (23 encontradas)
+YT34611	DUDOSO sin foto con el código en el nombre	search
 YT88882	SIN RESULTADO	0 links
-YT1304	search	2 fotos (6 encontradas)
-YT2178	search	1 fotos (97 encontradas)
-YT1231	search	2 fotos (6 encontradas)
-YT25760	search	3 fotos (12 encontradas)
-YT0519	search	3 fotos (15 encontradas)
-YT2341	search	1 fotos (3 encontradas)
-YT0307	search	1 fotos (2 encontradas)
-YT1460	search	2 fotos (6 encontradas)
-YT8277925	search	3 fotos (36 encontradas)
-YT85910	search	3 fotos (9 encontradas)
-YT0413	search	3 fotos (16 encontradas)
-YT73462	search	3 fotos (32 encontradas)
-YT4758	search	1 fotos (2 encontradas)
-YT1167	search	1 fotos (111 encontradas)
-YT21155	search	3 fotos (12 encontradas)
-YT1246	search	1 fotos (2 encontradas)
-YT2628	search	1 fotos (63 encontradas)
+YT1304	DUDOSO sin foto con el código en el nombre	search
+YT2178	DUDOSO sin foto con el código en el nombre	search
+YT1231	DUDOSO sin foto con el código en el nombre	search
+YT25760	DUDOSO sin foto con el código en el nombre	search
+YT0519	DUDOSO sin foto con el código en el nombre	search
+YT2341	DUDOSO sin foto con el código en el nombre	search
+YT0307	DUDOSO sin foto con el código en el nombre	search
+YT1460	DUDOSO sin foto con el código en el nombre	search
+YT8277925	DUDOSO sin foto con el código en el nombre	search
+YT85910	DUDOSO sin foto con el código en el nombre	search
+YT0413	DUDOSO sin foto con el código en el nombre	search
+YT73462	DUDOSO sin foto con el código en el nombre	search
+YT4758	DUDOSO sin foto con el código en el nombre	search
+YT1167	DUDOSO sin foto con el código en el nombre	search
+YT21155	DUDOSO sin foto con el código en el nombre	search
+YT1246	DUDOSO sin foto con el código en el nombre	search
+YT2628	DUDOSO sin foto con el código en el nombre	search
 YT4518	SIN RESULTADO	0 links
-YT2518	search	2 fotos (6 encontradas)
-YT0203	search	3 fotos (12 encontradas)
-YT0530	search	1 fotos (2 encontradas)
-YT1941	search	2 fotos (6 encontradas)
-YT3462	search	3 fotos (9 encontradas)
-YT0881	search	1 fotos (59 encontradas)
-YT6239	search	1 fotos (2 encontradas)
-YT1232	search	2 fotos (6 encontradas)
-YT1305	search	2 fotos (6 encontradas)
-YT2179	search	1 fotos (75 encontradas)
-YT58208	search	1 fotos (5 encontradas)
-YT6705	search	1 fotos (73 encontradas)
-YT6750	search	2 fotos (6 encontradas)
-YT0331	search	2 fotos (6 encontradas)
-YT1461	search	2 fotos (6 encontradas)
-YT0415	search	3 fotos (12 encontradas)
-YT0611	search	3 fotos (9 encontradas)
-YT4761	search	2 fotos (6 encontradas)
-YT85915	search	3 fotos (9 encontradas)
-YT21158	search	2 fotos (6 encontradas)
-YT1247	search	1 fotos (2 encontradas)
-YT2629	search	1 fotos (51 encontradas)
-YT4519	search	1 fotos (2 encontradas)
-YT1168	search	1 fotos (2 encontradas)
-YT0335	search	3 fotos (10 encontradas)
-YT0670	search	1 fotos (2 encontradas)
-YT3609	search	1 fotos (2 encontradas)
-YT2511	search	2 fotos (6 encontradas)
-YT0204	search	3 fotos (12 encontradas)
-YT0170	search	1 fotos (2 encontradas)
-YT1942	search	2 fotos (6 encontradas)
-YT34621	search	1 fotos (27 encontradas)
-YT0882	search	3 fotos (11 encontradas)
-YT1233	search	2 fotos (6 encontradas)
-YT1306	search	2 fotos (6 encontradas)
-YT0297	search	2 fotos (6 encontradas)
-YT828073	search	3 fotos (63 encontradas)
-YT1462	search	2 fotos (6 encontradas)
-YT23731	search	3 fotos (8 encontradas)
-YT0417	search	3 fotos (12 encontradas)
-YT2382	search	1 fotos (2 encontradas)
-YT0682	search	3 fotos (12 encontradas)
-YT4766	search	2 fotos (6 encontradas)
-YT21159	search	3 fotos (9 encontradas)
-YT1248	search	1 fotos (2 encontradas)
-YT4520	search	2 fotos (6 encontradas)
+YT2518	DUDOSO sin foto con el código en el nombre	search
+YT0203	DUDOSO sin foto con el código en el nombre	search
+YT0530	DUDOSO sin foto con el código en el nombre	search
+YT1941	DUDOSO sin foto con el código en el nombre	search
+YT3462	DUDOSO sin foto con el código en el nombre	search
+YT0881	DUDOSO sin foto con el código en el nombre	search
+YT6239	DUDOSO sin foto con el código en el nombre	search
+YT1232	DUDOSO sin foto con el código en el nombre	search
+YT1305	DUDOSO sin foto con el código en el nombre	search
+YT2179	DUDOSO sin foto con el código en el nombre	search
+YT58208	DUDOSO sin foto con el código en el nombre	search
+YT6705	DUDOSO sin foto con el código en el nombre	search
+YT6750	DUDOSO sin foto con el código en el nombre	search
+YT0331	DUDOSO sin foto con el código en el nombre	search
+YT1461	DUDOSO sin foto con el código en el nombre	search
+YT0415	DUDOSO sin foto con el código en el nombre	search
+YT0611	DUDOSO sin foto con el código en el nombre	search
+YT4761	DUDOSO sin foto con el código en el nombre	search
+YT85915	DUDOSO sin foto con el código en el nombre	search
+YT21158	DUDOSO sin foto con el código en el nombre	search
+YT1247	DUDOSO sin foto con el código en el nombre	search
+YT2629	DUDOSO sin foto con el código en el nombre	search
+YT4519	DUDOSO sin foto con el código en el nombre	search
+YT1168	DUDOSO sin foto con el código en el nombre	search
+YT0335	DUDOSO sin foto con el código en el nombre	search
+YT0670	DUDOSO sin foto con el código en el nombre	search
+YT3609	DUDOSO sin foto con el código en el nombre	search
+YT2511	DUDOSO sin foto con el código en el nombre	search
+YT0204	DUDOSO sin foto con el código en el nombre	search
+YT0170	DUDOSO sin foto con el código en el nombre	search
+YT1942	DUDOSO sin foto con el código en el nombre	search
+YT34621	DUDOSO sin foto con el código en el nombre	search
+YT0882	DUDOSO sin foto con el código en el nombre	search
+YT1233	DUDOSO sin foto con el código en el nombre	search
+YT1306	DUDOSO sin foto con el código en el nombre	search
+YT0297	DUDOSO sin foto con el código en el nombre	search
+YT828073	DUDOSO sin foto con el código en el nombre	search
+YT1462	DUDOSO sin foto con el código en el nombre	search
+YT23731	DUDOSO sin foto con el código en el nombre	search
+YT0417	DUDOSO sin foto con el código en el nombre	search
+YT2382	DUDOSO sin foto con el código en el nombre	search
+YT0682	DUDOSO sin foto con el código en el nombre	search
+YT4766	DUDOSO sin foto con el código en el nombre	search
+YT21159	DUDOSO sin foto con el código en el nombre	search
+YT1248	DUDOSO sin foto con el código en el nombre	search
+YT4520	DUDOSO sin foto con el código en el nombre	search
 YT2630	SIN RESULTADO	0 links
-YT0362	search	3 fotos (8 encontradas)
-YT8241	search	1 fotos (121 encontradas)
-YT2512	search	2 fotos (6 encontradas)
-YT0205	search	3 fotos (12 encontradas)
-YT0171	search	1 fotos (2 encontradas)
-YT0336	search	3 fotos (7 encontradas)
-YT0884	search	3 fotos (15 encontradas)
-YT1234	search	2 fotos (6 encontradas)
-YT1307	search	2 fotos (6 encontradas)
+YT0362	DUDOSO sin foto con el código en el nombre	search
+YT8241	DUDOSO sin foto con el código en el nombre	search
+YT2512	DUDOSO sin foto con el código en el nombre	search
+YT0205	DUDOSO sin foto con el código en el nombre	search
+YT0171	DUDOSO sin foto con el código en el nombre	search
+YT0336	DUDOSO sin foto con el código en el nombre	search
+YT0884	DUDOSO sin foto con el código en el nombre	search
+YT1234	DUDOSO sin foto con el código en el nombre	search
+YT1307	DUDOSO sin foto con el código en el nombre	search
 YT0720	SIN RESULTADO	0 links
 YT82842	SIN RESULTADO	0 links
-YT1463	search	2 fotos (6 encontradas)
-YT0418	search	2 fotos (6 encontradas)
-YT2384	search	1 fotos (2 encontradas)
-YT4769	search	2 fotos (6 encontradas)
-YT2631	search	1 fotos (65 encontradas)
-YT85700	search	3 fotos (30 encontradas)
-YT4521	search	1 fotos (2 encontradas)
+YT1463	DUDOSO sin foto con el código en el nombre	search
+YT0418	DUDOSO sin foto con el código en el nombre	search
+YT2384	DUDOSO sin foto con el código en el nombre	search
+YT4769	DUDOSO sin foto con el código en el nombre	search
+YT2631	DUDOSO sin foto con el código en el nombre	search
+YT85700	DUDOSO sin foto con el código en el nombre	search
+YT4521	DUDOSO sin foto con el código en el nombre	search
 YT20940	SIN RESULTADO	0 links
-YT2451	search	3 fotos (8 encontradas)
-YT03618	search	1 fotos (15 encontradas)
-YT2513	search	2 fotos (6 encontradas)
-YT0206	search	3 fotos (12 encontradas)
-YT0172	search	1 fotos (2 encontradas)
-YT3163	search	3 fotos (12 encontradas)
-YT0885	search	3 fotos (14 encontradas)
-YT1235	search	2 fotos (6 encontradas)
+YT2451	DUDOSO sin foto con el código en el nombre	search
+YT03618	DUDOSO sin foto con el código en el nombre	search
+YT2513	DUDOSO sin foto con el código en el nombre	search
+YT0206	DUDOSO sin foto con el código en el nombre	search
+YT0172	DUDOSO sin foto con el código en el nombre	search
+YT3163	DUDOSO sin foto con el código en el nombre	search
+YT0885	DUDOSO sin foto con el código en el nombre	search
+YT1235	DUDOSO sin foto con el código en el nombre	search
 YT3877	SIN RESULTADO	0 links
-YT0643	search	3 fotos (12 encontradas)
+YT0643	DUDOSO sin foto con el código en el nombre	search
 YT0721	SIN RESULTADO	0 links
-YT0337	search	3 fotos (9 encontradas)
+YT0337	DUDOSO sin foto con el código en el nombre	search
 YT82844	SIN RESULTADO	0 links
-YT1464	search	2 fotos (6 encontradas)
-YT1308	search	2 fotos (6 encontradas)
-YT23733	search	2 fotos (3 encontradas)
-YT0419	search	3 fotos (12 encontradas)
-YT55305	search	1 fotos (21 encontradas)
-YT1340	search	3 fotos (12 encontradas)
-YT21161	search	2 fotos (6 encontradas)
-YT25956	search	1 fotos (2 encontradas)
-YT12000	search	2 fotos (6 encontradas)
-YT4522	search	1 fotos (2 encontradas)
-YT2453	search	3 fotos (9 encontradas)
-YT7474	search	3 fotos (18 encontradas)
-YT85701	search	3 fotos (21 encontradas)
-YT0363	search	1 fotos (2 encontradas)
+YT1464	DUDOSO sin foto con el código en el nombre	search
+YT1308	DUDOSO sin foto con el código en el nombre	search
+YT23733	DUDOSO sin foto con el código en el nombre	search
+YT0419	DUDOSO sin foto con el código en el nombre	search
+YT55305	DUDOSO sin foto con el código en el nombre	search
+YT1340	DUDOSO sin foto con el código en el nombre	search
+YT21161	DUDOSO sin foto con el código en el nombre	search
+YT25956	DUDOSO sin foto con el código en el nombre	search
+YT12000	DUDOSO sin foto con el código en el nombre	search
+YT4522	DUDOSO sin foto con el código en el nombre	search
+YT2453	DUDOSO sin foto con el código en el nombre	search
+YT7474	DUDOSO sin foto con el código en el nombre	search
+YT85701	DUDOSO sin foto con el código en el nombre	search
+YT0363	DUDOSO sin foto con el código en el nombre	search
 YT20941	SIN RESULTADO	0 links
-YT0173	search	1 fotos (2 encontradas)
-YT1947	search	3 fotos (8 encontradas)
-YT3101	search	3 fotos (22 encontradas)
-YT08872	search	3 fotos (19 encontradas)
-YT1236	search	2 fotos (6 encontradas)
+YT0173	DUDOSO sin foto con el código en el nombre	search
+YT1947	DUDOSO sin foto con el código en el nombre	search
+YT3101	DUDOSO sin foto con el código en el nombre	search
+YT08872	DUDOSO sin foto con el código en el nombre	search
+YT1236	DUDOSO sin foto con el código en el nombre	search
 YT2830	SIN RESULTADO	0 links
-YT0314	search	1 fotos (2 encontradas)
-YT17310	search	3 fotos (9 encontradas)
+YT0314	DUDOSO sin foto con el código en el nombre	search
+YT17310	DUDOSO sin foto con el código en el nombre	search
 YT82845	SIN RESULTADO	0 links
-YT1465	search	2 fotos (6 encontradas)
-YT0338	search	3 fotos (9 encontradas)
-YT0602	search	3 fotos (12 encontradas)
-YT0421	search	3 fotos (9 encontradas)
-YT25958	search	3 fotos (9 encontradas)
-YT1341	search	1 fotos (2 encontradas)
-YT74728	search	3 fotos (18 encontradas)
-YT4560	search	2 fotos (6 encontradas)
-YT7301	search	3 fotos (9 encontradas)
-YT7220	search	2 fotos (6 encontradas)
-YT1309	search	2 fotos (6 encontradas)
-YT2523	search	2 fotos (6 encontradas)
-YT85710	search	3 fotos (21 encontradas)
+YT1465	DUDOSO sin foto con el código en el nombre	search
+YT0338	DUDOSO sin foto con el código en el nombre	search
+YT0602	DUDOSO sin foto con el código en el nombre	search
+YT0421	DUDOSO sin foto con el código en el nombre	search
+YT25958	DUDOSO sin foto con el código en el nombre	search
+YT1341	DUDOSO sin foto con el código en el nombre	search
+YT74728	DUDOSO sin foto con el código en el nombre	search
+YT4560	DUDOSO sin foto con el código en el nombre	search
+YT7301	DUDOSO sin foto con el código en el nombre	search
+YT7220	DUDOSO sin foto con el código en el nombre	search
+YT1309	DUDOSO sin foto con el código en el nombre	search
+YT2523	DUDOSO sin foto con el código en el nombre	search
+YT85710	DUDOSO sin foto con el código en el nombre	search
 YT20942	SIN RESULTADO	0 links
-YT01870	search	1 fotos (2 encontradas)
-YT25899	search	1 fotos (7 encontradas)
-YT0175	search	1 fotos (2 encontradas)
-YT1948	search	3 fotos (8 encontradas)
-YT3130	search	3 fotos (18 encontradas)
-YT08873	search	3 fotos (22 encontradas)
-YT1237	search	2 fotos (6 encontradas)
-YT28301	search	1 fotos (33 encontradas)
+YT01870	DUDOSO sin foto con el código en el nombre	search
+YT25899	DUDOSO sin foto con el código en el nombre	search
+YT0175	DUDOSO sin foto con el código en el nombre	search
+YT1948	DUDOSO sin foto con el código en el nombre	search
+YT3130	DUDOSO sin foto con el código en el nombre	search
+YT08873	DUDOSO sin foto con el código en el nombre	search
+YT1237	DUDOSO sin foto con el código en el nombre	search
+YT28301	DUDOSO sin foto con el código en el nombre	search
 YT82848	SIN RESULTADO	0 links
-YT1466	search	2 fotos (6 encontradas)
-YT0339	search	1 fotos (2 encontradas)
-YT17311	search	3 fotos (12 encontradas)
-YT04211	search	3 fotos (14 encontradas)
-YT39620	search	1 fotos (15 encontradas)
-YT25960	search	3 fotos (10 encontradas)
-YT1342	search	1 fotos (2 encontradas)
-YT4570	search	1 fotos (2 encontradas)
-YT2155	search	1 fotos (2 encontradas)
-YT7302	search	3 fotos (12 encontradas)
-YT7473	search	3 fotos (18 encontradas)
-YT7221	search	3 fotos (12 encontradas)
-YT0641	search	3 fotos (24 encontradas)
+YT1466	DUDOSO sin foto con el código en el nombre	search
+YT0339	DUDOSO sin foto con el código en el nombre	search
+YT17311	DUDOSO sin foto con el código en el nombre	search
+YT04211	DUDOSO sin foto con el código en el nombre	search
+YT39620	DUDOSO sin foto con el código en el nombre	search
+YT25960	DUDOSO sin foto con el código en el nombre	search
+YT1342	DUDOSO sin foto con el código en el nombre	search
+YT4570	DUDOSO sin foto con el código en el nombre	search
+YT2155	DUDOSO sin foto con el código en el nombre	search
+YT7302	DUDOSO sin foto con el código en el nombre	search
+YT7473	DUDOSO sin foto con el código en el nombre	search
+YT7221	DUDOSO sin foto con el código en el nombre	search
+YT0641	DUDOSO sin foto con el código en el nombre	search
 YT01871	SIN RESULTADO	0 links
-YT1310	search	2 fotos (6 encontradas)
-YT1626	search	1 fotos (121 encontradas)
-YT1943	search	2 fotos (6 encontradas)
-YT1238	search	2 fotos (6 encontradas)
-YT49470	search	1 fotos (5 encontradas)
-YT3133	search	3 fotos (12 encontradas)
-YT08874	search	3 fotos (22 encontradas)
-YT25904	search	3 fotos (9 encontradas)
-YT82924	search	3 fotos (18 encontradas)
-YT0308	search	1 fotos (2 encontradas)
-YT1467	search	2 fotos (6 encontradas)
-YT83141	search	1 fotos (2 encontradas)
-YT39630	search	1 fotos (9 encontradas)
-YT1401	search	3 fotos (9 encontradas)
-YT4563	search	2 fotos (6 encontradas)
-YT2156	search	2 fotos (6 encontradas)
+YT1310	DUDOSO sin foto con el código en el nombre	search
+YT1626	DUDOSO sin foto con el código en el nombre	search
+YT1943	DUDOSO sin foto con el código en el nombre	search
+YT1238	DUDOSO sin foto con el código en el nombre	search
+YT49470	DUDOSO sin foto con el código en el nombre	search
+YT3133	DUDOSO sin foto con el código en el nombre	search
+YT08874	DUDOSO sin foto con el código en el nombre	search
+YT25904	DUDOSO sin foto con el código en el nombre	search
+YT82924	DUDOSO sin foto con el código en el nombre	search
+YT0308	DUDOSO sin foto con el código en el nombre	search
+YT1467	DUDOSO sin foto con el código en el nombre	search
+YT83141	DUDOSO sin foto con el código en el nombre	search
+YT39630	DUDOSO sin foto con el código en el nombre	search
+YT1401	DUDOSO sin foto con el código en el nombre	search
+YT4563	DUDOSO sin foto con el código en el nombre	search
+YT2156	DUDOSO sin foto con el código en el nombre	search
 YTSQ1X100	ERROR HTTP Error 404: Not Found
 YT7476	SIN RESULTADO	0 links
-YT0340	search	3 fotos (9 encontradas)
-YT01872	search	2 fotos (6 encontradas)
-YT1627	search	3 fotos (9 encontradas)
-YT1944	search	2 fotos (6 encontradas)
-YT1239	search	2 fotos (6 encontradas)
-YT13630	search	1 fotos (121 encontradas)
-YT3134	search	3 fotos (28 encontradas)
-YT2866	search	3 fotos (9 encontradas)
-YT1311	search	2 fotos (6 encontradas)
+YT0340	DUDOSO sin foto con el código en el nombre	search
+YT01872	DUDOSO sin foto con el código en el nombre	search
+YT1627	DUDOSO sin foto con el código en el nombre	search
+YT1944	DUDOSO sin foto con el código en el nombre	search
+YT1239	DUDOSO sin foto con el código en el nombre	search
+YT13630	DUDOSO sin foto con el código en el nombre	search
+YT3134	DUDOSO sin foto con el código en el nombre	search
+YT2866	DUDOSO sin foto con el código en el nombre	search
+YT1311	DUDOSO sin foto con el código en el nombre	search
 YT8282995	SIN RESULTADO	0 links
-YT1468	search	2 fotos (6 encontradas)
-YT83142	search	1 fotos (2 encontradas)
-YT3258	search	1 fotos (2 encontradas)
-YT49472	search	1 fotos (5 encontradas)
-YT39009	search	3 fotos (21 encontradas)
-YT25896	search	1 fotos (15 encontradas)
-YT1402	search	1 fotos (121 encontradas)
-YT14421	search	2 fotos (3 encontradas)
-YT3853	search	1 fotos (2 encontradas)
-YT4550	search	1 fotos (2 encontradas)
+YT1468	DUDOSO sin foto con el código en el nombre	search
+YT83142	DUDOSO sin foto con el código en el nombre	search
+YT3258	DUDOSO sin foto con el código en el nombre	search
+YT49472	DUDOSO sin foto con el código en el nombre	search
+YT39009	DUDOSO sin foto con el código en el nombre	search
+YT25896	DUDOSO sin foto con el código en el nombre	search
+YT1402	DUDOSO sin foto con el código en el nombre	search
+YT14421	DUDOSO sin foto con el código en el nombre	search
+YT3853	DUDOSO sin foto con el código en el nombre	search
+YT4550	DUDOSO sin foto con el código en el nombre	search
 YT39613	ERROR HTTP Error 404: Not Found
 YTSQ2X100	SIN RESULTADO	0 links
-YT7461	search	3 fotos (14 encontradas)
-YT17312	search	3 fotos (9 encontradas)
+YT7461	DUDOSO sin foto con el código en el nombre	search
+YT17312	DUDOSO sin foto con el código en el nombre	search
 YT01873	SIN RESULTADO	0 links
-YT1628	search	3 fotos (9 encontradas)
-YT1945	search	3 fotos (9 encontradas)
-YT1240	search	2 fotos (6 encontradas)
-YT8001	search	1 fotos (2 encontradas)
-YT0341	search	3 fotos (9 encontradas)
-YT09101	search	3 fotos (38 encontradas)
-YT28522	search	1 fotos (13 encontradas)
-YT1469	search	2 fotos (6 encontradas)
-YT07293	search	1 fotos (5 encontradas)
-YT83143	search	1 fotos (2 encontradas)
-YT44740	search	3 fotos (12 encontradas)
-YT1403	search	3 fotos (9 encontradas)
-YT1438	search	1 fotos (2 encontradas)
-YT4551	search	2 fotos (6 encontradas)
+YT1628	DUDOSO sin foto con el código en el nombre	search
+YT1945	DUDOSO sin foto con el código en el nombre	search
+YT1240	DUDOSO sin foto con el código en el nombre	search
+YT8001	DUDOSO sin foto con el código en el nombre	search
+YT0341	DUDOSO sin foto con el código en el nombre	search
+YT09101	DUDOSO sin foto con el código en el nombre	search
+YT28522	DUDOSO sin foto con el código en el nombre	search
+YT1469	DUDOSO sin foto con el código en el nombre	search
+YT07293	DUDOSO sin foto con el código en el nombre	search
+YT83143	DUDOSO sin foto con el código en el nombre	search
+YT44740	DUDOSO sin foto con el código en el nombre	search
+YT1403	DUDOSO sin foto con el código en el nombre	search
+YT1438	DUDOSO sin foto con el código en el nombre	search
+YT4551	DUDOSO sin foto con el código en el nombre	search
 YT39614	ERROR HTTP Error 404: Not Found
-YT73072	search	3 fotos (9 encontradas)
-YT1312	search	2 fotos (6 encontradas)
-YT25917	search	1 fotos (39 encontradas)
-YT01874	search	2 fotos (6 encontradas)
-YT1629	search	3 fotos (9 encontradas)
-YT1946	search	3 fotos (11 encontradas)
-YT1270	search	2 fotos (6 encontradas)
-YT6351	search	3 fotos (8 encontradas)
-YT55210	search	3 fotos (21 encontradas)
-YT0342	search	3 fotos (9 encontradas)
-YT2865	search	2 fotos (6 encontradas)
-YT08271	search	1 fotos (13 encontradas)
-YT24301	search	2 fotos (3 encontradas)
-YT1470	search	2 fotos (6 encontradas)
-YT46831	search	1 fotos (2 encontradas)
-YT0309	search	1 fotos (2 encontradas)
-YT44739	search	3 fotos (12 encontradas)
-YT1404	search	3 fotos (9 encontradas)
-YT3854	search	1 fotos (2 encontradas)
+YT73072	DUDOSO sin foto con el código en el nombre	search
+YT1312	DUDOSO sin foto con el código en el nombre	search
+YT25917	DUDOSO sin foto con el código en el nombre	search
+YT01874	DUDOSO sin foto con el código en el nombre	search
+YT1629	DUDOSO sin foto con el código en el nombre	search
+YT1946	DUDOSO sin foto con el código en el nombre	search
+YT1270	DUDOSO sin foto con el código en el nombre	search
+YT6351	DUDOSO sin foto con el código en el nombre	search
+YT55210	DUDOSO sin foto con el código en el nombre	search
+YT0342	DUDOSO sin foto con el código en el nombre	search
+YT2865	DUDOSO sin foto con el código en el nombre	search
+YT08271	DUDOSO sin foto con el código en el nombre	search
+YT24301	DUDOSO sin foto con el código en el nombre	search
+YT1470	DUDOSO sin foto con el código en el nombre	search
+YT46831	DUDOSO sin foto con el código en el nombre	search
+YT0309	DUDOSO sin foto con el código en el nombre	search
+YT44739	DUDOSO sin foto con el código en el nombre	search
+YT1404	DUDOSO sin foto con el código en el nombre	search
+YT3854	DUDOSO sin foto con el código en el nombre	search
 YT14481	SIN RESULTADO	0 links
-YT73012	search	3 fotos (9 encontradas)
-YT2804	search	1 fotos (121 encontradas)
-YT8031	search	3 fotos (27 encontradas)
-YT0609	search	3 fotos (9 encontradas)
-YT03652	search	1 fotos (15 encontradas)
-YT1313	search	2 fotos (6 encontradas)
-YT2487	search	1 fotos (49 encontradas)
-YT2760	search	1 fotos (119 encontradas)
-YT01875	search	2 fotos (6 encontradas)
-YT1630	search	3 fotos (9 encontradas)
-YT1271	search	2 fotos (6 encontradas)
-YT20400	search	2 fotos (6 encontradas)
-YT6354	search	1 fotos (2 encontradas)
-YT55281	search	1 fotos (9 encontradas)
-YT0343	search	3 fotos (9 encontradas)
-YT08272	search	1 fotos (9 encontradas)
-YT1471	search	2 fotos (6 encontradas)
-YT06866	search	2 fotos (6 encontradas)
-YT44742	search	3 fotos (9 encontradas)
-YT0299	search	3 fotos (19 encontradas)
-YT1405	search	3 fotos (9 encontradas)
-YT1255	search	1 fotos (2 encontradas)
-YT14471	search	3 fotos (9 encontradas)
-YT8032	search	3 fotos (27 encontradas)
-YT0607	search	3 fotos (9 encontradas)
-YT1314	search	2 fotos (6 encontradas)
-YT01876	search	2 fotos (6 encontradas)
-YT2761	search	1 fotos (49 encontradas)
-YT2488	search	2 fotos (3 encontradas)
-YT1631	search	3 fotos (9 encontradas)
-YT1272	search	1 fotos (2 encontradas)
-YT0712	search	1 fotos (2 encontradas)
-YT20401	search	3 fotos (9 encontradas)
-YT1061	search	1 fotos (2 encontradas)
-YT8277905	search	3 fotos (42 encontradas)
-YT0344	search	3 fotos (9 encontradas)
-YT2990	search	3 fotos (9 encontradas)
-YT1472	search	2 fotos (6 encontradas)
-YT10561	search	1 fotos (29 encontradas)
-YT44745	search	3 fotos (9 encontradas)
-YT1406	search	3 fotos (9 encontradas)
-YT2828	search	1 fotos (4 encontradas)
-YT0608	search	2 fotos (6 encontradas)
-YT8033	search	3 fotos (27 encontradas)
-YT2541	search	2 fotos (6 encontradas)
-YT1315	search	2 fotos (6 encontradas)
-YT01877	search	1 fotos (2 encontradas)
-YT2676	search	1 fotos (121 encontradas)
-YT1632	search	3 fotos (9 encontradas)
-YT1273	search	2 fotos (6 encontradas)
-YT20402	search	3 fotos (9 encontradas)
-YT07115	search	1 fotos (2 encontradas)
-YT2489	search	2 fotos (3 encontradas)
-YT8277915	search	3 fotos (39 encontradas)
-YT0345	search	3 fotos (9 encontradas)
-YT2930	search	3 fotos (9 encontradas)
-YT1473	search	2 fotos (6 encontradas)
-YT1062	search	1 fotos (2 encontradas)
-YT0808	search	3 fotos (15 encontradas)
-YT10562	search	1 fotos (39 encontradas)
-YT44746	search	3 fotos (9 encontradas)
-YT1360	search	1 fotos (2 encontradas)
-YT1407	search	3 fotos (9 encontradas)
-YT8034	search	3 fotos (27 encontradas)
+YT73012	DUDOSO sin foto con el código en el nombre	search
+YT2804	DUDOSO sin foto con el código en el nombre	search
+YT8031	DUDOSO sin foto con el código en el nombre	search
+YT0609	DUDOSO sin foto con el código en el nombre	search
+YT03652	DUDOSO sin foto con el código en el nombre	search
+YT1313	DUDOSO sin foto con el código en el nombre	search
+YT2487	DUDOSO sin foto con el código en el nombre	search
+YT2760	DUDOSO sin foto con el código en el nombre	search
+YT01875	DUDOSO sin foto con el código en el nombre	search
+YT1630	DUDOSO sin foto con el código en el nombre	search
+YT1271	DUDOSO sin foto con el código en el nombre	search
+YT20400	DUDOSO sin foto con el código en el nombre	search
+YT6354	DUDOSO sin foto con el código en el nombre	search
+YT55281	DUDOSO sin foto con el código en el nombre	search
+YT0343	DUDOSO sin foto con el código en el nombre	search
+YT08272	DUDOSO sin foto con el código en el nombre	search
+YT1471	DUDOSO sin foto con el código en el nombre	search
+YT06866	DUDOSO sin foto con el código en el nombre	search
+YT44742	DUDOSO sin foto con el código en el nombre	search
+YT0299	DUDOSO sin foto con el código en el nombre	search
+YT1405	DUDOSO sin foto con el código en el nombre	search
+YT1255	DUDOSO sin foto con el código en el nombre	search
+YT14471	DUDOSO sin foto con el código en el nombre	search
+YT8032	DUDOSO sin foto con el código en el nombre	search
+YT0607	DUDOSO sin foto con el código en el nombre	search
+YT1314	DUDOSO sin foto con el código en el nombre	search
+YT01876	DUDOSO sin foto con el código en el nombre	search
+YT2761	DUDOSO sin foto con el código en el nombre	search
+YT2488	DUDOSO sin foto con el código en el nombre	search
+YT1631	DUDOSO sin foto con el código en el nombre	search
+YT1272	DUDOSO sin foto con el código en el nombre	search
+YT0712	DUDOSO sin foto con el código en el nombre	search
+YT20401	DUDOSO sin foto con el código en el nombre	search
+YT1061	DUDOSO sin foto con el código en el nombre	search
+YT8277905	DUDOSO sin foto con el código en el nombre	search
+YT0344	DUDOSO sin foto con el código en el nombre	search
+YT2990	DUDOSO sin foto con el código en el nombre	search
+YT1472	DUDOSO sin foto con el código en el nombre	search
+YT10561	DUDOSO sin foto con el código en el nombre	search
+YT44745	DUDOSO sin foto con el código en el nombre	search
+YT1406	DUDOSO sin foto con el código en el nombre	search
+YT2828	DUDOSO sin foto con el código en el nombre	search
+YT0608	DUDOSO sin foto con el código en el nombre	search
+YT8033	DUDOSO sin foto con el código en el nombre	search
+YT2541	DUDOSO sin foto con el código en el nombre	search
+YT1315	DUDOSO sin foto con el código en el nombre	search
+YT01877	DUDOSO sin foto con el código en el nombre	search
+YT2676	DUDOSO sin foto con el código en el nombre	search
+YT1632	DUDOSO sin foto con el código en el nombre	search
+YT1273	DUDOSO sin foto con el código en el nombre	search
+YT20402	DUDOSO sin foto con el código en el nombre	search
+YT07115	DUDOSO sin foto con el código en el nombre	search
+YT2489	DUDOSO sin foto con el código en el nombre	search
+YT8277915	DUDOSO sin foto con el código en el nombre	search
+YT0345	DUDOSO sin foto con el código en el nombre	search
+YT2930	DUDOSO sin foto con el código en el nombre	search
+YT1473	DUDOSO sin foto con el código en el nombre	search
+YT1062	DUDOSO sin foto con el código en el nombre	search
+YT0808	DUDOSO sin foto con el código en el nombre	search
+YT10562	DUDOSO sin foto con el código en el nombre	search
+YT44746	DUDOSO sin foto con el código en el nombre	search
+YT1360	DUDOSO sin foto con el código en el nombre	search
+YT1407	DUDOSO sin foto con el código en el nombre	search
+YT8034	DUDOSO sin foto con el código en el nombre	search
 YT48852	SIN RESULTADO	0 links
 YT0601	SIN RESULTADO	0 links
-YT01879	search	2 fotos (6 encontradas)
-YT08274	search	1 fotos (55 encontradas)
-YT1633	search	3 fotos (9 encontradas)
-YT1274	search	2 fotos (6 encontradas)
-YT0465	search	2 fotos (6 encontradas)
-YT55299	search	1 fotos (2 encontradas)
-YT0965	search	3 fotos (8 encontradas)
-YT1316	search	2 fotos (6 encontradas)
-YT2931	search	3 fotos (9 encontradas)
-YT1474	search	2 fotos (6 encontradas)
-YT2763	search	1 fotos (71 encontradas)
+YT01879	DUDOSO sin foto con el código en el nombre	search
+YT08274	DUDOSO sin foto con el código en el nombre	search
+YT1633	DUDOSO sin foto con el código en el nombre	search
+YT1274	DUDOSO sin foto con el código en el nombre	search
+YT0465	DUDOSO sin foto con el código en el nombre	search
+YT55299	DUDOSO sin foto con el código en el nombre	search
+YT0965	DUDOSO sin foto con el código en el nombre	search
+YT1316	DUDOSO sin foto con el código en el nombre	search
+YT2931	DUDOSO sin foto con el código en el nombre	search
+YT1474	DUDOSO sin foto con el código en el nombre	search
+YT2763	DUDOSO sin foto con el código en el nombre	search
 YT10562XL	ERROR HTTP Error 404: Not Found
-YT44731	search	3 fotos (12 encontradas)
-YT06871	search	2 fotos (6 encontradas)
-YT2490	search	2 fotos (3 encontradas)
-YT1160	search	1 fotos (2 encontradas)
-YT0346	search	1 fotos (2 encontradas)
-YT1408	search	3 fotos (9 encontradas)
-YT1258	search	3 fotos (12 encontradas)
+YT44731	DUDOSO sin foto con el código en el nombre	search
+YT06871	DUDOSO sin foto con el código en el nombre	search
+YT2490	DUDOSO sin foto con el código en el nombre	search
+YT1160	DUDOSO sin foto con el código en el nombre	search
+YT0346	DUDOSO sin foto con el código en el nombre	search
+YT1408	DUDOSO sin foto con el código en el nombre	search
+YT1258	DUDOSO sin foto con el código en el nombre	search
 YT80195	SIN RESULTADO	0 links
 YT08530	SIN RESULTADO	0 links
-YT01880	search	2 fotos (6 encontradas)
+YT01880	DUDOSO sin foto con el código en el nombre	search
 YT72002	SIN RESULTADO	0 links
-YT1275	search	2 fotos (6 encontradas)
-YT04625	search	2 fotos (6 encontradas)
-YT08275	search	1 fotos (11 encontradas)
-YT1634	search	3 fotos (9 encontradas)
-YT3380	search	3 fotos (25 encontradas)
+YT1275	DUDOSO sin foto con el código en el nombre	search
+YT04625	DUDOSO sin foto con el código en el nombre	search
+YT08275	DUDOSO sin foto con el código en el nombre	search
+YT1634	DUDOSO sin foto con el código en el nombre	search
+YT3380	DUDOSO sin foto con el código en el nombre	search
 YT44250	SIN RESULTADO	0 links
-YT58832	search	1 fotos (5 encontradas)
-YT2993	search	1 fotos (2 encontradas)
-YT1475	search	2 fotos (6 encontradas)
-YT0810	search	3 fotos (15 encontradas)
-YT44705	search	3 fotos (9 encontradas)
-YT1317	search	2 fotos (6 encontradas)
+YT58832	DUDOSO sin foto con el código en el nombre	search
+YT2993	DUDOSO sin foto con el código en el nombre	search
+YT1475	DUDOSO sin foto con el código en el nombre	search
+YT0810	DUDOSO sin foto con el código en el nombre	search
+YT44705	DUDOSO sin foto con el código en el nombre	search
+YT1317	DUDOSO sin foto con el código en el nombre	search
 YT2766	SIN RESULTADO	0 links
-YT68715	search	1 fotos (7 encontradas)
-YT2491	search	2 fotos (3 encontradas)
-YT1409	search	3 fotos (9 encontradas)
-YT1259	search	1 fotos (2 encontradas)
-YT0660	search	2 fotos (3 encontradas)
-YT0672	search	3 fotos (27 encontradas)
+YT68715	DUDOSO sin foto con el código en el nombre	search
+YT2491	DUDOSO sin foto con el código en el nombre	search
+YT1409	DUDOSO sin foto con el código en el nombre	search
+YT1259	DUDOSO sin foto con el código en el nombre	search
+YT0660	DUDOSO sin foto con el código en el nombre	search
+YT0672	DUDOSO sin foto con el código en el nombre	search
 YT80196	SIN RESULTADO	0 links
 YT01881	SIN RESULTADO	0 links
-YT0381	search	2 fotos (3 encontradas)
-YT72003	search	3 fotos (12 encontradas)
-YT0347	search	3 fotos (9 encontradas)
-YT1276	search	2 fotos (6 encontradas)
-YT04626	search	2 fotos (8 encontradas)
-YT1635	search	3 fotos (9 encontradas)
+YT0381	DUDOSO sin foto con el código en el nombre	search
+YT72003	DUDOSO sin foto con el código en el nombre	search
+YT0347	DUDOSO sin foto con el código en el nombre	search
+YT1276	DUDOSO sin foto con el código en el nombre	search
+YT04626	DUDOSO sin foto con el código en el nombre	search
+YT1635	DUDOSO sin foto con el código en el nombre	search
 YT3382	SIN RESULTADO	0 links
-YT2994	search	1 fotos (2 encontradas)
-YT1476	search	2 fotos (6 encontradas)
-YT1843	search	3 fotos (11 encontradas)
-YT06875	search	1 fotos (2 encontradas)
-YT68716	search	1 fotos (5 encontradas)
-YT1318	search	2 fotos (6 encontradas)
-YT2724	search	1 fotos (63 encontradas)
-YT2492	search	1 fotos (2 encontradas)
-YT1410	search	3 fotos (9 encontradas)
-YT08511	search	3 fotos (28 encontradas)
-YT1162	search	1 fotos (2 encontradas)
-YT0662	search	3 fotos (9 encontradas)
+YT2994	DUDOSO sin foto con el código en el nombre	search
+YT1476	DUDOSO sin foto con el código en el nombre	search
+YT1843	DUDOSO sin foto con el código en el nombre	search
+YT06875	DUDOSO sin foto con el código en el nombre	search
+YT68716	DUDOSO sin foto con el código en el nombre	search
+YT1318	DUDOSO sin foto con el código en el nombre	search
+YT2724	DUDOSO sin foto con el código en el nombre	search
+YT2492	DUDOSO sin foto con el código en el nombre	search
+YT1410	DUDOSO sin foto con el código en el nombre	search
+YT08511	DUDOSO sin foto con el código en el nombre	search
+YT1162	DUDOSO sin foto con el código en el nombre	search
+YT0662	DUDOSO sin foto con el código en el nombre	search
 YT80197	SIN RESULTADO	0 links
-YT0157	search	1 fotos (39 encontradas)
-YT72004	search	2 fotos (6 encontradas)
-YT0708	search	1 fotos (2 encontradas)
-YT1277	search	2 fotos (6 encontradas)
-YT04627	search	2 fotos (8 encontradas)
-YT1636	search	3 fotos (9 encontradas)
-YT0348	search	3 fotos (9 encontradas)
-YT39612	search	1 fotos (5 encontradas)
-YT2995	search	1 fotos (2 encontradas)
-YT1478	search	2 fotos (6 encontradas)
-YT0511	search	3 fotos (11 encontradas)
-YT1845	search	3 fotos (9 encontradas)
-YT1056	search	3 fotos (14 encontradas)
-YT72090	search	3 fotos (9 encontradas)
-YT4594	search	2 fotos (6 encontradas)
-YT07525	search	1 fotos (11 encontradas)
-YT1411	search	3 fotos (9 encontradas)
-YT0617	search	3 fotos (12 encontradas)
-YT085051	search	3 fotos (31 encontradas)
-YT10671	search	3 fotos (9 encontradas)
-YT1319	search	2 fotos (6 encontradas)
+YT0157	DUDOSO sin foto con el código en el nombre	search
+YT72004	DUDOSO sin foto con el código en el nombre	search
+YT0708	DUDOSO sin foto con el código en el nombre	search
+YT1277	DUDOSO sin foto con el código en el nombre	search
+YT04627	DUDOSO sin foto con el código en el nombre	search
+YT1636	DUDOSO sin foto con el código en el nombre	search
+YT0348	DUDOSO sin foto con el código en el nombre	search
+YT39612	DUDOSO sin foto con el código en el nombre	search
+YT2995	DUDOSO sin foto con el código en el nombre	search
+YT1478	DUDOSO sin foto con el código en el nombre	search
+YT0511	DUDOSO sin foto con el código en el nombre	search
+YT1845	DUDOSO sin foto con el código en el nombre	search
+YT1056	DUDOSO sin foto con el código en el nombre	search
+YT72090	DUDOSO sin foto con el código en el nombre	search
+YT4594	DUDOSO sin foto con el código en el nombre	search
+YT07525	DUDOSO sin foto con el código en el nombre	search
+YT1411	DUDOSO sin foto con el código en el nombre	search
+YT0617	DUDOSO sin foto con el código en el nombre	search
+YT085051	DUDOSO sin foto con el código en el nombre	search
+YT10671	DUDOSO sin foto con el código en el nombre	search
+YT1319	DUDOSO sin foto con el código en el nombre	search
 YT80198	SIN RESULTADO	0 links
 YT0158	SIN RESULTADO	0 links
-YT1278	search	2 fotos (6 encontradas)
-YT7201	search	3 fotos (9 encontradas)
-YT2493	search	1 fotos (2 encontradas)
-YT1163	search	1 fotos (2 encontradas)
-YT04685	search	3 fotos (9 encontradas)
-YT1637	search	3 fotos (9 encontradas)
-YT1201	search	2 fotos (6 encontradas)
+YT1278	DUDOSO sin foto con el código en el nombre	search
+YT7201	DUDOSO sin foto con el código en el nombre	search
+YT2493	DUDOSO sin foto con el código en el nombre	search
+YT1163	DUDOSO sin foto con el código en el nombre	search
+YT04685	DUDOSO sin foto con el código en el nombre	search
+YT1637	DUDOSO sin foto con el código en el nombre	search
+YT1201	DUDOSO sin foto con el código en el nombre	search
 YT73082	SIN RESULTADO	0 links
-YT2996	search	1 fotos (2 encontradas)
-YT1480	search	2 fotos (6 encontradas)
-YT0349	search	3 fotos (9 encontradas)
-YT0512	search	2 fotos (3 encontradas)
-YT1846	search	3 fotos (9 encontradas)
-YT1412	search	3 fotos (9 encontradas)
-YT08504	search	3 fotos (18 encontradas)
-YT1437	search	1 fotos (2 encontradas)
+YT2996	DUDOSO sin foto con el código en el nombre	search
+YT1480	DUDOSO sin foto con el código en el nombre	search
+YT0349	DUDOSO sin foto con el código en el nombre	search
+YT0512	DUDOSO sin foto con el código en el nombre	search
+YT1846	DUDOSO sin foto con el código en el nombre	search
+YT1412	DUDOSO sin foto con el código en el nombre	search
+YT08504	DUDOSO sin foto con el código en el nombre	search
+YT1437	DUDOSO sin foto con el código en el nombre	search
 YT0433	SIN RESULTADO	0 links
-YT0661	search	1 fotos (2 encontradas)
+YT0661	DUDOSO sin foto con el código en el nombre	search
 YT0159	SIN RESULTADO	0 links
 YT80199	SIN RESULTADO	0 links
-YT1279	search	2 fotos (6 encontradas)
-YT4902	search	2 fotos (6 encontradas)
-YT72300	search	3 fotos (9 encontradas)
-YT04628	search	2 fotos (6 encontradas)
-YT1320	search	2 fotos (6 encontradas)
-YT1638	search	3 fotos (9 encontradas)
-YT1202	search	2 fotos (6 encontradas)
-YT2494	search	1 fotos (2 encontradas)
-YT1064	search	3 fotos (9 encontradas)
+YT1279	DUDOSO sin foto con el código en el nombre	search
+YT4902	DUDOSO sin foto con el código en el nombre	search
+YT72300	DUDOSO sin foto con el código en el nombre	search
+YT04628	DUDOSO sin foto con el código en el nombre	search
+YT1320	DUDOSO sin foto con el código en el nombre	search
+YT1638	DUDOSO sin foto con el código en el nombre	search
+YT1202	DUDOSO sin foto con el código en el nombre	search
+YT2494	DUDOSO sin foto con el código en el nombre	search
+YT1064	DUDOSO sin foto con el código en el nombre	search
 YT73089	SIN RESULTADO	0 links
 YT39619	SIN RESULTADO	0 links
-YT2975	search	3 fotos (9 encontradas)
-YT1481	search	2 fotos (6 encontradas)
-YT05583	search	1 fotos (2 encontradas)
-YT1847	search	3 fotos (9 encontradas)
-YT4460	search	1 fotos (2 encontradas)
-YT10563	search	3 fotos (9 encontradas)
-YT73521	search	3 fotos (9 encontradas)
-YT1413	search	2 fotos (6 encontradas)
-YT3850	search	1 fotos (2 encontradas)
-YT06611	search	1 fotos (2 encontradas)
-YT0350	search	3 fotos (9 encontradas)
-YT80148	search	3 fotos (39 encontradas)
-YT1280	search	2 fotos (6 encontradas)
+YT2975	DUDOSO sin foto con el código en el nombre	search
+YT1481	DUDOSO sin foto con el código en el nombre	search
+YT05583	DUDOSO sin foto con el código en el nombre	search
+YT1847	DUDOSO sin foto con el código en el nombre	search
+YT4460	DUDOSO sin foto con el código en el nombre	search
+YT10563	DUDOSO sin foto con el código en el nombre	search
+YT73521	DUDOSO sin foto con el código en el nombre	search
+YT1413	DUDOSO sin foto con el código en el nombre	search
+YT3850	DUDOSO sin foto con el código en el nombre	search
+YT06611	DUDOSO sin foto con el código en el nombre	search
+YT0350	DUDOSO sin foto con el código en el nombre	search
+YT80148	DUDOSO sin foto con el código en el nombre	search
+YT1280	DUDOSO sin foto con el código en el nombre	search
 YT0161	SIN RESULTADO	0 links
-YT0824	search	3 fotos (9 encontradas)
-YT4904	search	2 fotos (6 encontradas)
-YT04629	search	1 fotos (2 encontradas)
-YT1639	search	3 fotos (9 encontradas)
-YT72301	search	3 fotos (9 encontradas)
-YT0705	search	1 fotos (2 encontradas)
-YT1322	search	2 fotos (6 encontradas)
-YT1203	search	2 fotos (6 encontradas)
-YT73096	search	3 fotos (21 encontradas)
-YT2130	search	3 fotos (14 encontradas)
-YT2979	search	2 fotos (6 encontradas)
-YT5079	search	1 fotos (27 encontradas)
-YT05597	search	1 fotos (2 encontradas)
-YT22000	search	2 fotos (6 encontradas)
+YT0824	DUDOSO sin foto con el código en el nombre	search
+YT4904	DUDOSO sin foto con el código en el nombre	search
+YT04629	DUDOSO sin foto con el código en el nombre	search
+YT1639	DUDOSO sin foto con el código en el nombre	search
+YT72301	DUDOSO sin foto con el código en el nombre	search
+YT0705	DUDOSO sin foto con el código en el nombre	search
+YT1322	DUDOSO sin foto con el código en el nombre	search
+YT1203	DUDOSO sin foto con el código en el nombre	search
+YT73096	DUDOSO sin foto con el código en el nombre	search
+YT2130	DUDOSO sin foto con el código en el nombre	search
+YT2979	DUDOSO sin foto con el código en el nombre	search
+YT5079	DUDOSO sin foto con el código en el nombre	search
+YT05597	DUDOSO sin foto con el código en el nombre	search
+YT22000	DUDOSO sin foto con el código en el nombre	search
 YT3875V	ERROR HTTP Error 404: Not Found
-YT4461	search	1 fotos (2 encontradas)
-YT0612	search	1 fotos (2 encontradas)
-YT1753	search	2 fotos (6 encontradas)
-YT1414	search	2 fotos (6 encontradas)
-YT1385	search	1 fotos (2 encontradas)
-YT1252	search	1 fotos (2 encontradas)
-YT1281	search	2 fotos (6 encontradas)
-YT80149	search	3 fotos (39 encontradas)
+YT4461	DUDOSO sin foto con el código en el nombre	search
+YT0612	DUDOSO sin foto con el código en el nombre	search
+YT1753	DUDOSO sin foto con el código en el nombre	search
+YT1414	DUDOSO sin foto con el código en el nombre	search
+YT1385	DUDOSO sin foto con el código en el nombre	search
+YT1252	DUDOSO sin foto con el código en el nombre	search
+YT1281	DUDOSO sin foto con el código en el nombre	search
+YT80149	DUDOSO sin foto con el código en el nombre	search
 YT0162	SIN RESULTADO	0 links
-YT04690	search	3 fotos (9 encontradas)
-YT0351	search	3 fotos (9 encontradas)
-YT4910	search	2 fotos (6 encontradas)
-YT1641	search	3 fotos (9 encontradas)
-YT0825	search	3 fotos (9 encontradas)
-YT72302	search	3 fotos (9 encontradas)
-YT1204	search	2 fotos (6 encontradas)
+YT04690	DUDOSO sin foto con el código en el nombre	search
+YT0351	DUDOSO sin foto con el código en el nombre	search
+YT4910	DUDOSO sin foto con el código en el nombre	search
+YT1641	DUDOSO sin foto con el código en el nombre	search
+YT0825	DUDOSO sin foto con el código en el nombre	search
+YT72302	DUDOSO sin foto con el código en el nombre	search
+YT1204	DUDOSO sin foto con el código en el nombre	search
 YT73086	SIN RESULTADO	0 links
-YT2136	search	2 fotos (6 encontradas)
-YT1323	search	2 fotos (6 encontradas)
-YT2699	search	1 fotos (21 encontradas)
-YT22260	search	2 fotos (3 encontradas)
-YT5080	search	1 fotos (121 encontradas)
-YT05615	search	1 fotos (2 encontradas)
-YT41603	search	1 fotos (2 encontradas)
-YT10560	search	1 fotos (95 encontradas)
-YT22002	search	2 fotos (6 encontradas)
-YT06122	search	1 fotos (2 encontradas)
-YT1754	search	1 fotos (2 encontradas)
-YT1415	search	2 fotos (6 encontradas)
-YT1282	search	2 fotos (6 encontradas)
-YT1352	search	1 fotos (2 encontradas)
+YT2136	DUDOSO sin foto con el código en el nombre	search
+YT1323	DUDOSO sin foto con el código en el nombre	search
+YT2699	DUDOSO sin foto con el código en el nombre	search
+YT22260	DUDOSO sin foto con el código en el nombre	search
+YT5080	DUDOSO sin foto con el código en el nombre	search
+YT05615	DUDOSO sin foto con el código en el nombre	search
+YT41603	DUDOSO sin foto con el código en el nombre	search
+YT10560	DUDOSO sin foto con el código en el nombre	search
+YT22002	DUDOSO sin foto con el código en el nombre	search
+YT06122	DUDOSO sin foto con el código en el nombre	search
+YT1754	DUDOSO sin foto con el código en el nombre	search
+YT1415	DUDOSO sin foto con el código en el nombre	search
+YT1282	DUDOSO sin foto con el código en el nombre	search
+YT1352	DUDOSO sin foto con el código en el nombre	search
 YT0163	SIN RESULTADO	0 links
-YT80150	search	3 fotos (39 encontradas)
-YT04686	search	3 fotos (9 encontradas)
-YT4912	search	2 fotos (6 encontradas)
-YT72303	search	3 fotos (9 encontradas)
-YT1205	search	2 fotos (6 encontradas)
-YT0709	search	1 fotos (2 encontradas)
-YT1985	search	1 fotos (121 encontradas)
-YT0352	search	3 fotos (9 encontradas)
-YT73091	search	3 fotos (9 encontradas)
-YT22255	search	3 fotos (11 encontradas)
-YT22261	search	1 fotos (19 encontradas)
-YT1324	search	2 fotos (6 encontradas)
-YT5081	search	1 fotos (35 encontradas)
-YT4462	search	2 fotos (6 encontradas)
-YT4620	search	3 fotos (9 encontradas)
+YT80150	DUDOSO sin foto con el código en el nombre	search
+YT04686	DUDOSO sin foto con el código en el nombre	search
+YT4912	DUDOSO sin foto con el código en el nombre	search
+YT72303	DUDOSO sin foto con el código en el nombre	search
+YT1205	DUDOSO sin foto con el código en el nombre	search
+YT0709	DUDOSO sin foto con el código en el nombre	search
+YT1985	DUDOSO sin foto con el código en el nombre	search
+YT0352	DUDOSO sin foto con el código en el nombre	search
+YT73091	DUDOSO sin foto con el código en el nombre	search
+YT22255	DUDOSO sin foto con el código en el nombre	search
+YT22261	DUDOSO sin foto con el código en el nombre	search
+YT1324	DUDOSO sin foto con el código en el nombre	search
+YT5081	DUDOSO sin foto con el código en el nombre	search
+YT4462	DUDOSO sin foto con el código en el nombre	search
+YT4620	DUDOSO sin foto con el código en el nombre	search
 YT07723	SIN RESULTADO	0 links
-YT0613	search	1 fotos (2 encontradas)
-YT0622	search	1 fotos (2 encontradas)
-YT08518	search	3 fotos (44 encontradas)
-YT1416	search	2 fotos (6 encontradas)
-YT1283	search	2 fotos (6 encontradas)
-YT1676	search	3 fotos (12 encontradas)
-YT80151	search	3 fotos (39 encontradas)
-YT04681	search	2 fotos (6 encontradas)
-YT1206	search	2 fotos (6 encontradas)
-YT72305	search	3 fotos (9 encontradas)
+YT0613	DUDOSO sin foto con el código en el nombre	search
+YT0622	DUDOSO sin foto con el código en el nombre	search
+YT08518	DUDOSO sin foto con el código en el nombre	search
+YT1416	DUDOSO sin foto con el código en el nombre	search
+YT1283	DUDOSO sin foto con el código en el nombre	search
+YT1676	DUDOSO sin foto con el código en el nombre	search
+YT80151	DUDOSO sin foto con el código en el nombre	search
+YT04681	DUDOSO sin foto con el código en el nombre	search
+YT1206	DUDOSO sin foto con el código en el nombre	search
+YT72305	DUDOSO sin foto con el código en el nombre	search
 YT73093	SIN RESULTADO	0 links
-YT1986	search	1 fotos (121 encontradas)
-YT0353	search	3 fotos (9 encontradas)
-YT2180	search	3 fotos (25 encontradas)
-YT5082	search	1 fotos (47 encontradas)
-YT07410	search	1 fotos (17 encontradas)
-YT4622	search	3 fotos (9 encontradas)
-YT06870	search	2 fotos (6 encontradas)
-YT09511	search	3 fotos (11 encontradas)
-YT0614	search	1 fotos (2 encontradas)
-YT08527	search	3 fotos (36 encontradas)
-YT1417	search	2 fotos (6 encontradas)
-YT1284	search	2 fotos (6 encontradas)
-YT1326	search	2 fotos (6 encontradas)
-YT38561	search	3 fotos (9 encontradas)
-YT1677	search	3 fotos (12 encontradas)
-YT8021	search	3 fotos (39 encontradas)
-YT2701	search	1 fotos (121 encontradas)
-YT04682	search	2 fotos (6 encontradas)
+YT1986	DUDOSO sin foto con el código en el nombre	search
+YT0353	DUDOSO sin foto con el código en el nombre	search
+YT2180	DUDOSO sin foto con el código en el nombre	search
+YT5082	DUDOSO sin foto con el código en el nombre	search
+YT07410	DUDOSO sin foto con el código en el nombre	search
+YT4622	DUDOSO sin foto con el código en el nombre	search
+YT06870	DUDOSO sin foto con el código en el nombre	search
+YT09511	DUDOSO sin foto con el código en el nombre	search
+YT0614	DUDOSO sin foto con el código en el nombre	search
+YT08527	DUDOSO sin foto con el código en el nombre	search
+YT1417	DUDOSO sin foto con el código en el nombre	search
+YT1284	DUDOSO sin foto con el código en el nombre	search
+YT1326	DUDOSO sin foto con el código en el nombre	search
+YT38561	DUDOSO sin foto con el código en el nombre	search
+YT1677	DUDOSO sin foto con el código en el nombre	search
+YT8021	DUDOSO sin foto con el código en el nombre	search
+YT2701	DUDOSO sin foto con el código en el nombre	search
+YT04682	DUDOSO sin foto con el código en el nombre	search
 YT4961	SIN RESULTADO	0 links
-YT1207	search	2 fotos (6 encontradas)
-YT2137	search	2 fotos (6 encontradas)
-YT2212	search	1 fotos (2 encontradas)
-YT2233	search	1 fotos (2 encontradas)
-YT83033	search	3 fotos (15 encontradas)
-YT5083	search	1 fotos (41 encontradas)
-YT0354	search	3 fotos (9 encontradas)
-YT08253	search	3 fotos (9 encontradas)
-YT41605	search	1 fotos (2 encontradas)
-YT23702	search	3 fotos (8 encontradas)
-YT4623	search	3 fotos (9 encontradas)
+YT1207	DUDOSO sin foto con el código en el nombre	search
+YT2137	DUDOSO sin foto con el código en el nombre	search
+YT2212	DUDOSO sin foto con el código en el nombre	search
+YT2233	DUDOSO sin foto con el código en el nombre	search
+YT83033	DUDOSO sin foto con el código en el nombre	search
+YT5083	DUDOSO sin foto con el código en el nombre	search
+YT0354	DUDOSO sin foto con el código en el nombre	search
+YT08253	DUDOSO sin foto con el código en el nombre	search
+YT41605	DUDOSO sin foto con el código en el nombre	search
+YT23702	DUDOSO sin foto con el código en el nombre	search
+YT4623	DUDOSO sin foto con el código en el nombre	search
 YT0852	SIN RESULTADO	0 links
-YT06160	search	3 fotos (9 encontradas)
-YT1972	search	1 fotos (107 encontradas)
-YT1285	search	2 fotos (6 encontradas)
-YT1418	search	2 fotos (6 encontradas)
-YT1565	search	3 fotos (18 encontradas)
+YT06160	DUDOSO sin foto con el código en el nombre	search
+YT1972	DUDOSO sin foto con el código en el nombre	search
+YT1285	DUDOSO sin foto con el código en el nombre	search
+YT1418	DUDOSO sin foto con el código en el nombre	search
+YT1565	DUDOSO sin foto con el código en el nombre	search
 YT09513	SIN RESULTADO	0 links
-YT1678	search	3 fotos (12 encontradas)
-YT8022	search	3 fotos (39 encontradas)
-YT1295	search	1 fotos (2 encontradas)
-YT4962	search	1 fotos (59 encontradas)
-YT1328	search	2 fotos (6 encontradas)
-YT1208	search	2 fotos (6 encontradas)
-YT1987	search	1 fotos (95 encontradas)
+YT1678	DUDOSO sin foto con el código en el nombre	search
+YT8022	DUDOSO sin foto con el código en el nombre	search
+YT1295	DUDOSO sin foto con el código en el nombre	search
+YT4962	DUDOSO sin foto con el código en el nombre	search
+YT1328	DUDOSO sin foto con el código en el nombre	search
+YT1208	DUDOSO sin foto con el código en el nombre	search
+YT1987	DUDOSO sin foto con el código en el nombre	search
 YT2702	SIN RESULTADO	0 links
-YT82082	search	1 fotos (37 encontradas)
-YT21826	search	3 fotos (9 encontradas)
-YT5084	search	1 fotos (39 encontradas)
-YT08254	search	3 fotos (9 encontradas)
-YT0355	search	3 fotos (9 encontradas)
-YT39007	search	1 fotos (17 encontradas)
-YT1055	search	3 fotos (12 encontradas)
-YT06877	search	2 fotos (6 encontradas)
-YT4630	search	2 fotos (6 encontradas)
+YT82082	DUDOSO sin foto con el código en el nombre	search
+YT21826	DUDOSO sin foto con el código en el nombre	search
+YT5084	DUDOSO sin foto con el código en el nombre	search
+YT08254	DUDOSO sin foto con el código en el nombre	search
+YT0355	DUDOSO sin foto con el código en el nombre	search
+YT39007	DUDOSO sin foto con el código en el nombre	search
+YT1055	DUDOSO sin foto con el código en el nombre	search
+YT06877	DUDOSO sin foto con el código en el nombre	search
+YT4630	ERROR HTTP Error 502: Bad Gateway
 YT08523	SIN RESULTADO	0 links
-YT1925	search	1 fotos (2 encontradas)
-YT1286	search	2 fotos (6 encontradas)
-YT1419	search	2 fotos (6 encontradas)
-YT1566	search	3 fotos (18 encontradas)
+YT1925	DUDOSO sin foto con el código en el nombre	search
+YT1286	DUDOSO sin foto con el código en el nombre	search
+YT1419	DUDOSO sin foto con el código en el nombre	search
+YT1566	DUDOSO sin foto con el código en el nombre	search
 YT5030	SIN RESULTADO	0 links
-YT1296	search	1 fotos (2 encontradas)
-YT8023	search	3 fotos (39 encontradas)
+YT1296	DUDOSO sin foto con el código en el nombre	search
+YT8023	DUDOSO sin foto con el código en el nombre	search
 YT4963	SIN RESULTADO	0 links
-YT1209	search	2 fotos (6 encontradas)
-YT72450	search	2 fotos (6 encontradas)
-YT0691	search	2 fotos (3 encontradas)
-YT1330	search	2 fotos (6 encontradas)
-YT09515	search	3 fotos (20 encontradas)
-YT82088	search	1 fotos (35 encontradas)
-YT5086	search	1 fotos (43 encontradas)
+YT1209	DUDOSO sin foto con el código en el nombre	search
+YT72450	DUDOSO sin foto con el código en el nombre	search
+YT0691	DUDOSO sin foto con el código en el nombre	search
+YT1330	DUDOSO sin foto con el código en el nombre	search
+YT09515	DUDOSO sin foto con el código en el nombre	search
+YT82088	DUDOSO sin foto con el código en el nombre	search
+YT5086	DUDOSO sin foto con el código en el nombre	search
 YT8301	SIN RESULTADO	0 links
-YT2703	search	1 fotos (121 encontradas)
-YT2469	search	1 fotos (2 encontradas)
-YT0356	search	3 fotos (9 encontradas)
-YT1115	search	3 fotos (16 encontradas)
+YT2703	DUDOSO sin foto con el código en el nombre	search
+YT2469	DUDOSO sin foto con el código en el nombre	search
+YT0356	DUDOSO sin foto con el código en el nombre	search
+YT1115	DUDOSO sin foto con el código en el nombre	search
 YT07732	SIN RESULTADO	0 links
-YT4632	search	2 fotos (6 encontradas)
+YT4632	DUDOSO sin foto con el código en el nombre	search
 YT06161T	ERROR HTTP Error 404: Not Found
-YT08590	search	3 fotos (30 encontradas)
-YT1912	search	1 fotos (2 encontradas)
-YT1289	search	2 fotos (6 encontradas)
-YT1420	search	2 fotos (6 encontradas)
-YT1567	search	3 fotos (18 encontradas)
+YT08590	DUDOSO sin foto con el código en el nombre	search
+YT1912	DUDOSO sin foto con el código en el nombre	search
+YT1289	DUDOSO sin foto con el código en el nombre	search
+YT1420	DUDOSO sin foto con el código en el nombre	search
+YT1567	DUDOSO sin foto con el código en el nombre	search
 YT3857	SIN RESULTADO	0 links
 YT5031	SIN RESULTADO	0 links
-YT04752	search	2 fotos (6 encontradas)
-YT79552	search	3 fotos (36 encontradas)
+YT04752	DUDOSO sin foto con el código en el nombre	search
+YT79552	DUDOSO sin foto con el código en el nombre	search
 YT4964	SIN RESULTADO	0 links
-YT1210	search	2 fotos (6 encontradas)
-YT72453	search	3 fotos (12 encontradas)
-YT73131	search	3 fotos (33 encontradas)
-YT06914	search	1 fotos (2 encontradas)
-YT6862	search	2 fotos (6 encontradas)
-YT5088	search	1 fotos (69 encontradas)
-YT0953	search	3 fotos (7 encontradas)
-YT2704	search	1 fotos (121 encontradas)
-YT1155	search	3 fotos (8 encontradas)
-YT2371	search	2 fotos (6 encontradas)
-YT3590	search	3 fotos (9 encontradas)
-YT4590	search	3 fotos (21 encontradas)
-YT0357	search	3 fotos (9 encontradas)
-YT1976	search	1 fotos (2 encontradas)
-YT1291	search	2 fotos (6 encontradas)
-YT1421	search	2 fotos (6 encontradas)
-YT1426	search	1 fotos (2 encontradas)
-YT5032	search	1 fotos (55 encontradas)
-YT04772	search	2 fotos (6 encontradas)
+YT1210	DUDOSO sin foto con el código en el nombre	search
+YT72453	DUDOSO sin foto con el código en el nombre	search
+YT73131	DUDOSO sin foto con el código en el nombre	search
+YT06914	DUDOSO sin foto con el código en el nombre	search
+YT6862	DUDOSO sin foto con el código en el nombre	search
+YT5088	DUDOSO sin foto con el código en el nombre	search
+YT0953	DUDOSO sin foto con el código en el nombre	search
+YT2704	DUDOSO sin foto con el código en el nombre	search
+YT1155	DUDOSO sin foto con el código en el nombre	search
+YT2371	DUDOSO sin foto con el código en el nombre	search
+YT3590	DUDOSO sin foto con el código en el nombre	search
+YT4590	DUDOSO sin foto con el código en el nombre	search
+YT0357	DUDOSO sin foto con el código en el nombre	search
+YT1976	DUDOSO sin foto con el código en el nombre	search
+YT1291	DUDOSO sin foto con el código en el nombre	search
+YT1421	DUDOSO sin foto con el código en el nombre	search
+YT1426	DUDOSO sin foto con el código en el nombre	search
+YT5032	DUDOSO sin foto con el código en el nombre	search
+YT04772	DUDOSO sin foto con el código en el nombre	search
 YT4965	SIN RESULTADO	0 links
-YT79553	search	3 fotos (36 encontradas)
-YT1211	search	2 fotos (6 encontradas)
-YT5851	search	1 fotos (113 encontradas)
-YT73126	search	3 fotos (21 encontradas)
-YT6863	search	2 fotos (6 encontradas)
-YT5089	search	1 fotos (19 encontradas)
-YT83082	search	3 fotos (63 encontradas)
-YT09564	search	3 fotos (14 encontradas)
-YT39280	search	3 fotos (24 encontradas)
-YT2372	search	1 fotos (2 encontradas)
-YT1292	search	2 fotos (6 encontradas)
-YT19764	search	1 fotos (2 encontradas)
-YT38510	search	1 fotos (2 encontradas)
-YT1422	search	2 fotos (6 encontradas)
-YT2705	search	1 fotos (119 encontradas)
+YT79553	DUDOSO sin foto con el código en el nombre	search
+YT1211	DUDOSO sin foto con el código en el nombre	search
+YT5851	DUDOSO sin foto con el código en el nombre	search
+YT73126	DUDOSO sin foto con el código en el nombre	search
+YT6863	DUDOSO sin foto con el código en el nombre	search
+YT5089	DUDOSO sin foto con el código en el nombre	search
+YT83082	DUDOSO sin foto con el código en el nombre	search
+YT09564	DUDOSO sin foto con el código en el nombre	search
+YT39280	DUDOSO sin foto con el código en el nombre	search
+YT2372	ERROR HTTP Error 502: Bad Gateway
+YT1292	DUDOSO sin foto con el código en el nombre	search
+YT19764	DUDOSO sin foto con el código en el nombre	search
+YT38510	DUDOSO sin foto con el código en el nombre	search
+YT1422	DUDOSO sin foto con el código en el nombre	search
+YT2705	DUDOSO sin foto con el código en el nombre	search
 YT5033	SIN RESULTADO	0 links
-YT1425	search	1 fotos (2 encontradas)
-YT04782	search	2 fotos (6 encontradas)
-YT0521	search	3 fotos (16 encontradas)
-YT3591	search	2 fotos (6 encontradas)
-YT1212	search	2 fotos (6 encontradas)
+YT1425	DUDOSO sin foto con el código en el nombre	search
+YT04782	DUDOSO sin foto con el código en el nombre	search
+YT0521	DUDOSO sin foto con el código en el nombre	search
+YT3591	DUDOSO sin foto con el código en el nombre	search
+YT1212	DUDOSO sin foto con el código en el nombre	search
 YT4966	SIN RESULTADO	0 links
-YT5852	search	1 fotos (71 encontradas)
-YT79554	search	3 fotos (36 encontradas)
-YT0358	search	3 fotos (9 encontradas)
-YT82097	search	2 fotos (6 encontradas)
-YT5090	search	1 fotos (121 encontradas)
-YT72460	search	3 fotos (9 encontradas)
-YT07061	search	1 fotos (2 encontradas)
-YT2268	search	1 fotos (2 encontradas)
-YT1130	search	1 fotos (2 encontradas)
-YT38951	search	3 fotos (30 encontradas)
-YT07413	search	1 fotos (13 encontradas)
-YT12930	search	2 fotos (6 encontradas)
-YT0959	search	3 fotos (14 encontradas)
-YT1423	search	2 fotos (6 encontradas)
+YT5852	DUDOSO sin foto con el código en el nombre	search
+YT79554	DUDOSO sin foto con el código en el nombre	search
+YT0358	DUDOSO sin foto con el código en el nombre	search
+YT82097	DUDOSO sin foto con el código en el nombre	search
+YT5090	DUDOSO sin foto con el código en el nombre	search
+YT72460	DUDOSO sin foto con el código en el nombre	search
+YT07061	DUDOSO sin foto con el código en el nombre	search
+YT2268	DUDOSO sin foto con el código en el nombre	search
+YT1130	DUDOSO sin foto con el código en el nombre	search
+YT38951	DUDOSO sin foto con el código en el nombre	search
+YT07413	DUDOSO sin foto con el código en el nombre	search
+YT12930	DUDOSO sin foto con el código en el nombre	search
+YT0959	DUDOSO sin foto con el código en el nombre	search
+YT1423	DUDOSO sin foto con el código en el nombre	search
 YT5035	SIN RESULTADO	0 links
-YT3840	search	1 fotos (2 encontradas)
-YT04812	search	2 fotos (6 encontradas)
-YT7751	search	3 fotos (7 encontradas)
-YT1213	search	2 fotos (6 encontradas)
+YT3840	DUDOSO sin foto con el código en el nombre	search
+YT04812	DUDOSO sin foto con el código en el nombre	search
+YT7751	DUDOSO sin foto con el código en el nombre	search
+YT1213	DUDOSO sin foto con el código en el nombre	search
 YT4967	SIN RESULTADO	0 links
-YT5853	search	1 fotos (79 encontradas)
+YT5853	DUDOSO sin foto con el código en el nombre	search
 YT01234T	ERROR HTTP Error 404: Not Found
-YT82101	search	3 fotos (17 encontradas)
-YT3851	search	1 fotos (2 encontradas)
-YT0820	search	3 fotos (12 encontradas)
-YT5091	search	1 fotos (29 encontradas)
-YT6854	search	2 fotos (6 encontradas)
-YT25986	search	1 fotos (2 encontradas)
-YT4711	search	2 fotos (6 encontradas)
-YT2274	search	1 fotos (2 encontradas)
-YT1132	search	1 fotos (2 encontradas)
-YT0760	search	3 fotos (27 encontradas)
+YT82101	DUDOSO sin foto con el código en el nombre	search
+YT3851	DUDOSO sin foto con el código en el nombre	search
+YT0820	DUDOSO sin foto con el código en el nombre	search
+YT5091	DUDOSO sin foto con el código en el nombre	search
+YT6854	DUDOSO sin foto con el código en el nombre	search
+YT25986	DUDOSO sin foto con el código en el nombre	search
+YT4711	DUDOSO sin foto con el código en el nombre	search
+YT2274	DUDOSO sin foto con el código en el nombre	search
+YT1132	DUDOSO sin foto con el código en el nombre	search
+YT0760	DUDOSO sin foto con el código en el nombre	search
 YT06162T	SIN RESULTADO	0 links
-YT12931	search	1 fotos (2 encontradas)
-YT1424	search	2 fotos (6 encontradas)
-YT3839	search	3 fotos (15 encontradas)
-YT0359	search	1 fotos (2 encontradas)
-YT7752	search	2 fotos (6 encontradas)
-YT1214	search	2 fotos (6 encontradas)
-YT0384	search	2 fotos (6 encontradas)
-YT04310	search	2 fotos (6 encontradas)
-YT5854	search	1 fotos (87 encontradas)
-YT5092	search	1 fotos (39 encontradas)
-YT6855	search	2 fotos (6 encontradas)
-YT2403	search	1 fotos (2 encontradas)
-YT39615	search	1 fotos (5 encontradas)
+YT12931	DUDOSO sin foto con el código en el nombre	search
+YT1424	DUDOSO sin foto con el código en el nombre	search
+YT3839	DUDOSO sin foto con el código en el nombre	search
+YT0359	DUDOSO sin foto con el código en el nombre	search
+YT7752	DUDOSO sin foto con el código en el nombre	search
+YT1214	DUDOSO sin foto con el código en el nombre	search
+YT0384	DUDOSO sin foto con el código en el nombre	search
+YT04310	DUDOSO sin foto con el código en el nombre	search
+YT5854	DUDOSO sin foto con el código en el nombre	search
+YT5092	DUDOSO sin foto con el código en el nombre	search
+YT6855	DUDOSO sin foto con el código en el nombre	search
+YT2403	DUDOSO sin foto con el código en el nombre	search
+YT39615	DUDOSO sin foto con el código en el nombre	search
 YT2276	SIN RESULTADO	0 links
-YT1133	search	1 fotos (2 encontradas)
-YT0821	search	3 fotos (12 encontradas)
-YT07601	search	3 fotos (12 encontradas)
-YT0635	search	2 fotos (6 encontradas)
-YT08592	search	3 fotos (18 encontradas)
-YT04301	search	1 fotos (2 encontradas)
-YT7523	search	1 fotos (65 encontradas)
-YT1241	search	3 fotos (15 encontradas)
-YT0208	search	3 fotos (12 encontradas)
-YT12932	search	2 fotos (6 encontradas)
-YT38511	search	1 fotos (2 encontradas)
+YT1133	DUDOSO sin foto con el código en el nombre	search
+YT0821	ERROR HTTP Error 502: Bad Gateway
+YT07601	DUDOSO sin foto con el código en el nombre	search
+YT0635	DUDOSO sin foto con el código en el nombre	search
+YT08592	DUDOSO sin foto con el código en el nombre	search
+YT04301	DUDOSO sin foto con el código en el nombre	search
+YT7523	DUDOSO sin foto con el código en el nombre	search
+YT1241	DUDOSO sin foto con el código en el nombre	search
+YT0208	DUDOSO sin foto con el código en el nombre	search
+YT12932	DUDOSO sin foto con el código en el nombre	search
+YT38511	DUDOSO sin foto con el código en el nombre	search
 YT7750	SIN RESULTADO	0 links
-YT1215	search	2 fotos (6 encontradas)
-YT0385	search	2 fotos (6 encontradas)
-YT5855	search	1 fotos (79 encontradas)
-YT5093	search	1 fotos (19 encontradas)
-YT25989	search	1 fotos (2 encontradas)
-YT7405	search	1 fotos (113 encontradas)
-YT0642	search	2 fotos (6 encontradas)
-YT04311	search	2 fotos (6 encontradas)
-YT09615	search	3 fotos (19 encontradas)
-YT2270	search	1 fotos (2 encontradas)
-YT39171	search	1 fotos (53 encontradas)
-YT0360	search	3 fotos (9 encontradas)
-YT25998	search	1 fotos (2 encontradas)
-YT1177	search	1 fotos (2 encontradas)
-YT3895	search	3 fotos (49 encontradas)
-YT0636	search	2 fotos (6 encontradas)
-YT06651	search	3 fotos (9 encontradas)
-YT0761	search	3 fotos (12 encontradas)
-YT08593	search	3 fotos (23 encontradas)
-YT2542	search	2 fotos (6 encontradas)
-YT04302	search	2 fotos (6 encontradas)
-YT7532	search	3 fotos (10 encontradas)
-YT12933	search	2 fotos (6 encontradas)
-YT1242	search	3 fotos (15 encontradas)
-YT1216	search	2 fotos (6 encontradas)
-YT0386	search	2 fotos (6 encontradas)
-YT5856	search	1 fotos (65 encontradas)
-YT0822	search	3 fotos (12 encontradas)
-YT05220	search	1 fotos (2 encontradas)
-YT7416	search	2 fotos (6 encontradas)
-YT3841	search	1 fotos (2 encontradas)
-YT04313	search	2 fotos (6 encontradas)
-YT07067	search	3 fotos (9 encontradas)
-YT2254	search	1 fotos (2 encontradas)
+YT1215	DUDOSO sin foto con el código en el nombre	search
+YT0385	DUDOSO sin foto con el código en el nombre	search
+YT5855	DUDOSO sin foto con el código en el nombre	search
+YT5093	DUDOSO sin foto con el código en el nombre	search
+YT25989	DUDOSO sin foto con el código en el nombre	search
+YT7405	DUDOSO sin foto con el código en el nombre	search
+YT0642	DUDOSO sin foto con el código en el nombre	search
+YT04311	DUDOSO sin foto con el código en el nombre	search
+YT09615	DUDOSO sin foto con el código en el nombre	search
+YT2270	DUDOSO sin foto con el código en el nombre	search
+YT39171	DUDOSO sin foto con el código en el nombre	search
+YT0360	DUDOSO sin foto con el código en el nombre	search
+YT25998	DUDOSO sin foto con el código en el nombre	search
+YT1177	DUDOSO sin foto con el código en el nombre	search
+YT3895	DUDOSO sin foto con el código en el nombre	search
+YT0636	DUDOSO sin foto con el código en el nombre	search
+YT06651	ERROR HTTP Error 502: Bad Gateway
+YT0761	ERROR HTTP Error 502: Bad Gateway
+YT08593	DUDOSO sin foto con el código en el nombre	search
+YT2542	DUDOSO sin foto con el código en el nombre	search
+YT04302	DUDOSO sin foto con el código en el nombre	search
+YT7532	ERROR HTTP Error 502: Bad Gateway
+YT12933	DUDOSO sin foto con el código en el nombre	search
+YT1242	DUDOSO sin foto con el código en el nombre	search
+YT1216	DUDOSO sin foto con el código en el nombre	search
+YT0386	DUDOSO sin foto con el código en el nombre	search
+YT5856	DUDOSO sin foto con el código en el nombre	search
+YT0822	DUDOSO sin foto con el código en el nombre	search
+YT05220	DUDOSO sin foto con el código en el nombre	search
+YT7416	DUDOSO sin foto con el código en el nombre	search
+YT3841	DUDOSO sin foto con el código en el nombre	search
+YT04313	DUDOSO sin foto con el código en el nombre	search
+YT07067	DUDOSO sin foto con el código en el nombre	search
+YT2254	DUDOSO sin foto con el código en el nombre	search
 YT2783	SIN RESULTADO	0 links
-YT25992	search	1 fotos (2 encontradas)
-YT1178	search	1 fotos (2 encontradas)
-YT4710	search	2 fotos (3 encontradas)
-YT00760	search	2 fotos (3 encontradas)
-YT0637	search	2 fotos (6 encontradas)
-YT08599	search	3 fotos (31 encontradas)
-YT2543	search	2 fotos (6 encontradas)
-YT0605	search	2 fotos (6 encontradas)
-YT04303	search	2 fotos (6 encontradas)
-YT12934	search	2 fotos (6 encontradas)
-YT16737	search	1 fotos (7 encontradas)
-YT2808	search	1 fotos (121 encontradas)
-YT1217	search	2 fotos (6 encontradas)
-YT5857	search	1 fotos (63 encontradas)
-YT0387	search	2 fotos (6 encontradas)
-YT05221	search	1 fotos (2 encontradas)
-YT7400	search	2 fotos (6 encontradas)
-YT83113	search	3 fotos (11 encontradas)
-YT18600	search	3 fotos (12 encontradas)
-YT04316	search	2 fotos (6 encontradas)
-YT83060	search	2 fotos (6 encontradas)
-YT3852	search	1 fotos (121 encontradas)
-YT2055	search	2 fotos (6 encontradas)
-YT07416	search	1 fotos (11 encontradas)
+YT25992	DUDOSO sin foto con el código en el nombre	search
+YT1178	DUDOSO sin foto con el código en el nombre	search
+YT4710	DUDOSO sin foto con el código en el nombre	search
+YT00760	DUDOSO sin foto con el código en el nombre	search
+YT0637	DUDOSO sin foto con el código en el nombre	search
+YT08599	DUDOSO sin foto con el código en el nombre	search
+YT2543	DUDOSO sin foto con el código en el nombre	search
+YT0605	DUDOSO sin foto con el código en el nombre	search
+YT04303	DUDOSO sin foto con el código en el nombre	search
+YT12934	DUDOSO sin foto con el código en el nombre	search
+YT16737	DUDOSO sin foto con el código en el nombre	search
+YT2808	DUDOSO sin foto con el código en el nombre	search
+YT1217	DUDOSO sin foto con el código en el nombre	search
+YT5857	DUDOSO sin foto con el código en el nombre	search
+YT0387	DUDOSO sin foto con el código en el nombre	search
+YT05221	DUDOSO sin foto con el código en el nombre	search
+YT7400	DUDOSO sin foto con el código en el nombre	search
+YT83113	DUDOSO sin foto con el código en el nombre	search
+YT18600	ERROR HTTP Error 502: Bad Gateway
+YT04316	ERROR HTTP Error 502: Bad Gateway
+YT83060	DUDOSO sin foto con el código en el nombre	search
+YT3852	DUDOSO sin foto con el código en el nombre	search
+YT2055	DUDOSO sin foto con el código en el nombre	search
+YT07416	DUDOSO sin foto con el código en el nombre	search
 YT08564	SIN RESULTADO	0 links
-YT04305	search	2 fotos (6 encontradas)
-YT12935	search	2 fotos (6 encontradas)
-YT47121	search	2 fotos (3 encontradas)
-YT1218	search	2 fotos (6 encontradas)
-YT5858	search	1 fotos (77 encontradas)
-YT0388	search	2 fotos (6 encontradas)
-YT05222	search	1 fotos (2 encontradas)
-YT73201	search	3 fotos (15 encontradas)
+YT04305	DUDOSO sin foto con el código en el nombre	search
+YT12935	DUDOSO sin foto con el código en el nombre	search
+YT47121	DUDOSO sin foto con el código en el nombre	search
+YT1218	DUDOSO sin foto con el código en el nombre	search
+YT5858	DUDOSO sin foto con el código en el nombre	search
+YT0388	DUDOSO sin foto con el código en el nombre	search
+YT05222	DUDOSO sin foto con el código en el nombre	search
+YT73201	DUDOSO sin foto con el código en el nombre	search
 YT2307	SIN RESULTADO	0 links
-YT07020	search	3 fotos (23 encontradas)
-YT00761	search	1 fotos (2 encontradas)
-YT04318	search	2 fotos (6 encontradas)
-YT2057	search	2 fotos (6 encontradas)
-YT08559	search	3 fotos (39 encontradas)
-YT38781	search	3 fotos (9 encontradas)
-YT38512	search	2 fotos (6 encontradas)
-YT2536	search	3 fotos (9 encontradas)
-YT04306	search	2 fotos (6 encontradas)
+YT07020	DUDOSO sin foto con el código en el nombre	search
+YT00761	DUDOSO sin foto con el código en el nombre	search
+YT04318	DUDOSO sin foto con el código en el nombre	search
+YT2057	DUDOSO sin foto con el código en el nombre	search
+YT08559	DUDOSO sin foto con el código en el nombre	search
+YT38781	DUDOSO sin foto con el código en el nombre	search
+YT38512	DUDOSO sin foto con el código en el nombre	search
+YT2536	DUDOSO sin foto con el código en el nombre	search
+YT04306	DUDOSO sin foto con el código en el nombre	search
 YT7527	SIN RESULTADO	0 links
-YT12936	search	2 fotos (6 encontradas)
-YT1219	search	2 fotos (6 encontradas)
-YT0980	search	2 fotos (3 encontradas)
-YT5859	search	1 fotos (57 encontradas)
-YT0389	search	2 fotos (6 encontradas)
+YT12936	DUDOSO sin foto con el código en el nombre	search
+YT1219	DUDOSO sin foto con el código en el nombre	search
+YT0980	DUDOSO sin foto con el código en el nombre	search
+YT5859	DUDOSO sin foto con el código en el nombre	search
+YT0389	DUDOSO sin foto con el código en el nombre	search
 YT7732	SIN RESULTADO	0 links
-YT2709	search	1 fotos (121 encontradas)
-YT00762	search	1 fotos (2 encontradas)
-YT2782	search	1 fotos (45 encontradas)
-YT12681	search	3 fotos (12 encontradas)
+YT2709	DUDOSO sin foto con el código en el nombre	search
+YT00762	DUDOSO sin foto con el código en el nombre	search
+YT2782	DUDOSO sin foto con el código en el nombre	search
+YT12681	DUDOSO sin foto con el código en el nombre	search
 YT08566	SIN RESULTADO	0 links
-YT0841	search	2 fotos (6 encontradas)
-YT06658	search	3 fotos (9 encontradas)
-YT76050	search	3 fotos (11 encontradas)
-YT12937	search	2 fotos (6 encontradas)
-YT1243	search	1 fotos (2 encontradas)
-YT1220	search	2 fotos (6 encontradas)
-YT38521	search	3 fotos (9 encontradas)
-YT5860	search	1 fotos (119 encontradas)
-YT0984	search	1 fotos (121 encontradas)
-YT0390	search	2 fotos (6 encontradas)
+YT0841	DUDOSO sin foto con el código en el nombre	search
+YT06658	DUDOSO sin foto con el código en el nombre	search
+YT76050	DUDOSO sin foto con el código en el nombre	search
+YT12937	DUDOSO sin foto con el código en el nombre	search
+YT1243	DUDOSO sin foto con el código en el nombre	search
+YT1220	DUDOSO sin foto con el código en el nombre	search
+YT38521	DUDOSO sin foto con el código en el nombre	search
+YT5860	DUDOSO sin foto con el código en el nombre	search
+YT0984	DUDOSO sin foto con el código en el nombre	search
+YT0390	DUDOSO sin foto con el código en el nombre	search
 YT7733	SIN RESULTADO	0 links
-YT0845	search	1 fotos (2 encontradas)
+YT0845	DUDOSO sin foto con el código en el nombre	search
 YT2710	SIN RESULTADO	0 links
-YT2090	search	3 fotos (9 encontradas)
-YT4712	search	3 fotos (9 encontradas)
-YT25966	search	1 fotos (2 encontradas)
-YT00763	search	3 fotos (9 encontradas)
-YT2170	search	1 fotos (2 encontradas)
-YT38791	search	3 fotos (14 encontradas)
-YT0842	search	2 fotos (6 encontradas)
-YT82742	search	1 fotos (2 encontradas)
-YT76051	search	3 fotos (9 encontradas)
-YT12938	search	2 fotos (6 encontradas)
-YT1244	search	1 fotos (2 encontradas)
-YT7753	search	3 fotos (7 encontradas)
-YT1199	search	1 fotos (79 encontradas)
-YT25480	search	3 fotos (12 encontradas)
-YT5861	search	1 fotos (19 encontradas)
-YT04342	search	2 fotos (6 encontradas)
-YT2240	search	1 fotos (2 encontradas)
-YT38522	search	3 fotos (9 encontradas)
-YT71141	search	1 fotos (29 encontradas)
-YT2070	search	3 fotos (11 encontradas)
+YT2090	DUDOSO sin foto con el código en el nombre	search
+YT4712	DUDOSO sin foto con el código en el nombre	search
+YT25966	DUDOSO sin foto con el código en el nombre	search
+YT00763	DUDOSO sin foto con el código en el nombre	search
+YT2170	DUDOSO sin foto con el código en el nombre	search
+YT38791	DUDOSO sin foto con el código en el nombre	search
+YT0842	DUDOSO sin foto con el código en el nombre	search
+YT82742	DUDOSO sin foto con el código en el nombre	search
+YT76051	DUDOSO sin foto con el código en el nombre	search
+YT12938	DUDOSO sin foto con el código en el nombre	search
+YT1244	DUDOSO sin foto con el código en el nombre	search
+YT7753	ERROR HTTP Error 502: Bad Gateway
+YT1199	DUDOSO sin foto con el código en el nombre	search
+YT25480	DUDOSO sin foto con el código en el nombre	search
+YT5861	DUDOSO sin foto con el código en el nombre	search
+YT04342	DUDOSO sin foto con el código en el nombre	search
+YT2240	DUDOSO sin foto con el código en el nombre	search
+YT38522	DUDOSO sin foto con el código en el nombre	search
+YT71141	DUDOSO sin foto con el código en el nombre	search
+YT2070	ERROR HTTP Error 502: Bad Gateway
 YT2711	SIN RESULTADO	0 links
-YT2787	search	1 fotos (37 encontradas)
-YT4714	search	3 fotos (12 encontradas)
-YT2171	search	1 fotos (2 encontradas)
-YT06662	search	3 fotos (9 encontradas)
-YT82743	search	3 fotos (8 encontradas)
-YT12939	search	2 fotos (6 encontradas)
-YT76052	ERROR HTTP Error 404: Not Found
-YT00764	search	1 fotos (2 encontradas)
-YT04622	search	3 fotos (17 encontradas)
-YT1200	search	1 fotos (121 encontradas)
-YT0135	search	1 fotos (2 encontradas)
-YT85170	search	3 fotos (12 encontradas)
-YT04343	search	3 fotos (9 encontradas)
-YT5862	search	1 fotos (45 encontradas)
-YT10662	search	2 fotos (9 encontradas)
-YT2305	search	1 fotos (2 encontradas)
+YT2787	DUDOSO sin foto con el código en el nombre	search
+YT4714	DUDOSO sin foto con el código en el nombre	search
+YT2171	DUDOSO sin foto con el código en el nombre	search
+YT06662	DUDOSO sin foto con el código en el nombre	search
+YT82743	DUDOSO sin foto con el código en el nombre	search
+YT12939	DUDOSO sin foto con el código en el nombre	search
+YT76052	DUDOSO sin foto con el código en el nombre	search
+YT00764	DUDOSO sin foto con el código en el nombre	search
+YT04622	DUDOSO sin foto con el código en el nombre	search
+YT1200	DUDOSO sin foto con el código en el nombre	search
+YT0135	DUDOSO sin foto con el código en el nombre	search
+YT85170	DUDOSO sin foto con el código en el nombre	search
+YT04343	DUDOSO sin foto con el código en el nombre	search
+YT5862	DUDOSO sin foto con el código en el nombre	search
+YT10662	DUDOSO sin foto con el código en el nombre	search
+YT2305	DUDOSO sin foto con el código en el nombre	search
 YT71143	SIN RESULTADO	0 links
-YT2172	search	1 fotos (2 encontradas)
-YT0762	search	1 fotos (61 encontradas)
-YT38513	search	1 fotos (19 encontradas)
+YT2172	DUDOSO sin foto con el código en el nombre	search
+YT0762	DUDOSO sin foto con el código en el nombre	search
+YT38513	DUDOSO sin foto con el código en el nombre	search
 YT0967	SIN RESULTADO	0 links
-YT8271	search	2 fotos (6 encontradas)
-YT12940	search	2 fotos (6 encontradas)
-YT4700	search	2 fotos (3 encontradas)
-YT04624	search	3 fotos (14 encontradas)
-YT1221	search	2 fotos (6 encontradas)
-YT0136	search	1 fotos (2 encontradas)
-YT0648	search	2 fotos (6 encontradas)
-YT0396	search	1 fotos (2 encontradas)
-YT7736	search	1 fotos (9 encontradas)
-YT58830	search	1 fotos (13 encontradas)
-YT10663	search	2 fotos (9 encontradas)
-YT00765	search	1 fotos (2 encontradas)
-YT22860	search	3 fotos (9 encontradas)
+YT8271	DUDOSO sin foto con el código en el nombre	search
+YT12940	DUDOSO sin foto con el código en el nombre	search
+YT4700	DUDOSO sin foto con el código en el nombre	search
+YT04624	DUDOSO sin foto con el código en el nombre	search
+YT1221	DUDOSO sin foto con el código en el nombre	search
+YT0136	DUDOSO sin foto con el código en el nombre	search
+YT0648	DUDOSO sin foto con el código en el nombre	search
+YT0396	DUDOSO sin foto con el código en el nombre	search
+YT7736	DUDOSO sin foto con el código en el nombre	search
+YT58830	DUDOSO sin foto con el código en el nombre	search
+YT10663	DUDOSO sin foto con el código en el nombre	search
+YT00765	DUDOSO sin foto con el código en el nombre	search
+YT22860	DUDOSO sin foto con el código en el nombre	search
 YT71145	SIN RESULTADO	0 links
-YT0716	search	3 fotos (9 encontradas)
+YT0716	DUDOSO sin foto con el código en el nombre	search
 YT2160	SIN RESULTADO	0 links
-YT25982	search	2 fotos (6 encontradas)
-YT2173	search	1 fotos (2 encontradas)
-YT08579	search	3 fotos (45 encontradas)
+YT25982	DUDOSO sin foto con el código en el nombre	search
+YT2173	DUDOSO sin foto con el código en el nombre	search
+YT08579	DUDOSO sin foto con el código en el nombre	search
 YT0767	SIN RESULTADO	0 links
-YT0836	search	3 fotos (12 encontradas)
-YT38891	search	3 fotos (9 encontradas)
-YT8272	search	2 fotos (6 encontradas)
-YT1763	search	2 fotos (6 encontradas)
-YT12941	search	2 fotos (6 encontradas)
-YT1350	search	1 fotos (2 encontradas)
-YT08163	search	3 fotos (9 encontradas)
-YT1222	search	2 fotos (6 encontradas)
-YT0137	search	1 fotos (2 encontradas)
-YT04344	search	2 fotos (6 encontradas)
-YT0398	search	3 fotos (10 encontradas)
-YT5836	search	1 fotos (25 encontradas)
-YT10664	search	2 fotos (9 encontradas)
-YT71146	search	1 fotos (15 encontradas)
+YT0836	DUDOSO sin foto con el código en el nombre	search
+YT38891	DUDOSO sin foto con el código en el nombre	search
+YT8272	DUDOSO sin foto con el código en el nombre	search
+YT1763	DUDOSO sin foto con el código en el nombre	search
+YT12941	DUDOSO sin foto con el código en el nombre	search
+YT1350	DUDOSO sin foto con el código en el nombre	search
+YT08163	DUDOSO sin foto con el código en el nombre	search
+YT1222	DUDOSO sin foto con el código en el nombre	search
+YT0137	DUDOSO sin foto con el código en el nombre	search
+YT04344	DUDOSO sin foto con el código en el nombre	search
+YT0398	DUDOSO sin foto con el código en el nombre	search
+YT5836	DUDOSO sin foto con el código en el nombre	search
+YT10664	DUDOSO sin foto con el código en el nombre	search
+YT71146	DUDOSO sin foto con el código en el nombre	search
 YT4705	SIN RESULTADO	0 links
-YT8106	search	3 fotos (9 encontradas)
+YT8106	DUDOSO sin foto con el código en el nombre	search
 YT2161	SIN RESULTADO	0 links
-YT2789	search	1 fotos (21 encontradas)
-YT00766	search	1 fotos (2 encontradas)
-YT38931	search	3 fotos (11 encontradas)
-YT7000	https://toya24.pl/product-pol-10005605-ZSZYWKI-6X10-6-MM-1000-SZT.html	2 fotos (6 encontradas)
-YT08164	search	3 fotos (9 encontradas)
-YT25920	search	2 fotos (6 encontradas)
-YT0191	search	3 fotos (12 encontradas)
-YT47151	search	1 fotos (2 encontradas)
-YT00767	search	1 fotos (2 encontradas)
-YT1253	search	1 fotos (2 encontradas)
+YT2789	DUDOSO sin foto con el código en el nombre	search
+YT00766	DUDOSO sin foto con el código en el nombre	search
+YT38931	DUDOSO sin foto con el código en el nombre	search
+YT7000	DUDOSO sin foto con el código en el nombre	https://toya24.pl/product-pol-10005605-ZSZYWKI-6X10-6-MM-1000-SZT.html
+YT08164	DUDOSO sin foto con el código en el nombre	search
+YT25920	DUDOSO sin foto con el código en el nombre	search
+YT0191	DUDOSO sin foto con el código en el nombre	search
+YT47151	DUDOSO sin foto con el código en el nombre	search
+YT00767	DUDOSO sin foto con el código en el nombre	search
+YT1253	DUDOSO sin foto con el código en el nombre	search
 YT0993	SIN RESULTADO	0 links
-YT25937	search	1 fotos (29 encontradas)
-YT08236	search	3 fotos (9 encontradas)
-YT09695	search	3 fotos (9 encontradas)
-YT55600	search	1 fotos (2 encontradas)
-YT00768	search	1 fotos (2 encontradas)
-YT1254	search	1 fotos (2 encontradas)
-YT25923	search	1 fotos (2 encontradas)
+YT25937	DUDOSO sin foto con el código en el nombre	search
+YT08236	DUDOSO sin foto con el código en el nombre	search
+YT09695	DUDOSO sin foto con el código en el nombre	search
+YT55600	DUDOSO sin foto con el código en el nombre	search
+YT00768	DUDOSO sin foto con el código en el nombre	search
+YT1254	DUDOSO sin foto con el código en el nombre	search
+YT25923	DUDOSO sin foto con el código en el nombre	search
 YT0970	SIN RESULTADO	0 links
-YT00769	search	3 fotos (9 encontradas)
-YT25938	search	1 fotos (25 encontradas)
-YT0826	search	2 fotos (6 encontradas)
-YT09910	search	3 fotos (59 encontradas)
-YT1427	search	1 fotos (2 encontradas)
-YT1429	search	1 fotos (2 encontradas)
-YT25929	search	1 fotos (2 encontradas)
-YT2380	search	1 fotos (2 encontradas)
-YT04320	search	2 fotos (6 encontradas)
+YT00769	DUDOSO sin foto con el código en el nombre	search
+YT25938	DUDOSO sin foto con el código en el nombre	search
+YT0826	DUDOSO sin foto con el código en el nombre	search
+YT09910	DUDOSO sin foto con el código en el nombre	search
+YT1427	DUDOSO sin foto con el código en el nombre	search
+YT1429	DUDOSO sin foto con el código en el nombre	search
+YT25929	DUDOSO sin foto con el código en el nombre	search
+YT2380	DUDOSO sin foto con el código en el nombre	search
+YT04320	DUDOSO sin foto con el código en el nombre	search
 YT4875	SIN RESULTADO	0 links
-YT1430	search	1 fotos (2 encontradas)
-YT25939	search	1 fotos (25 encontradas)
+YT1430	DUDOSO sin foto con el código en el nombre	search
+YT25939	DUDOSO sin foto con el código en el nombre	search
 YT4876	SIN RESULTADO	0 links
-YT04321	search	2 fotos (6 encontradas)
+YT04321	DUDOSO sin foto con el código en el nombre	search
 YT2770	SIN RESULTADO	0 links
 YT4877	SIN RESULTADO	0 links
-YT1432	search	1 fotos (2 encontradas)
-YT2772	search	1 fotos (35 encontradas)
+YT1432	DUDOSO sin foto con el código en el nombre	search
+YT2772	DUDOSO sin foto con el código en el nombre	search
 YT4878	SIN RESULTADO	0 links
-YT0621	search	2 fotos (6 encontradas)
-YT65049	search	1 fotos (2 encontradas)
+YT0621	DUDOSO sin foto con el código en el nombre	search
+YT65049	DUDOSO sin foto con el código en el nombre	search
+# v2 Fri Nov 27 18:29:22 -03 2026	ERROR HTTP Error 404: Not Found
