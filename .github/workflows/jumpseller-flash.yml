@@ -1,0 +1,15 @@
+name: Oferta flash
+on:
+  push:
+    paths: ['jumpseller/flash.json']
+  workflow_dispatch:
+jobs:
+  flash:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 trabajo/scripts/js_flash.py
+        env:
+          JS_LOGIN: ${{ secrets.JUMPSELLER_LOGIN }}
+          JS_TOKEN: ${{ secrets.JUMPSELLER_TOKEN }}
