@@ -131,6 +131,15 @@ DATOS = {
     'orings': ['ms-display-surtido-de-o-ring-en-mm.jpg', (0.45, 0.45), 'Es un surtido de O-rings',
                'Surtido de O-rings en mm YATO', 'YT06877',
                ['Todas las medidas en una caja', 'Para sellos de aceite y agua', 'Ordenados por compartimiento'], 9339, False],
+    'estetoscopio': ['ms-estetoscopio-para-detectar-ruido-de-motores.jpg', (0.50, 0.50), 'Es un estetoscopio mecánico',
+                     'Estetoscopio para ruidos de motor', '6104580',
+                     ['Escucha ruidos internos del motor', 'Ubica rodamientos y válvulas', 'Diagnóstico sin desarmar'], 10890, True],
+    'llave-rueda': ['ms-llave-de-rueda-tipo-cruz-17-19-21-mm-y-cuadrante-de-12-para-automovil.jpg', (0.20, 0.22), 'Es una llave de rueda cruz',
+                    'Llave de rueda cruz 17-19-21 mm', 'ASRZ149171921',
+                    ['Tres medidas: 17, 19 y 21 mm', 'Cuadrante de 1/2"', 'Más fuerza para soltar tuercas'], 14289, False],
+    'sopletear': ['ms-pistola-de-sopletear-corta.jpg', (0.18, 0.22), 'Es una pistola de sopletear',
+                  'Pistola de sopletear corta', 'DG10B1',
+                  ['Limpia piezas con aire', 'Gatillo de control', 'Para compresor'], 10450, False],
 }
 CARD = {'fundas280': 'card-fundas-250.png'}
 PREG = {'jabon': ('¿Adivinas qué', 'producto es?'), 'orings': ('¿Adivinas qué', 'producto es?'), 'cable': ('¿Sabes qué', 'cable es este?'), 'williams': ('¿Adivinas qué', 'producto es?'), 'fundas280': ('¿Adivinas qué', 'producto es?')}
