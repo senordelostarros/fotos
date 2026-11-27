@@ -1,0 +1,21 @@
+name: Jumpseller crear productos
+on:
+  push:
+    paths: ['jumpseller/crear.json']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  crear:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sleep 60   # esperar que GitHub Pages publique la foto
+      - run: python3 trabajo/scripts/js_crear.py
+        env:
+          JS_LOGIN: ${{ secrets.JUMPSELLER_LOGIN }}
+          JS_TOKEN: ${{ secrets.JUMPSELLER_TOKEN }}
+      - run: |
+          git config user.name "fotos-bot"; git config user.email "fotos-bot@users.noreply.github.com"
+          git add jumpseller/estado.txt; git commit -m "Jumpseller: productos creados" || true
+          git pull --rebase origin ${GITHUB_REF_NAME}; git push origin HEAD:${GITHUB_REF_NAME}
