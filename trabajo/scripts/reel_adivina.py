@@ -308,8 +308,8 @@ def frame(t):
         pastilla(c, 'elsenordelostarros.cl', f(FB, 62), 930, TURQ, CARBON, back((u - .8) / .5))
         pastilla(c, 'WhatsApp +56 9 4969 1686', f(FB, 58), 1090, AMAR, CARBON, back((u - 1.1) / .5))
         texto(c, 'Precios netos · Emitimos factura', f(FM, 42), 1290, BLANCO, ease((u - 1.5) / .4))
-        texto(c, 'Despacho gratis dentro de Vespucio', f(FR, 40), 1360, GRIS, ease((u - 1.7) / .4))
-        texto(c, 'sobre $50.000 + IVA', f(FR, 40), 1412, GRIS, ease((u - 1.7) / .4))
+        texto(c, 'Despacho gratis en Santiago', f(FR, 40), 1360, GRIS, ease((u - 1.7) / .4))
+        texto(c, 'sobre $30.000 + IVA · Regiones por Blue Express', f(FR, 36), 1412, GRIS, ease((u - 1.7) / .4))
     return c
 
 n = int(TOTAL * FPS)

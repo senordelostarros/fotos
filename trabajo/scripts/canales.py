@@ -63,7 +63,7 @@ def armar(W, H, compacto):
     fy = H - (90 if compacto else 120)
     d.rectangle([0, fy, W, H], fill=AMAR)
     d.text((W // 2, fy + (30 if compacto else 40)), 'Precios netos · Emitimos factura', font=f(FB, 36 if compacto else 42), fill=CARBON, anchor='mm')
-    d.text((W // 2, fy + (66 if compacto else 88)), 'Despacho gratis dentro de Vespucio sobre $50.000 + IVA', font=f(FM, 26 if compacto else 31), fill=CARBON, anchor='mm')
+    d.text((W // 2, fy + (66 if compacto else 88)), 'Despacho gratis en Santiago sobre $30.000 + IVA · Regiones: Blue Express', font=f(FM, 24 if compacto else 28), fill=CARBON, anchor='mm')
     return c.convert('RGB')
 
 armar(1080, 1920, False).save(OUT + '/canales-historia.jpg', quality=92)

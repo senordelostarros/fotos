@@ -61,7 +61,7 @@ for i, (nom, cod, det, pre, foto) in enumerate(P, 1):
     # pie
     d.rectangle([0, H - 240, W, H], fill=CARBON)
     d.text((W // 2, H - 170), 'Pídelo por WhatsApp +56 9 4969 1686', font=f(FB, 46), fill=AMAR, anchor='mm')
-    d.text((W // 2, H - 105), 'Despacho gratis dentro de Vespucio sobre $50.000 + IVA', font=f(FM, 32), fill=BLANCO, anchor='mm')
+    d.text((W // 2, H - 105), 'Despacho gratis en Santiago sobre $30.000 + IVA', font=f(FM, 32), fill=BLANCO, anchor='mm')
     d.text((W // 2, H - 55), 'elsenordelostarros.cl', font=f(FR, 30), fill=TURQ, anchor='mm')
     c.save(os.path.join(OUT, f'estado-{i:02d}-{cod.lower()}.jpg'), quality=90)
 print('ok', len(P))
