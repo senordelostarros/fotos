@@ -5,7 +5,8 @@ UA={'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/60
 B='https://toya24.pl'
 def get(u):
     return urllib.request.urlopen(urllib.request.Request(u,headers=UA),timeout=60).read()
-os.makedirs('yato/raw',exist_ok=True); log=[]
+import shutil; shutil.rmtree('yato/raw',ignore_errors=True); os.makedirs('yato/raw',exist_ok=True); log=[]
+open('yato/log.txt','w').write('')
 for cod in [l.strip() for l in open('yato/pedir.txt') if l.strip()]:
     c=cod.upper().replace('YT','YT-').replace('YT--','YT-')
     try:
@@ -22,12 +23,15 @@ for cod in [l.strip() for l in open('yato/pedir.txt') if l.strip()]:
         if not ok: log.append(f'{cod}\tSIN RESULTADO\t{len(links)} links'); continue
         u,p=ok
         imgs=list(dict.fromkeys(re.findall(r'/hpeciai/[0-9a-f]{32}/[a-z]{3}_[a-z]{2}_[^"\'\s)]+?\.(?:jpg|jpeg|png|webp)',p)))
-        big=[i for i in imgs if '_pl_' in i] or imgs
-        n=0
+        # solo fotos cuyo nombre de archivo trae el código exacto (evita fotos de otros productos)
+        pat=re.compile(r'(?<![A-Z0-9])'+re.escape(c)+r'(?![0-9])',re.I)
+        big=[i for i in imgs if pat.search(i.rsplit('/',1)[1])]
+        if not big: log.append(f'{cod}\tDUDOSO sin foto con el código en el nombre\t{u}'); continue
+        n=0; urls=[]
         for i in big[:3]:
             ext=i.rsplit('.',1)[1]
-            open(f'yato/raw/{c}-{n}.{ext}','wb').write(get(B+i)); n+=1
-        log.append(f'{cod}\t{u}\t{n} fotos ({len(imgs)} encontradas)')
+            open(f'yato/raw/{c}-{n}.{ext}','wb').write(get(B+i)); n+=1; urls.append(i)
+        log.append(f'{cod}\t{u}\t{n} fotos\t'+' '.join(urls))
     except Exception as e:
         log.append(f'{cod}\tERROR {e}')
     time.sleep(1.2)
