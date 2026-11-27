@@ -1,4 +1,16 @@
-[{"nombre": "Cinta de embalaje silenciosa 50 mm x 40 m Bilden", "sku": "642102", "barcode": "7809824011338", "precio": 2590, "stock": 10,
-  "marca": "Bilden", "categoria": "Insumos de taller", "permalink": "cinta-embalaje-silenciosa-50mm-40mt-bilden",
+[
+ {
+  "nombre": "Cinta de embalaje silenciosa 50 mm x 40 m Bilden",
+  "sku": "642102",
+  "barcode": "7809824011338",
+  "precio": 2590,
+  "stock": 10,
+  "marca": "Bilden",
+  "categoria": "Insumos de taller",
+  "permalink": "cinta-embalaje-silenciosa-50mm-40mt-bilden",
   "descripcion": "<p>Cinta de embalaje silenciosa transparente Bilden de 50 mm x 40 m.</p><ul><li>Fuerte adhesión y alta resistencia a la tracción.</li><li>Reduce el ruido al desprender y cortar la cinta.</li><li>Aplicar en superficies planas, limpias y secas.</li></ul><p>Código 642102. Precio neto + IVA.</p>",
-  "imagenes": ["https://senordelostarros.github.io/fotos/ms-cinta-embalaje-silenciosa-50mm-40mt-bilden.jpg"]}]
+  "imagenes": [
+   "https://senordelostarros.github.io/fotos/ms-cinta-embalaje-silenciosa-50mm-40mt-bilden.jpg"
+  ]
+ }
+]

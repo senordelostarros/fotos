@@ -8,10 +8,12 @@ def api(p, data=None, m='GET'):
     except urllib.error.HTTPError as e: raise Exception(f'{e.code} {e.read()[:300]}')
 log = []
 cats = []; pg = 1
-while True:
-    cs = api(f'categories.json?limit=100&page={pg}')
-    if not cs: break
-    cats += [c.get('category', c) for c in cs]; pg += 1
+seen = set()
+while pg <= 30:
+    cs = [c.get('category', c) for c in api(f'categories.json?limit=100&page={pg}')]
+    nuevos = [c for c in cs if c.get('id') not in seen]
+    if not nuevos: break
+    cats += nuevos; seen |= {c.get('id') for c in nuevos}; pg += 1
 for it in json.load(open('jumpseller/crear.json')):
     try:
         ex = api('products/search.json?query=' + urllib.request.quote(it['sku']))
