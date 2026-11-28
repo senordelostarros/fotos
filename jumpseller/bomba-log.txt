@@ -1,3 +1,9 @@
+2026-11-28 10:33 UTC · hoy 2026-11-28 · REAL
+vuelve a precio normal: ESTETOSCOPIO PARA DETECTAR RUIDO DE MOTORES (id 27697880) precio 8712.0 -> 10890
+   OK ahora precio 10890.0 stock 5
+BOMBA -20%: Probador de batería y alternador 12 V (id 37114320) precio 16489.0 -> 13191
+   OK ahora precio 13191.0 stock 0
+
 2026-11-27 18:31 UTC · hoy 2026-11-27 · PRUEBA (no cambia nada)
 vuelve a precio normal: Jabón mecánico 2 litros (id 27697791) precio 14289.0 -> 14289
 BOMBA -20%: ESTETOSCOPIO PARA DETECTAR RUIDO DE MOTORES (id 27697880) precio 8712.0 -> 8712
