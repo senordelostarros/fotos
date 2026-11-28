@@ -1,0 +1,23 @@
+name: Subir fotos YATO
+on:
+  push:
+    paths: ['jumpseller/fotos-yato.txt']
+permissions:
+  contents: write
+jobs:
+  s:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "L=$(head -1 jumpseller/fotos-yato.txt)" >> $GITHUB_ENV
+      - run: python3 trabajo/scripts/js_fotos_yato.py
+        env:
+          JS_LOGIN: ${{ secrets.JUMPSELLER_LOGIN }}
+          JS_TOKEN: ${{ secrets.JUMPSELLER_TOKEN }}
+          LIMIT: ${{ env.L }}
+      - if: always()
+        run: |
+          git config user.name "fotos-bot"; git config user.email "fotos-bot@users.noreply.github.com"
+          git add jumpseller/fotos-yato-log.txt; git commit -m "Fotos YATO subidas (API)" || true
+          git pull --rebase origin main; git push origin HEAD:main
