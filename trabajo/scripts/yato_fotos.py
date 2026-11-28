@@ -10,25 +10,18 @@ open('yato/log.txt','w').write('')
 for cod in [l.strip() for l in open('yato/pedir.txt') if l.strip()]:
     c=cod.upper().replace('YT','YT-').replace('YT--','YT-')
     try:
-        h=get(B+'/search.php?'+urllib.parse.urlencode({'text':c})).decode('utf-8','ignore')
-        links=list(dict.fromkeys(re.findall(r'(?:https://toya24\.pl)?/(?:[a-z]{2}-[A-Z]{2}/)?product-[a-z]{3}-\d+-[^"\'#?\s]+\.html',h)))
-        ok=None
-        for L in links[:6]:
-            u=L if L.startswith('http') else B+L
-            p=get(u).decode('utf-8','ignore')
-            if re.search(r'\b'+re.escape(c)+r'\b',p): ok=(u,p); break
-        if not ok:
-            # a veces la búsqueda redirige directo a la ficha
-            if re.search(r'\b'+re.escape(c)+r'\b',h) and 'hpeciai' in h: ok=('search',h)
-        if not ok: log.append(f'{cod}\tSIN RESULTADO\t{len(links)} links'); continue
-        u,p=ok
-        imgs=list(dict.fromkeys(re.findall(r'/hpeciai/[0-9a-f]{32}/[a-z]{3}_[a-z]{2}_[^"\'\s)]+?\.(?:jpg|jpeg|png|webp)',p)))
-        # solo fotos cuyo nombre de archivo trae el código exacto (evita fotos de otros productos)
-        pat=re.compile(r'(?<![A-Z0-9])'+re.escape(c)+r'(?![0-9])',re.I)
-        big=[i for i in imgs if pat.search(i.rsplit('/',1)[1])]
-        if not big: log.append(f'{cod}\tDUDOSO sin foto con el código en el nombre\t{u}'); continue
+        r=urllib.request.urlopen(urllib.request.Request(B+'/search.php?'+urllib.parse.urlencode({'text':c}),headers=UA),timeout=60)
+        u=r.geturl(); p=r.read().decode('utf-8','ignore')
+        if '/products/' not in u and '/product-' not in u:
+            log.append(f'{cod}\tLISTA (varios resultados, no se usa)\t{u}'); time.sleep(1.2); continue
+        if not re.search(r'(?<![A-Z0-9-])'+re.escape(c)+r'(?![0-9])',p):
+            log.append(f'{cod}\tDUDOSO ficha sin el código\t{u}'); time.sleep(1.2); continue
+        imgs=list(dict.fromkeys(re.findall(r'/hpeciai/[0-9a-f]{32}/[a-z]{3}_pl_[^"\'\s)]+?\.(?:jpg|jpeg|png|webp)',p)))
+        def num(i):
+            m=re.search(r'_(\d+)\.[a-z]+$',i); return int(m.group(1)) if m else 0
+        imgs.sort(key=num)
         n=0; urls=[]
-        for i in big[:3]:
+        for i in imgs[:3]:
             ext=i.rsplit('.',1)[1]
             open(f'yato/raw/{c}-{n}.{ext}','wb').write(get(B+i)); n+=1; urls.append(i)
         log.append(f'{cod}\t{u}\t{n} fotos\t'+' '.join(urls))

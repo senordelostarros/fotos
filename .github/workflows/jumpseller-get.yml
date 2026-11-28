@@ -1,0 +1,18 @@
+name: Jumpseller ver producto
+on:
+  push:
+    paths: ['jumpseller/get.txt']
+permissions:
+  contents: write
+jobs:
+  g:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 trabajo/scripts/js_get.py
+        env:
+          JS_LOGIN: ${{ secrets.JUMPSELLER_LOGIN }}
+          JS_TOKEN: ${{ secrets.JUMPSELLER_TOKEN }}
+      - run: |
+          git config user.name "fotos-bot"; git config user.email "fotos-bot@users.noreply.github.com"
+          git add jumpseller; git commit -m "ver producto" || true; git pull --rebase origin main; git push origin HEAD:main
